@@ -154,9 +154,12 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
             data={data}
             margin={{ top: 20, right: 20, left: 20, bottom: 30 }}
             onClick={(e: unknown) => {
-              const evt = e as { activePayload?: Array<{ payload?: { dataFormatada?: string } }> } | null;
-              if (evt?.activePayload?.[0]?.payload?.dataFormatada && onDayClick) {
-                onDayClick(evt.activePayload[0].payload.dataFormatada);
+              const evt = e as { activeLabel?: string; activePayload?: Array<{ payload?: { data?: string } }> } | null;
+              // activeLabel é o valor do eixo X (dataFormatada)
+              // payload.data contém o dataStr original
+              const dateStr = evt?.activePayload?.[0]?.payload?.data || evt?.activeLabel;
+              if (dateStr && onDayClick) {
+                onDayClick(dateStr);
               }
             }}
             style={{ cursor: onDayClick ? 'pointer' : 'default' }}
@@ -238,6 +241,18 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               fill="url(#colorEntradas)"
               animationBegin={200}
               animationDuration={1000}
+              activeDot={{ 
+                r: 6, 
+                fill: '#00C853', 
+                stroke: '#fff', 
+                strokeWidth: 2,
+                cursor: 'pointer',
+                onClick: (_, payload) => {
+                  if (onDayClick && payload?.payload?.data) {
+                    onDayClick(payload.payload.data);
+                  }
+                }
+              }}
             />
             
             <Area
@@ -249,6 +264,18 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               fill="url(#colorSaidas)"
               animationBegin={400}
               animationDuration={1000}
+              activeDot={{ 
+                r: 6, 
+                fill: '#FF5252', 
+                stroke: '#fff', 
+                strokeWidth: 2,
+                cursor: 'pointer',
+                onClick: (_, payload) => {
+                  if (onDayClick && payload?.payload?.data) {
+                    onDayClick(payload.payload.data);
+                  }
+                }
+              }}
             />
             
             {/* Linha pontilhada do saldo acumulado */}
@@ -260,7 +287,18 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               strokeWidth={2}
               strokeDasharray="8 4"
               dot={false}
-              activeDot={{ r: 6, fill: '#008DD0', stroke: '#fff', strokeWidth: 2 }}
+              activeDot={{ 
+                r: 6, 
+                fill: '#008DD0', 
+                stroke: '#fff', 
+                strokeWidth: 2,
+                cursor: 'pointer',
+                onClick: (_, payload) => {
+                  if (onDayClick && payload?.payload?.data) {
+                    onDayClick(payload.payload.data);
+                  }
+                }
+              }}
               animationBegin={600}
               animationDuration={1000}
             />
