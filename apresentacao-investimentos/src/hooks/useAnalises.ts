@@ -39,9 +39,9 @@ function parseNumberDot(value: string): number {
   return Number.isFinite(n) ? n : 0;
 }
 
-function loadCSV<T extends Record<string, unknown>>(url: string): Promise<T[]> {
+function loadCSV<T>(url: string): Promise<T[]> {
   return new Promise((resolve, reject) => {
-    Papa.parse<T>(url, {
+    Papa.parse(url, {
       download: true,
       header: true,
       delimiter: ';',

@@ -195,7 +195,7 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
                 <Bar 
                   dataKey="total" 
                   radius={[0, 6, 6, 0]}
-                  onClick={(data) => handleBarClick(data as CategoriaAgregada)}
+                  onClick={(data) => handleBarClick(data as unknown as CategoriaAgregada)}
                   onMouseEnter={(_, index) => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >

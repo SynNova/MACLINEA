@@ -602,7 +602,7 @@ export function MovimentosTable({ data }: MovimentosTableProps) {
     getFilteredRowModel: getFilteredRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
-    getRowId: (row) => row.id,
+    getRowId: (row) => String(row.id),
     initialState: {
       pagination: { pageSize: 15 },
     },

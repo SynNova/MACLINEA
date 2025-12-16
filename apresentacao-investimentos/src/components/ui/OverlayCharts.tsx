@@ -237,7 +237,7 @@ export function OverlayCharts({ movimentos, valueField = 'debito' }: OverlayChar
                 outerRadius={120}
                 innerRadius={60}
                 paddingAngle={2}
-                label={({ name, percent }) => `${name.slice(0, 15)}${name.length > 15 ? '...' : ''} (${percent.toFixed(1)}%)`}
+                label={({ name, percent }) => `${(name ?? '').slice(0, 15)}${(name ?? '').length > 15 ? '...' : ''} (${(percent ?? 0).toFixed(1)}%)`}
                 labelLine={false}
               >
                 {dataWithPercent.map((_, index) => (

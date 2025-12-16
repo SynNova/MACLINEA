@@ -153,9 +153,10 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
           <ComposedChart
             data={data}
             margin={{ top: 20, right: 20, left: 20, bottom: 30 }}
-            onClick={(e) => {
-              if (e?.activePayload?.[0]?.payload?.dataFormatada && onDayClick) {
-                onDayClick(e.activePayload[0].payload.dataFormatada);
+            onClick={(e: unknown) => {
+              const evt = e as { activePayload?: Array<{ payload?: { dataFormatada?: string } }> } | null;
+              if (evt?.activePayload?.[0]?.payload?.dataFormatada && onDayClick) {
+                onDayClick(evt.activePayload[0].payload.dataFormatada);
               }
             }}
             style={{ cursor: onDayClick ? 'pointer' : 'default' }}

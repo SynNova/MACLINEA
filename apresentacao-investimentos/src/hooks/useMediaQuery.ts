@@ -13,12 +13,19 @@ export function useMediaQuery(query: string): boolean {
 
     // estado inicial + listener
     onChange();
-    if ('addEventListener' in mql) mql.addEventListener('change', onChange);
-    else mql.addListener(onChange);
+    if ('addEventListener' in mql) {
+      mql.addEventListener('change', onChange);
+    } else {
+      // Fallback para navegadores antigos
+      (mql as MediaQueryList & { addListener: (cb: () => void) => void }).addListener(onChange);
+    }
 
     return () => {
-      if ('removeEventListener' in mql) mql.removeEventListener('change', onChange);
-      else mql.removeListener(onChange);
+      if ('removeEventListener' in mql) {
+        mql.removeEventListener('change', onChange);
+      } else {
+        (mql as MediaQueryList & { removeListener: (cb: () => void) => void }).removeListener(onChange);
+      }
     };
   }, [query]);
 
