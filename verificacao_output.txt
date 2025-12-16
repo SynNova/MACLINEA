@@ -1,0 +1,100 @@
+================================================================================
+VERIFICAÇÃO DOS DADOS CITADOS NO TEXTO DA USIFIX
+================================================================================
+
+1. SALÁRIO DO DIRETOR GERAL:
+--------------------------------------------------------------------------------
+Nome: ANGELO PIPITONE
+Cargo: Diretor Geral
+Tipo: CLT
+Valor Base: R$ 42,219.80
+Total Mensal (com encargos): R$ 50,663.76
+
+✓ Texto cita: R$ 50.664,00
+✓ Planilha mostra: R$ 50,663.76
+✅ VALOR CORRETO!
+Nome: FLAVIO AZANHA
+Cargo: Diretor Geral
+Tipo: PJ
+Valor Base: R$ 38,036.00
+Total Mensal (com encargos): R$ 38,036.00
+
+✓ Texto cita: R$ 50.664,00
+✓ Planilha mostra: R$ 38,036.00
+⚠️ DIVERGÊNCIA: Diferença de R$ 12,628.00
+
+
+2. ENDIVIDAMENTO:
+--------------------------------------------------------------------------------
+
+Detalhamento por linha (Mapa_Endividamento):
+  GIROPRE: Banco Itau - R$ 4,550,000.00
+  GIROPRE: Banco Itau - R$ 2,890,000.00
+  FINIMP: Banco Brasil - R$ 766,265.27
+  FINIMP: Banco Brasil - R$ 383,758.38
+  FINIMP: Banco Brasil - R$ 317,407.30
+  FINIMP: Banco Brasil - R$ 49,372.00
+  SBLC (Stand by Letter of Credit): nan - R$ 8,956,802.95
+  GIRO  : Banco Brasil - R$ 1,609,756.17
+  FINAME: Copel - R$ 1,372,792.67
+  NCE: Santander - R$ 742,070.42
+  GARANTIA: Banco Itau - R$ 454,364.00
+  Aval Marcello: nan - R$ 4,178,983.26
+  GIRO: BRADESCO - R$ 949,690.08
+  Renegociação de Divida: SANTANDER - R$ 694,099.92
+  GARANTIA: BANCO BRASIL - R$ 500,000.00
+  LIMITE C/C: BANCO ITAU - R$ 350,000.00
+  GIRO  : BANCO BRASIL - R$ 347,728.34
+  Liquidação Finimp 409: BANCO BRASIL - R$ 278,661.03
+  Liquidação Finimp 1166: BANCO BRASIL - R$ 269,362.97
+  LIMITE C/C: CAIXA - R$ 100,000.00
+  LIMITE C/C: BANCO BRASIL - R$ 24,000.00
+  Aval Flávio/Angelo: nan - R$ 3,513,542.34
+  CDC: Banco Itau - R$ 40,061.98
+  Garantia Real: nan - R$ 40,061.98
+  ACC: Banco Brasil - R$ 1,141,740.00
+  ACC: Banco Brasil - R$ 719,296.20
+
+Total endividamento bancário: R$ 35,239,817.26
+
+✓ Texto cita: ~R$ 19 milhões
+✓ Análise mostra: R$ 35,239,817.26
+⚠️ ATENÇÃO: Valor real é R$ 35.2 milhões, não R$ 19 milhões!
+
+
+3. DÍVIDAS COM FORNECEDORES:
+--------------------------------------------------------------------------------
+Linha 5: R$ 1,862,580.26
+
+Total linha 5 (provável total): R$ 1,862,580.26
+
+✓ Texto cita: mínimo R$ 5 milhões
+
+
+4. COLABORADORES E RESCISÕES:
+--------------------------------------------------------------------------------
+Total colaboradores: 79
+  • CLT: 68
+  • PJ: 11
+
+Rescisões planejadas:
+  • Cenário 1 (Máq + Peças): 45 pessoas
+  • Cenário 2 (Apenas Peças): 60 pessoas
+
+✓ Texto cita: 'em torno de 40 rescisões'
+✓ Planilha mostra: 45 a 60 rescisões
+✅ VALOR APROXIMADO CORRETO!
+
+
+================================================================================
+RESUMO DA VERIFICAÇÃO
+================================================================================
+
+📊 DADOS CITADOS NO TEXTO vs. DADOS DA PLANILHA:
+
+Endividamento bancário         | Texto: ~R$ 19 milhões       | Planilha: R$ 35.2 milhões
+Salário Diretor Geral          | Texto: R$ 50.664,00         | Planilha: R$ 50.663,76 (Angelo Pipitone)
+Rescisões planejadas           | Texto: ~40 pessoas          | Planilha: 45 a 60 pessoas
+Total colaboradores            | Texto: Não especificado     | Planilha: 79 pessoas
+
+================================================================================

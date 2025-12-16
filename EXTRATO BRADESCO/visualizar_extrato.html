@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-visualização de Importação - Extrato Bradesco</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 12px; margin: 20px; background-color: #f4f6f9; }
+        h2 { color: #333; }
+        table { border-collapse: collapse; width: 100%; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #007bff; color: white; position: sticky; top: 0; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+        .saida { color: #dc3545; font-weight: bold; }
+        .entrada { color: #28a745; font-weight: bold; }
+        .no-account { background-color: #fff3cd; color: #856404; }
+        .account { color: #004085; font-weight: 500; }
+    </style>
+</head>
+<body>
+
+    <h2>Pré-visualização dos Lançamentos - Extrato Bradesco</h2>
+    <p>Total de registros: <span id="total-records">0</span></p>
+
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Documento</th>
+                <th>Operação</th>
+                <th>Valor (R$)</th>
+                <th>Histórico</th>
+                <th>Plano de Contas (Nome)</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be inserted here by JS -->
+        </tbody>
+    </table>
+
+    <script src="extrato_data.js"></script>
+    <script>
+        const data = extratoData;
+        document.getElementById('total-records').innerText = data.length;
+
+        const tbody = document.querySelector('#data-table tbody');
+        
+        data.forEach(row => {
+            const tr = document.createElement('tr');
+            
+            // Clean up account name (remove code)
+            let accountName = row['Plano de Contas'];
+            if (accountName) {
+                // "63 - 1.4.12 - Telefonia/Fixa/Movel/Internet" -> "Telefonia/Fixa/Movel/Internet"
+                const parts = accountName.split(' - ');
+                if (parts.length >= 3) {
+                    accountName = parts.slice(2).join(' - '); // Join back in case name has dashes
+                } else if (parts.length === 1 && accountName.includes('NAO IDENTIFICADO')) {
+                    accountName = "NAO IDENTIFICADO";
+                }
+            }
+
+            const opClass = row['Operação'] === 'Entrada' ? 'entrada' : 'saida';
+            const accountClass = row['Plano de Contas'] ? 'account' : 'no-account';
+            const accountDisplay = accountName || '(Não Classificado)';
+
+            tr.innerHTML = `
+                <td>${row['Data Lançamento']}</td>
+                <td>${row['Documento']}</td>
+                <td class="${opClass}">${row['Operação']}</td>
+                <td class="${opClass}">${row['Valor Lançamento']}</td>
+                <td>${row['Histórico Movimento']}</td>
+                <td class="${accountClass}">${accountDisplay}</td>
+                <td>${row['Complemento Descrição']}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    </script>
+</body>
+</html>

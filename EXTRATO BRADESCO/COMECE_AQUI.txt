@@ -1,0 +1,251 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║              🎯 LANÇAMENTO AUTOMÁTICO - BRADESCO                          ║
+║                                                                            ║
+║                    ✅ COMECE AQUI - GUIA RÁPIDO                           ║
+║                                                                            ║
+║        174 Registros Prontos para Importar em ~8 Minutos                 ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                         🚀 MODO MAIS RÁPIDO
+
+        Copie e Cole No Console Do Navegador (F12 > Console)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+
+PASSO 1: PREPARAR O NAVEGADOR
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Acesse: http://sistema.maclinea.com.br:4586/app/
+  
+  2. Navegue até: Financeiro → Movimento Financeiro
+  
+  3. Abra o Console:
+     Pressione: F12
+     Clique em: Console
+     
+  4. Você deve ver um prompt ">_" branco/verde
+
+
+PASSO 2: COPIAR O SCRIPT
+━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Abra arquivo: lancar_com_dados_embutidos.js
+  
+  2. Selecione TODO o conteúdo (Ctrl+A)
+  
+  3. Copie (Ctrl+C)
+  
+  ⚠️ IMPORTANTE: Copie TUDO, do início ao final!
+
+
+PASSO 3: COLAR NO CONSOLE
+━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Clique no console
+  
+  2. Cole (Ctrl+V)
+  
+  3. Você verá linhas e linhas de código sendo coladas
+  
+  4. Pressione ENTER para executar
+  
+  5. Aguarde a mensagem aparecer:
+     "✓ Pronto! Execute: autoLancador.iniciar()"
+
+
+PASSO 4: INICIAR O LANÇAMENTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  No console, digite:
+  
+  >>> autoLancador.iniciar()
+  
+  Pressione ENTER
+  
+  ✅ Início automático de lançamento!
+
+
+PASSO 5: ACOMPANHAR PROGRESSO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  O console mostrará:
+  
+  [1/174] 03/11/2025 Doc:49294
+  [2/174] 03/11/2025 Doc:1037148
+  [3/174] 04/11/2025 Doc:...
+  ...
+  
+  Taxa de progresso aumentando...
+  
+  Aguarde ~8 minutos
+
+
+PASSO 6: RESULTADO FINAL
+━━━━━━━━━━━━━━━━━━━━━━
+
+  Ao final, você verá:
+  
+  ════════════════════════════════
+  Fim: 174 OK, 0 erro, 480s
+  ════════════════════════════════
+  
+  ✅ SUCESSO! Todos os 174 registros foram lançados!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    ⚡ COMANDOS ÚTEIS DURANTE EXECUÇÃO
+
+  Ver progresso em tempo real:
+  >>> autoLancador.status()
+  
+  Pausar o lançamento:
+  >>> autoLancador.pausar()
+  
+  Continuar após pausar:
+  >>> autoLancador.continuar()
+  
+  Acelerar (1 segundo ao invés de 1.5s):
+  >>> autoLancador.setDelay(1000)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        ⚠️  ERROS COMUNS
+
+ERRO: "Assignment to constant variable"
+SOLUÇÃO: O script pode ter sido colado 2 vezes. 
+         Atualize a página (F5) e comece de novo.
+
+ERRO: "autoLancador is not defined"
+SOLUÇÃO: Você não completou de colar o script.
+         Certifique-se de ter copiado TUDO o arquivo.
+
+ERRO: "JSON parse error"
+SOLUÇÃO: O arquivo está corrompido. 
+         Regenere com: python gerar_script_embutido.py
+
+ERRO: "fetch error 404"
+SOLUÇÃO: Não é problema! O script tenta carregar arquivo
+         mas os dados já estão embutidos. Ignore este erro.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    📊 DADOS QUE SERÃO LANÇADOS
+
+Total de Registros: 174
+
+Período:
+  Data Início: 03/11/2025
+  Data Fim:    19/11/2025
+
+Conta Bancária:
+  Código: 6 - BRADESCO
+  Empresa: 1 - MACLINEA MAQUINAS E EQUIPAMENTOS LTDA
+
+Movimentações:
+  Entradas:   ~30 registros (depósitos/recebimentos)
+  Saídas:     ~144 registros (pagamentos/transferências)
+
+Principais Despesas:
+  Transferências PIX
+  Pagamentos Eletrônicos
+  Faturas (Luz, Água, Internet, Telefone)
+  Despesas Financeiras
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    ✅ VERIFICAÇÃO PÓS-LANÇAMENTO
+
+Após conclusão, verifique:
+
+1. Na Lista de Movimentos:
+   □ Atualize a página (F5)
+   □ Filtro: Período 01/11 a 30/11/2025
+   □ Filtro: Conta = 6 - BRADESCO
+   □ Total deve mostrar 174+ registros
+
+2. Dados Aleatórios:
+   □ Primeiro: 03/11/2025 Doc 49294 - Entrada 700.000,00
+   □ Último: 19/11/2025 Doc 31125 - Saída 415,26
+   □ Empresa: MACLINEA corretamente vinculada
+
+3. Qualidade:
+   □ Nenhum erro de validação
+   □ Plano de Contas corretamente classificado
+   □ Valores com casas decimais corretas
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    💾 ARQUIVOS DISPONÍVEIS
+
+Para Usar AGORA:
+  ✓ lancar_com_dados_embutidos.js (ESTE - Use este!)
+
+Para Alternativas:
+  • auto_lancer_selenium.py (Python automático)
+  • lancar_automatico_console.js (Versão completa)
+
+Para Referência:
+  • INSTRUCOES_RAPIDAS.txt (Instruções detalhadas)
+  • SOLUCOES_DISPONIVEIS.txt (Comparação de métodos)
+  • README_AUTOMACAO.md (Documentação completa)
+  • extrato_json_completo.js (Dados em JSON puro)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        🎯 RESUMO RÁPIDO
+
+1️⃣  F12 > Console
+2️⃣  Copiar: lancar_com_dados_embutidos.js
+3️⃣  Colar no console + ENTER
+4️⃣  autoLancador.iniciar()
+5️⃣  ⏳ Aguardar ~8 minutos
+6️⃣  ✅ 174 registros lançados!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    📞 PRÓXIMO PASSO
+
+👉 AGORA: Abra o arquivo lancar_com_dados_embutidos.js
+   
+   Copie TODO o conteúdo
+   
+   Cole no console do navegador
+   
+   Execute: autoLancador.iniciar()
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        ⏱️ TEMPO ESPERADO
+
+Velocidade Normal (1.5s/registro):    ~8 minutos
+Velocidade Rápida (1s/registro):      ~4-5 minutos
+Velocidade Turbo (0.5s/registro):     ~2-3 minutos
+
+⚠️ Não vá muito rápido! O servidor pode não acompanhar.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Gerado: 19/11/2025
+Versão: 2.0 (Corrigido)
+Status: ✅ PRONTO PARA USO
+
+═══════════════════════════════════════════════════════════════════════════════
+
+
+
+

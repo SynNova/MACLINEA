@@ -1,0 +1,114 @@
+======================================================================
+EXTRACAO UNICRED - CONCLUIDA
+======================================================================
+
+Arquivo CSV gerado: unicred_novo_para_revisar.csv
+
+Total de registros: 179
+  Entradas: 174
+  Saidas: 5
+
+Valores:
+  Total Entradas: R$ 1.235.554,25
+  Total Saidas: R$ 47,50
+  Saldo: R$ 1.235.506,75
+
+======================================================================
+PRIMEIROS 30 REGISTROS
+======================================================================
+
+  1. 10/11/2025 | +Entrada | Doc: CRED               | R$        10,00
+     -...
+
+  2. 11/11/2025 | +Entrada | Doc: CRED               | R$       200,00
+     -...
+
+  3. 12/11/2025 | +Entrada | Doc: CRED               | R$         2,20
+     -...
+
+  4. 13/11/2025 | +Entrada | Doc: CRED               | R$        10,00
+     -...
+
+  5. 13/11/2025 | +Entrada | Doc: CRED               | R$       776,72
+     -...
+
+  6. 14/11/2025 | +Entrada | Doc: CRED               | R$         3,30
+     -...
+
+  7. 14/11/2025 | +Entrada | Doc: CRED               | R$       622,93
+     -...
+
+  8. 14/11/2025 | +Entrada | Doc: CRED               | R$     5.000,00
+     -...
+
+  9. 14/11/2025 | +Entrada | Doc: CRED               | R$     2.500,00
+     -...
+
+ 10. 14/11/2025 | +Entrada | Doc: CRED               | R$     7.374,41
+     -...
+
+ 11. 14/11/2025 | +Entrada | Doc: CRED               | R$    59.395,00
+     -...
+
+ 12. 14/11/2025 | +Entrada | Doc: CRED               | R$     4.339,51
+     -...
+
+ 13. 17/11/2025 | +Entrada | Doc: CRED               | R$         2,20
+     -...
+
+ 14. 17/11/2025 | +Entrada | Doc: CRED               | R$   155.820,00
+     -...
+
+ 15. 17/11/2025 | +Entrada | Doc: CRED               | R$     3.134,64
+     -...
+
+ 16. 17/11/2025 | +Entrada | Doc: CRED               | R$     1.030,00
+     -...
+
+ 17. 17/11/2025 | +Entrada | Doc: CRED               | R$    70.114,70
+     -...
+
+ 18. 17/11/2025 | +Entrada | Doc: CRED               | R$     9.737,52
+     -...
+
+ 19. 17/11/2025 | +Entrada | Doc: CRED               | R$     5.740,35
+     -...
+
+ 20. 17/11/2025 | +Entrada | Doc: CRED               | R$     6.110,09
+     -...
+
+ 21. 17/11/2025 | +Entrada | Doc: CRED               | R$       582,00
+     -...
+
+ 22. 17/11/2025 | +Entrada | Doc: CRED               | R$    12.705,00
+     -...
+
+ 23. 17/11/2025 | +Entrada | Doc: CRED               | R$        10,00
+     -...
+
+ 24. 17/11/2025 | +Entrada | Doc: CRED               | R$       500,00
+     -...
+
+ 25. 17/11/2025 | +Entrada | Doc: CRED               | R$       206,40
+     -...
+
+ 26. 17/11/2025 | +Entrada | Doc: CRED               | R$       186,75
+     -...
+
+ 27. 17/11/2025 | +Entrada | Doc: CRED               | R$    35.474,16
+     -...
+
+ 28. 17/11/2025 | +Entrada | Doc: CRED               | R$    22.765,64
+     -...
+
+ 29. 17/11/2025 | +Entrada | Doc: CRED               | R$     1.394,00
+     -...
+
+ 30. 17/11/2025 | +Entrada | Doc: CRED               | R$       482,16
+     -...
+
+
+======================================================================
+ABRA O ARQUIVO NO EXCEL PARA REVISAR:
+>>> unicred_novo_para_revisar.csv <<<
+======================================================================

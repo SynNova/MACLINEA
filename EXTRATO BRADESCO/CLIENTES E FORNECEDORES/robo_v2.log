@@ -1,0 +1,136 @@
+2025-11-25 19:32:07,888 [INFO] Carregando planilha...
+2025-11-25 19:32:10,616 [INFO] 8055 registros carregados
+2025-11-25 19:32:10,616 [INFO] Iniciando navegador...
+2025-11-25 19:32:11,599 [INFO] Navegador iniciado
+2025-11-25 19:32:11,599 [INFO] Fazendo login...
+2025-11-25 19:32:16,091 [INFO] Login OK
+2025-11-25 19:32:16,091 [INFO] Abrindo Cliente/Fornecedores...
+2025-11-25 19:32:19,337 [INFO] Modulo carregado
+2025-11-25 19:32:19,338 [INFO] Ordenando por codigo...
+2025-11-25 19:32:22,345 [INFO] Ordenacao aplicada
+2025-11-25 19:32:22,345 [INFO] 
+================================================================================
+2025-11-25 19:32:22,346 [INFO] INICIANDO PROCESSAMENTO V2 (PAGINACAO)
+2025-11-25 19:32:22,346 [INFO] Total: 8055
+2025-11-25 19:32:22,346 [INFO] ================================================================================
+
+2025-11-25 19:32:22,347 [INFO] [1/8055] Processando: 1 - TUDINO
+2025-11-25 19:32:22,355 [INFO]   Codigo 1 nao encontrado, tentando proxima pagina...
+2025-11-25 19:32:25,367 [INFO]   Codigo 1 nao encontrado, tentando proxima pagina...
+2025-11-25 19:32:28,375 [INFO]   Codigo 1 nao encontrado, tentando proxima pagina...
+2025-11-25 19:32:31,384 [INFO]   Codigo 1 nao encontrado, tentando proxima pagina...
+2025-11-25 19:32:32,599 [ERROR]   Erro: Page.evaluate: Target page, context or browser has been closed
+2025-11-25 19:32:32,602 [INFO] Abrindo Cliente/Fornecedores...
+2025-11-25 19:32:33,605 [ERROR] Erro critico: Page.click: Target page, context or browser has been closed
+2025-11-25 19:32:33,605 [INFO] 
+================================================================================
+2025-11-25 19:32:33,605 [INFO] FINALIZANDO
+2025-11-25 19:32:33,605 [INFO] ================================================================================
+2025-11-25 19:32:33,606 [INFO] 
+ESTATISTICAS:
+2025-11-25 19:32:33,606 [INFO]   Total: 8055
+2025-11-25 19:32:33,606 [INFO]   Processados: 1
+2025-11-25 19:32:33,606 [INFO]   Sucessos: 0
+2025-11-25 19:32:33,606 [INFO]   Erros: 1
+2025-11-25 19:32:33,606 [INFO]   Taxa sucesso: 0.0%
+2025-11-25 19:32:33,607 [INFO]   Tempo total: 0:00:25.717210
+2025-11-25 19:32:33,628 [INFO] 
+Finalizado!
+2025-11-25 19:33:41,223 [INFO] Carregando planilha...
+2025-11-25 19:33:44,390 [INFO] 8055 registros carregados
+2025-11-25 19:33:44,390 [INFO] Iniciando navegador...
+2025-11-25 19:33:45,469 [INFO] Navegador iniciado
+2025-11-25 19:33:45,469 [INFO] Fazendo login...
+2025-11-25 19:33:50,182 [INFO] Login OK
+2025-11-25 19:33:50,182 [INFO] Abrindo Cliente/Fornecedores...
+2025-11-25 19:34:01,908 [INFO] Modulo carregado
+2025-11-25 19:34:01,908 [INFO] Ordenando por codigo (2 cliques para crescente)...
+2025-11-25 19:34:06,935 [INFO] Ordenacao crescente aplicada (1 → infinito)
+2025-11-25 19:34:06,935 [INFO] 
+================================================================================
+2025-11-25 19:34:06,935 [INFO] INICIANDO PROCESSAMENTO V2 (PAGINACAO)
+2025-11-25 19:34:06,935 [INFO] Total: 8055
+2025-11-25 19:34:06,935 [INFO] ================================================================================
+
+2025-11-25 19:34:06,935 [INFO] [2/8055] Processando: 2 - 3D
+2025-11-25 19:34:06,944 [INFO]   Codigo 2 encontrado: 2
+2025-11-25 19:34:07,950 [INFO]   10 campos preenchidos
+2025-11-25 19:34:12,982 [INFO]   Registro 2 atualizado com sucesso
+2025-11-25 19:34:13,983 [INFO] [3/8055] Processando: 4 - SINCOL - MATRIZ
+2025-11-25 19:34:13,998 [INFO]   Codigo 4 encontrado: 4
+2025-11-25 19:34:15,004 [INFO]   10 campos preenchidos
+2025-11-25 19:34:20,033 [INFO]   Registro 4 atualizado com sucesso
+2025-11-25 19:34:21,033 [INFO] [4/8055] Processando: 5 - LAVRASUL
+2025-11-25 19:34:21,050 [INFO]   Codigo 5 encontrado: 5
+2025-11-25 19:34:22,057 [INFO]   10 campos preenchidos
+2025-11-25 19:34:27,085 [INFO]   Registro 5 atualizado com sucesso
+2025-11-25 19:34:28,086 [INFO] [5/8055] Processando: 6 - GLOBAL MOBILINEA
+2025-11-25 19:34:28,102 [INFO]   Codigo 6 encontrado: 6
+2025-11-25 19:34:29,108 [INFO]   10 campos preenchidos
+2025-11-25 19:34:34,136 [INFO]   Registro 6 atualizado com sucesso
+2025-11-25 19:34:35,137 [INFO] [6/8055] Processando: 7 - EMBRAPINUS
+2025-11-25 19:34:35,152 [INFO]   Codigo 7 encontrado: 7
+2025-11-25 19:34:36,157 [INFO]   10 campos preenchidos
+2025-11-25 19:34:41,186 [INFO]   Registro 7 atualizado com sucesso
+2025-11-25 19:34:42,187 [INFO] [7/8055] Processando: 8 - GTS MOVEIS
+2025-11-25 19:34:42,203 [INFO]   Codigo 8 encontrado: 8
+2025-11-25 19:34:43,209 [INFO]   10 campos preenchidos
+2025-11-25 19:34:48,238 [INFO]   Registro 8 atualizado com sucesso
+2025-11-25 19:34:49,239 [INFO] [8/8055] Processando: 9 - MSA
+2025-11-25 19:34:49,249 [INFO]   Codigo 9 encontrado: 9
+2025-11-25 19:34:50,255 [INFO]   10 campos preenchidos
+2025-11-25 19:34:53,280 [ERROR]   Erro: Page.evaluate: Target page, context or browser has been closed
+2025-11-25 19:34:53,282 [INFO] Abrindo Cliente/Fornecedores...
+2025-11-25 19:34:54,284 [ERROR] Erro critico: Page.click: Target page, context or browser has been closed
+2025-11-25 19:34:54,284 [INFO] 
+================================================================================
+2025-11-25 19:34:54,284 [INFO] FINALIZANDO
+2025-11-25 19:34:54,284 [INFO] ================================================================================
+2025-11-25 19:34:54,284 [INFO] 
+ESTATISTICAS:
+2025-11-25 19:34:54,285 [INFO]   Total: 8055
+2025-11-25 19:34:54,285 [INFO]   Processados: 7
+2025-11-25 19:34:54,285 [INFO]   Sucessos: 6
+2025-11-25 19:34:54,285 [INFO]   Erros: 1
+2025-11-25 19:34:54,285 [INFO]   Taxa sucesso: 85.7%
+2025-11-25 19:34:54,285 [INFO]   Tempo total: 0:01:13.061233
+2025-11-25 19:34:54,290 [INFO] 
+Finalizado!
+2025-11-25 19:37:49,532 [INFO] Carregando planilha...
+2025-11-25 19:37:52,145 [INFO] 8055 registros carregados
+2025-11-25 19:37:52,145 [INFO] Iniciando navegador...
+2025-11-25 19:37:53,073 [INFO] Navegador iniciado
+2025-11-25 19:37:53,073 [INFO] Fazendo login...
+2025-11-25 19:37:57,710 [INFO] Login OK
+2025-11-25 19:37:57,710 [INFO] Abrindo Cliente/Fornecedores...
+2025-11-25 19:38:12,577 [INFO] Modulo carregado
+2025-11-25 19:38:12,578 [INFO] Ordenando por codigo (2 cliques para crescente)...
+2025-11-25 19:38:17,604 [INFO] Ordenacao crescente aplicada (1 → infinito)
+2025-11-25 19:38:17,604 [INFO] 
+================================================================================
+2025-11-25 19:38:17,605 [INFO] INICIANDO PROCESSAMENTO V2 (PAGINACAO)
+2025-11-25 19:38:17,605 [INFO] Total: 8055
+2025-11-25 19:38:17,605 [INFO] ================================================================================
+
+2025-11-25 19:38:17,605 [INFO] [8/8055] Processando: 9 - MSA
+2025-11-25 19:38:17,615 [INFO]   Codigo 9 encontrado: 9
+2025-11-25 19:38:18,621 [INFO]   10 campos preenchidos
+2025-11-25 19:38:23,653 [INFO]   Registro 9 atualizado com sucesso
+2025-11-25 19:38:24,654 [INFO] [9/8055] Processando: 10 - DISSENHA
+2025-11-25 19:38:24,672 [INFO]   Codigo 10 encontrado: 10
+2025-11-25 19:38:26,188 [WARNING] 
+Interrompido pelo usuario
+2025-11-25 19:38:26,189 [INFO] 
+================================================================================
+2025-11-25 19:38:26,189 [INFO] FINALIZANDO
+2025-11-25 19:38:26,189 [INFO] ================================================================================
+2025-11-25 19:38:26,189 [INFO] 
+ESTATISTICAS:
+2025-11-25 19:38:26,189 [INFO]   Total: 8055
+2025-11-25 19:38:26,189 [INFO]   Processados: 2
+2025-11-25 19:38:26,189 [INFO]   Sucessos: 1
+2025-11-25 19:38:26,190 [INFO]   Erros: 0
+2025-11-25 19:38:26,190 [INFO]   Taxa sucesso: 50.0%
+2025-11-25 19:38:26,190 [INFO]   Tempo total: 0:00:36.657061
+2025-11-25 19:38:26,190 [INFO] 
+Finalizado!

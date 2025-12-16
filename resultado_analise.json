@@ -1,0 +1,191 @@
+{
+  "data_analise": "2025-10-16 12:13:23",
+  "emprestimos": {
+    "total_endividamento": 35239817.260000005,
+    "juros_mensais_total": 232193.28999999998,
+    "juros_anuais_estimado": 2786319.4799999995,
+    "detalhamento": [
+      {
+        "Tipo": "GIROPRE",
+        "Credor": "Banco Itau",
+        "Saldo_Atual": 4550000.0,
+        "Juros_Mensal": 86678.18
+      },
+      {
+        "Tipo": "GIROPRE",
+        "Credor": "Banco Itau",
+        "Saldo_Atual": 2890000.0,
+        "Juros_Mensal": 51499.81
+      },
+      {
+        "Tipo": "FINIMP",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 766265.27,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "FINIMP",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 383758.38,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "FINIMP",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 317407.3,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "FINIMP",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 49372.0,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "SBLC (Stand by Letter of Credit)",
+        "Credor": "N/A",
+        "Saldo_Atual": 8956802.950000001,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "GIRO  ",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 1609756.17,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "FINAME",
+        "Credor": "Copel",
+        "Saldo_Atual": 1372792.67,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "NCE",
+        "Credor": "Santander",
+        "Saldo_Atual": 742070.4199999999,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "GARANTIA",
+        "Credor": "Banco Itau",
+        "Saldo_Atual": 454364.0,
+        "Juros_Mensal": 14312.46
+      },
+      {
+        "Tipo": "Aval Marcello",
+        "Credor": "N/A",
+        "Saldo_Atual": 4178983.26,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "GIRO",
+        "Credor": "BRADESCO",
+        "Saldo_Atual": 949690.08,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "Renegociação de Divida",
+        "Credor": "SANTANDER",
+        "Saldo_Atual": 694099.92,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "GARANTIA",
+        "Credor": "BANCO BRASIL",
+        "Saldo_Atual": 500000.0,
+        "Juros_Mensal": 13500.0
+      },
+      {
+        "Tipo": "LIMITE C/C",
+        "Credor": "BANCO ITAU",
+        "Saldo_Atual": 350000.0,
+        "Juros_Mensal": 48635.0
+      },
+      {
+        "Tipo": "GIRO  ",
+        "Credor": "BANCO BRASIL",
+        "Saldo_Atual": 347728.34,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "Liquidação Finimp 409",
+        "Credor": "BANCO BRASIL",
+        "Saldo_Atual": 278661.03,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "Liquidação Finimp 1166",
+        "Credor": "BANCO BRASIL",
+        "Saldo_Atual": 269362.97,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "LIMITE C/C",
+        "Credor": "CAIXA",
+        "Saldo_Atual": 100000.0,
+        "Juros_Mensal": 13799.84
+      },
+      {
+        "Tipo": "LIMITE C/C",
+        "Credor": "BANCO BRASIL",
+        "Saldo_Atual": 24000.0,
+        "Juros_Mensal": 3768.0
+      },
+      {
+        "Tipo": "Aval Flávio/Angelo",
+        "Credor": "N/A",
+        "Saldo_Atual": 3513542.34,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "CDC",
+        "Credor": "Banco Itau",
+        "Saldo_Atual": 40061.979999999996,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "FINAME",
+        "Credor": "Banco Itau",
+        "Saldo_Atual": 0.0,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "Garantia Real",
+        "Credor": "N/A",
+        "Saldo_Atual": 40061.979999999996,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "ACC",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 1141740.0,
+        "Juros_Mensal": 0.0
+      },
+      {
+        "Tipo": "ACC",
+        "Credor": "Banco Brasil",
+        "Saldo_Atual": 719296.2,
+        "Juros_Mensal": 0.0
+      }
+    ]
+  },
+  "rescisoes": {
+    "total_colaboradores": 79,
+    "colaboradores_clt": 68,
+    "colaboradores_pj": 11
+  },
+  "custos_fixos": {
+    "total_mensal": 176065,
+    "total_anual": 2112780,
+    "percentual_receita_liquida": 10.01781830562912,
+    "receita_liquida_referencia": 1757518.4
+  },
+  "faturamento": {
+    "receita_bruta_mensal": 2171500.0,
+    "receita_liquida_mensal": 1757518.4,
+    "receita_bruta_anual": 26058000.0,
+    "receita_liquida_anual": 21090220.799999997,
+    "margem_contribuicao_total": 789107.11,
+    "percentual_margem_global": 44.89893875364264
+  }
+}

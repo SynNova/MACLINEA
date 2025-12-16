@@ -1,0 +1,194 @@
+2025-11-26 11:12:05,476 [INFO] Carregando planilha: CLIENTES E FORNECEDORES PROCESSADO MAC.xlsx
+2025-11-26 11:12:05,834 [INFO] 22 registros carregados
+2025-11-26 11:12:05,834 [INFO] Iniciando navegador...
+2025-11-26 11:12:06,891 [INFO] Navegador iniciado
+2025-11-26 11:12:06,891 [INFO] Fazendo login...
+2025-11-26 11:12:12,380 [INFO] Login OK
+2025-11-26 11:12:12,381 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:12:15,965 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:12:19,163 [INFO] Módulo carregado
+2025-11-26 11:12:19,163 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:12:24,193 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:12:24,193 [INFO] 
+================================================================================
+2025-11-26 11:12:24,193 [INFO] INICIANDO PROCESSAMENTO - PLANILHA MAC
+2025-11-26 11:12:24,194 [INFO] Total de registros: 22
+2025-11-26 11:12:24,194 [INFO] Iniciando do índice: 0
+2025-11-26 11:12:24,194 [INFO] ================================================================================
+
+2025-11-26 11:12:24,194 [INFO] [1/22] Processando: 1 - Maclínea
+2025-11-26 11:12:27,232 [INFO]   Código 1 encontrado
+2025-11-26 11:12:27,232 [INFO]   Limpando CNPJ/CPF...
+2025-11-26 11:12:28,925 [INFO]   Preenchendo 10 campos da planilha...
+2025-11-26 11:12:29,152 [INFO]   Preenchendo CNPJ: 76103373000150
+2025-11-26 11:12:29,264 [INFO]   Preenchimento concluído
+2025-11-26 11:12:32,458 [INFO]   ✓ Registro 1 atualizado com sucesso
+2025-11-26 11:12:32,560 [INFO] [2/22] Processando: 675 - MAC-SISCRED
+2025-11-26 11:12:34,077 [ERROR]   ✗ Erro: Código 675 não encontrado
+2025-11-26 11:12:35,979 [WARNING]   [RETRY 1/3] Reiniciando navegador...
+2025-11-26 11:12:35,979 [INFO]   [REINICIO] Fechando navegador...
+2025-11-26 11:12:38,511 [INFO]   [REINICIO] Abrindo navegador novamente...
+2025-11-26 11:12:38,511 [INFO] Iniciando navegador...
+2025-11-26 11:12:39,020 [WARNING] 
+⚠ Interrompido pelo usuário
+2025-11-26 11:12:39,020 [INFO] 
+================================================================================
+2025-11-26 11:12:39,020 [INFO] FINALIZANDO
+2025-11-26 11:12:39,020 [INFO] ================================================================================
+2025-11-26 11:12:39,020 [INFO] 
+📊 ESTATÍSTICAS:
+2025-11-26 11:12:39,020 [INFO]   Total: 22
+2025-11-26 11:12:39,021 [INFO]   Processados: 2
+2025-11-26 11:12:39,021 [INFO]   ✓ Sucessos: 1
+2025-11-26 11:12:39,021 [INFO]   ✗ Erros: 1
+2025-11-26 11:12:39,021 [INFO]   ? Não encontrados: 1
+2025-11-26 11:12:39,021 [INFO]   Taxa de sucesso: 50.0%
+2025-11-26 11:12:39,021 [INFO]   Tempo total: 0:00:33.544123
+2025-11-26 11:12:39,027 [INFO] 
+⚠ 1 erros salvos em erros_mac.csv
+2025-11-26 11:12:39,576 [INFO] 
+✅ Finalizado!
+2025-11-26 11:12:39,605 [ERROR] Task was destroyed but it is pending!
+task: <Task pending name='Task-76' coro=<BrowserType.launch() done, defined at C:\Users\Administrador\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_browser_type.py:73> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[SyncBase._sync.<locals>.<lambda>() at C:\Users\Administrador\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_sync_base.py:111, ProtocolCallback.__init__.<locals>.cb() at C:\Users\Administrador\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py:230]>
+2025-11-26 11:14:32,016 [INFO] Carregando planilha: CLIENTES E FORNECEDORES PROCESSADO MAC.xlsx
+2025-11-26 11:14:32,277 [INFO] 22 registros carregados
+2025-11-26 11:14:32,277 [INFO] Iniciando navegador...
+2025-11-26 11:14:33,312 [INFO] Navegador iniciado
+2025-11-26 11:14:33,312 [INFO] Fazendo login...
+2025-11-26 11:14:38,765 [INFO] Login OK
+2025-11-26 11:14:38,765 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:14:39,972 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:14:43,168 [INFO] Módulo carregado
+2025-11-26 11:14:43,169 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:14:48,208 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:14:48,208 [INFO] 
+================================================================================
+2025-11-26 11:14:48,208 [INFO] INICIANDO PROCESSAMENTO - PLANILHA MAC
+2025-11-26 11:14:48,208 [INFO] ⚡ ORDEM: DO FIM PARA O COMEÇO (último → primeiro)
+2025-11-26 11:14:48,209 [INFO] Total de registros: 22
+2025-11-26 11:14:48,209 [INFO] Iniciando do índice: 1 (registro 2)
+2025-11-26 11:14:48,209 [INFO] ================================================================================
+
+2025-11-26 11:14:48,209 [INFO] [2/22] Processando: 675 - MAC-SISCRED
+2025-11-26 11:14:49,729 [ERROR]   ✗ Erro: Código 675 não encontrado
+2025-11-26 11:14:51,604 [WARNING]   [RETRY 1/3] Reiniciando navegador...
+2025-11-26 11:14:51,605 [INFO]   [REINICIO] Fechando navegador...
+2025-11-26 11:14:53,847 [INFO]   [REINICIO] Abrindo navegador novamente...
+2025-11-26 11:14:53,847 [INFO] Iniciando navegador...
+2025-11-26 11:14:54,836 [INFO] Navegador iniciado
+2025-11-26 11:14:54,836 [INFO] Fazendo login...
+2025-11-26 11:15:00,144 [INFO] Login OK
+2025-11-26 11:15:00,144 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:15:01,353 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:15:04,537 [INFO] Módulo carregado
+2025-11-26 11:15:04,537 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:15:09,573 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:15:09,573 [INFO]   [REINICIO] Sistema pronto novamente
+2025-11-26 11:15:09,573 [INFO] [2/22] Processando: 675 - MAC-SISCRED
+2025-11-26 11:15:11,091 [ERROR]   ✗ Erro: Código 675 não encontrado
+2025-11-26 11:15:12,964 [WARNING]   [RETRY 2/3] Reiniciando navegador...
+2025-11-26 11:15:12,964 [INFO]   [REINICIO] Fechando navegador...
+2025-11-26 11:15:15,187 [INFO]   [REINICIO] Abrindo navegador novamente...
+2025-11-26 11:15:15,187 [INFO] Iniciando navegador...
+2025-11-26 11:15:16,275 [INFO] Navegador iniciado
+2025-11-26 11:15:16,275 [INFO] Fazendo login...
+2025-11-26 11:15:21,591 [INFO] Login OK
+2025-11-26 11:15:21,591 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:15:22,801 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:15:25,987 [INFO] Módulo carregado
+2025-11-26 11:15:25,988 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:15:31,023 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:15:31,023 [INFO]   [REINICIO] Sistema pronto novamente
+2025-11-26 11:15:31,024 [INFO] [2/22] Processando: 675 - MAC-SISCRED
+2025-11-26 11:15:34,071 [INFO]   Código 675 encontrado
+2025-11-26 11:15:34,071 [INFO]   Limpando CNPJ/CPF...
+2025-11-26 11:15:35,757 [INFO]   Preenchendo 9 campos da planilha...
+2025-11-26 11:15:35,979 [INFO]   Preenchimento concluído
+2025-11-26 11:15:39,174 [INFO]   ✓ Registro 675 atualizado com sucesso
+2025-11-26 11:15:39,276 [INFO] [1/22] Processando: 1 - Maclínea
+2025-11-26 11:15:42,313 [INFO]   Código 1 encontrado
+2025-11-26 11:15:42,313 [INFO]   Limpando CNPJ/CPF...
+2025-11-26 11:15:43,981 [INFO]   Preenchendo 10 campos da planilha...
+2025-11-26 11:15:44,196 [INFO]   Preenchendo CNPJ: 76103373000150
+2025-11-26 11:15:44,307 [INFO]   Preenchimento concluído
+2025-11-26 11:15:47,498 [INFO]   ✓ Registro 1 atualizado com sucesso
+2025-11-26 11:15:47,599 [INFO] 
+================================================================================
+2025-11-26 11:15:47,600 [INFO] FINALIZANDO
+2025-11-26 11:15:47,600 [INFO] ================================================================================
+2025-11-26 11:15:47,600 [INFO] 
+📊 ESTATÍSTICAS:
+2025-11-26 11:15:47,600 [INFO]   Total: 22
+2025-11-26 11:15:47,600 [INFO]   Processados: 4
+2025-11-26 11:15:47,600 [INFO]   ✓ Sucessos: 2
+2025-11-26 11:15:47,600 [INFO]   ✗ Erros: 2
+2025-11-26 11:15:47,601 [INFO]   ? Não encontrados: 2
+2025-11-26 11:15:47,601 [INFO]   Taxa de sucesso: 50.0%
+2025-11-26 11:15:47,601 [INFO]   Tempo total: 0:01:15.583658
+2025-11-26 11:15:47,607 [INFO] 
+⚠ 2 erros salvos em erros_mac.csv
+2025-11-26 11:15:47,833 [INFO] 
+✅ Finalizado!
+2025-11-26 11:17:43,963 [INFO] Carregando planilha: CLIENTES E FORNECEDORES PROCESSADO MAC.xlsx
+2025-11-26 11:17:44,321 [INFO] 22 registros carregados
+2025-11-26 11:17:44,321 [INFO] Iniciando navegador...
+2025-11-26 11:17:51,843 [INFO] Navegador iniciado
+2025-11-26 11:17:51,843 [INFO] Fazendo login...
+2025-11-26 11:17:57,259 [INFO] Login OK
+2025-11-26 11:17:57,259 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:17:58,477 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:18:01,659 [INFO] Módulo carregado
+2025-11-26 11:18:01,659 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:18:06,695 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:18:06,695 [INFO] 
+================================================================================
+2025-11-26 11:18:06,695 [INFO] INICIANDO PROCESSAMENTO - PLANILHA MAC
+2025-11-26 11:18:06,695 [INFO] ⚡ ORDEM: DO FIM PARA O COMEÇO (último → primeiro)
+2025-11-26 11:18:06,696 [INFO] Total de registros: 22
+2025-11-26 11:18:06,696 [INFO] Iniciando do índice: 3 (registro 4)
+2025-11-26 11:18:06,696 [INFO] ================================================================================
+
+2025-11-26 11:18:06,697 [INFO] [4/22] Processando: 1379 - MAC-FEIRA FEMADE
+2025-11-26 11:18:09,723 [INFO]   Código 1379 encontrado
+2025-11-26 11:18:09,724 [INFO]   Limpando CNPJ/CPF...
+2025-11-26 11:18:11,407 [INFO]   Preenchendo 8 campos da planilha...
+2025-11-26 11:18:11,627 [INFO]   Preenchimento concluído
+2025-11-26 11:18:14,913 [INFO]   ✓ Registro 1379 atualizado com sucesso
+2025-11-26 11:18:15,014 [INFO] [3/22] Processando: 711 - MAC-FEIRA MOVELPAR
+2025-11-26 11:18:16,531 [ERROR]   ✗ Erro: Código 711 não encontrado
+2025-11-26 11:18:18,422 [WARNING]   [RETRY 1/3] Reiniciando navegador...
+2025-11-26 11:18:18,422 [INFO]   [REINICIO] Fechando navegador...
+2025-11-26 11:18:20,700 [INFO]   [REINICIO] Abrindo navegador novamente...
+2025-11-26 11:18:20,700 [INFO] Iniciando navegador...
+2025-11-26 11:18:21,582 [INFO] Navegador iniciado
+2025-11-26 11:18:21,582 [INFO] Fazendo login...
+2025-11-26 11:18:26,956 [INFO] Login OK
+2025-11-26 11:18:26,956 [INFO] Abrindo menu Cadastros...
+2025-11-26 11:18:28,165 [INFO] Clicando em Cliente/Fornecedores...
+2025-11-26 11:18:31,347 [INFO] Módulo carregado
+2025-11-26 11:18:31,348 [INFO] Ordenando por código (2 cliques para crescente)...
+2025-11-26 11:18:36,384 [INFO] Ordenacao crescente aplicada
+2025-11-26 11:18:36,384 [INFO]   [REINICIO] Sistema pronto novamente
+2025-11-26 11:18:36,384 [INFO] [3/22] Processando: 711 - MAC-FEIRA MOVELPAR
+2025-11-26 11:18:37,899 [ERROR]   ✗ Erro: Código 711 não encontrado
+2025-11-26 11:18:39,778 [WARNING]   [RETRY 2/3] Reiniciando navegador...
+2025-11-26 11:18:39,778 [INFO]   [REINICIO] Fechando navegador...
+2025-11-26 11:18:41,859 [WARNING] 
+⚠ Interrompido pelo usuário
+2025-11-26 11:18:41,859 [INFO] 
+================================================================================
+2025-11-26 11:18:41,860 [INFO] FINALIZANDO
+2025-11-26 11:18:41,860 [INFO] ================================================================================
+2025-11-26 11:18:41,860 [INFO] 
+📊 ESTATÍSTICAS:
+2025-11-26 11:18:41,860 [INFO]   Total: 22
+2025-11-26 11:18:41,860 [INFO]   Processados: 3
+2025-11-26 11:18:41,860 [INFO]   ✓ Sucessos: 1
+2025-11-26 11:18:41,860 [INFO]   ✗ Erros: 2
+2025-11-26 11:18:41,861 [INFO]   ? Não encontrados: 2
+2025-11-26 11:18:41,861 [INFO]   Taxa de sucesso: 33.3%
+2025-11-26 11:18:41,861 [INFO]   Tempo total: 0:00:57.896538
+2025-11-26 11:18:41,876 [INFO] 
+⚠ 2 erros salvos em erros_mac.csv
+2025-11-26 11:18:41,877 [INFO] 
+✅ Finalizado!

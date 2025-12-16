@@ -1,0 +1,843 @@
+id;data;mes;tipo;banco;categoria_id;categoria;entidade;descricao;credito;debito;classe_fluxo;classe_recorrencia;extraordinario
+791;03/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros Conta;Juros Conta;0.00;52549.75;custo_operacional;recorrente_forte;nao
+789;03/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros Excesso Limite;Juros Excesso Limite;0.00;3618.99;custo_operacional;recorrente_forte;nao
+16;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;5;Implantaçao de Saldo;Implantação Saldo Santander;Implantação Saldo Santander;0.00;259.72;implantacao_saldo;;sim
+792;03/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;7.34;custo_operacional;recorrente_forte;nao
+13;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Multa Atraso;Multa Atraso;0.00;5.32;custo_operacional;nao_recorrente;nao
+12;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Juros Adiantamento;Juros Adiantamento;0.00;1.25;custo_operacional;nao_recorrente;nao
+15;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;35;IOF;IOF;IOF;0.00;1.04;custo_operacional;nao_recorrente;nao
+14;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;35;IOF;IOF;IOF;0.00;0.02;custo_operacional;nao_recorrente;nao
+10;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;3;Venda de Produtos;Recebimento Cobrança;Recebimento Cobrança;1323.42;0.00;entrada;;nao
+11;03/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;5415.97;0.00;entrada;;nao
+793;03/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb Carolina Baby;Receb Carolina Baby;1280.25;0.00;entrada;;nao
+790;03/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;1367.26;0.00;entrada;;nao
+61;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Luiz Fernando;Pagto Luiz Fernando;0.00;113373.49;custo_operacional;nao_recorrente;sim
+60;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Gerson Labres;Pagto Gerson Labres;0.00;95766.57;custo_operacional;nao_recorrente;sim
+68;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Maikon Cardoz;Pagto Maikon Cardoz;0.00;80959.25;custo_operacional;nao_recorrente;sim
+63;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Thiago Jose Pianowski;Pagto Thiago Jose Pianowski;0.00;36339.82;custo_operacional;nao_recorrente;sim
+70;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Suemar Jose da Costa;Pagto Suemar Jose da Costa;0.00;35771.17;custo_operacional;nao_recorrente;sim
+66;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Edson de Oliveira;Pagto Edson de Oliveira;0.00;33944.48;custo_operacional;nao_recorrente;sim
+73;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Vinicius de Lara;Pagto Vinicius de Lara;0.00;32313.90;custo_operacional;nao_recorrente;sim
+64;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Luis Paulo de Oliveira;Pagto Luis Paulo de Oliveira;0.00;31825.86;custo_operacional;nao_recorrente;sim
+58;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Marcos Roberto Rescisão;Pagto Marcos Roberto Rescisão;0.00;31465.35;custo_operacional;nao_recorrente;sim
+69;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Patricia Cristina Rescisão;Pagto Patricia Cristina Rescisão;0.00;29962.52;custo_operacional;nao_recorrente;sim
+72;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Wagner Inacio Rescisão;Pagto Wagner Inacio Rescisão;0.00;29166.24;custo_operacional;nao_recorrente;sim
+80;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;65;Luz;COPEL Energia;COPEL Energia;0.00;26958.79;custo_operacional;nao_recorrente;nao
+67;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Fabio Junior Rescisão;Pagto Fabio Junior Rescisão;0.00;25372.30;custo_operacional;nao_recorrente;sim
+59;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Danilo Massarin Rescisão;Pagto Danilo Massarin Rescisão;0.00;24235.06;custo_operacional;nao_recorrente;sim
+65;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Sergio Oliveira Rescisão;Pagto Sergio Oliveira Rescisão;0.00;22726.86;custo_operacional;nao_recorrente;sim
+62;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Rescisão Taiane Barboza;Rescisão Taiane Barboza;0.00;15748.86;custo_operacional;nao_recorrente;sim
+78;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Rescisão Felipe - Soma Coop;Rescisão Felipe - Soma Coop;0.00;8126.20;custo_operacional;nao_recorrente;sim
+76;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;7444.14;transferencia_interna;;nao
+55;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Cobrança Net;Pagto Cobrança Net;0.00;7416.02;custo_operacional;nao_recorrente;sim
+23;04/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;33;Emprestimos/Parcelas;Parcela 025/036;Parcela 025/036;0.00;6915.23;custo_operacional;nao_recorrente;nao
+17;04/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;33;Emprestimos/Parcelas;Parcela 025/036;Parcela 025/036;0.00;6472.00;custo_operacional;nao_recorrente;nao
+71;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Francisco Queiroz;Pagto Francisco Queiroz;0.00;2000.00;custo_operacional;nao_recorrente;sim
+77;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;52;Aluguel;Aluguel BRE-MAX;Aluguel BRE-MAX;0.00;1500.00;custo_operacional;nao_recorrente;nao
+79;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;97;PLANO DE SAÚDE;Plano Saúde Amil;Plano Saúde Amil;0.00;1371.40;custo_operacional;recorrente_forte;nao
+796;04/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;IOF;IOF;0.00;1326.20;custo_operacional;recorrente_forte;nao
+794;04/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;IOF;IOF;0.00;1154.98;custo_operacional;recorrente_forte;nao
+74;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Normatic Tratamentos;Pagto Normatic Tratamentos;0.00;680.00;custo_operacional;nao_recorrente;nao
+56;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Cobrança Net;Pagto Cobrança Net;0.00;477.36;custo_operacional;nao_recorrente;sim
+515;04/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;VOGA COM. REP. CORREIAS MANGUEIRAS ROLAMENTOS LTDA;Pagto Voga Correias;0.00;52.87;custo_operacional;recorrente_forte;nao
+795;04/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;18.35;custo_operacional;recorrente_forte;nao
+22;04/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;6915.22;0.00;entrada;;nao
+24;04/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;79;Juros Recebidos / Aporte Capital Social;Rendimento Contamax;Rendimento Contamax;0.01;0.00;entrada;;nao
+52;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;3;Venda de Produtos;L Chek Móveis;L Chek Móveis;618.14;0.00;entrada;;nao
+53;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;79;Juros Recebidos / Aporte Capital Social;Rendimento Facilcred;Rendimento Facilcred;0.60;0.00;entrada;;nao
+54;04/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;79;Juros Recebidos / Aporte Capital Social;Rendimento Facilcred;Rendimento Facilcred;0.09;0.00;entrada;;nao
+797;04/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;844.95;0.00;entrada;;nao
+106;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;87;FGTS Rescisao;FGTS 27 Rescisões;FGTS 27 Rescisões;0.00;611771.37;custo_operacional;nao_recorrente;sim
+104;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Douglas Zarinello;Pagto Douglas Zarinello;0.00;44350.81;custo_operacional;nao_recorrente;sim
+105;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;54;Compras de Serviços;Pagto MDS Instalacao;Pagto MDS Instalacao;0.00;40000.00;custo_operacional;nao_recorrente;sim
+102;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Rodrigo de Carvalho;Pagto Rodrigo de Carvalho;0.00;37656.53;custo_operacional;nao_recorrente;sim
+103;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;52;Aluguel;Pagto BRE-MAX Aluguel;Pagto BRE-MAX Aluguel;0.00;31700.00;custo_operacional;nao_recorrente;nao
+83;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;ICMS PR/SEFAZ;ICMS PR/SEFAZ;0.00;26556.21;custo_operacional;nao_recorrente;sim
+95;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Fabio Julio Rescisão;Pagto Fabio Julio Rescisão;0.00;24040.94;custo_operacional;nao_recorrente;sim
+85;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Lucas Martins Rescisão;Pagto Lucas Martins Rescisão;0.00;22717.59;custo_operacional;nao_recorrente;sim
+92;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Pagto Logistic Co;Pagto Logistic Co;0.00;20899.22;custo_operacional;nao_recorrente;sim
+98;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Rescisão Luciano Silva;Rescisão Luciano Silva;0.00;17004.99;custo_operacional;nao_recorrente;sim
+513;05/11/2025;2025-11;Pagar;6 - BRADESCO;61;Despesas Administrativas;SOMA COOPERATIVA DE TRABALHO TECNOLOGIA INFORMACAO;( RECISÃO JONANS );0.00;16477.29;custo_operacional;nao_recorrente;sim
+99;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Marcio Quedas;Pagto Marcio Quedas;0.00;14590.72;custo_operacional;nao_recorrente;sim
+97;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Joao Alexandre;Pagto Joao Alexandre;0.00;14417.64;custo_operacional;nao_recorrente;sim
+101;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Marcos Antonio;Pagto Marcos Antonio;0.00;13405.87;custo_operacional;nao_recorrente;sim
+100;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Geovani Teodoro;Pagto Geovani Teodoro;0.00;11675.18;custo_operacional;nao_recorrente;sim
+96;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Hallan Siqueira;Pagto Hallan Siqueira;0.00;10924.42;custo_operacional;nao_recorrente;sim
+19;05/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;33;Emprestimos/Parcelas;Parcela 25/36 Empréstimo;Parcela 25/36 Empréstimo;0.00;9703.97;custo_operacional;nao_recorrente;nao
+91;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Frete Demil Express;Frete Demil Express;0.00;4673.00;custo_operacional;nao_recorrente;nao
+82;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Tributo PR/SEFAZ;Tributo PR/SEFAZ;0.00;2278.37;custo_operacional;nao_recorrente;sim
+88;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;89;Informatica;Pagto A4Consult TI;Pagto A4Consult TI;0.00;1527.58;custo_operacional;nao_recorrente;nao
+799;05/11/2025;2025-11;Movto.Financeiro;4 - ITAU;50;Pedagio;DEB AUTOR SEM PARAR;DEB AUTOR SEM PARAR;0.00;745.55;custo_operacional;recorrente_forte;nao
+511;05/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;PODIUM MANGUEIRAS MRO LTDA;Pagto Podium Mangueiras;0.00;510.00;custo_operacional;nao_recorrente;nao
+84;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;81;Despesas com Viagem;Transf Edson Domingos;Transf Edson Domingos;0.00;500.00;custo_operacional;nao_recorrente;nao
+86;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Contrato Câmbio;Contrato Câmbio;0.00;450.00;custo_operacional;nao_recorrente;nao
+90;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Pagto Transcic;Pagto Transcic;0.00;250.00;custo_operacional;nao_recorrente;nao
+87;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Câmbio;Tarifa Câmbio;0.00;225.00;custo_operacional;nao_recorrente;nao
+800;05/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;14.68;custo_operacional;recorrente_forte;nao
+21;05/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Multa Atraso;Multa Atraso;0.00;5.19;custo_operacional;nao_recorrente;nao
+20;05/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Juros Adiantamento;Juros Adiantamento;0.00;2.42;custo_operacional;nao_recorrente;nao
+18;05/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;9711.58;0.00;entrada;;nao
+81;05/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;79;Juros Recebidos / Aporte Capital Social;Câmbio Financeiro;Câmbio Financeiro;3357720.71;0.00;entrada;;nao
+801;05/11/2025;2025-11;Movto.Financeiro;4 - ITAU;91;Devolucoes Fornecedores;EST DB AUTSEM PARAR;EST DB AUTSEM PARAR;745.55;0.00;entrada;;nao
+798;05/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;2175.26;0.00;entrada;;nao
+155;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;105618.57;custo_operacional;nao_recorrente;sim
+138;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Italservice Automacao;Pagto Italservice Automacao;0.00;40892.91;custo_operacional;nao_recorrente;sim
+148;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Salário Flavio;0.00;38036.00;custo_operacional;recorrente_frequente;nao
+151;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Moretti Serviços;0.00;31766.43;custo_operacional;recorrente_frequente;nao
+146;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;59;Alimentaçao;RESTAURANTE E LANCHONETE BUHRER LTDA;Pagto Buhrer Alimentação;0.00;26589.15;custo_operacional;nao_recorrente;sim
+153;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto SAIP Automação;0.00;23332.00;custo_operacional;recorrente_frequente;sim
+141;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Rescisão J.M.C. Automacao;0.00;15874.00;custo_operacional;recorrente_frequente;sim
+142;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;61;Despesas Administrativas;J.O.F. SOLUCOES EM RECURSOS HUMANOS EIRELI;Pagto J.O.F. RH;0.00;15043.36;custo_operacional;nao_recorrente;nao
+136;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Jose Alexandre;0.00;12833.84;custo_operacional;recorrente_frequente;nao
+126;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto João Octavio;0.00;11280.87;custo_operacional;recorrente_frequente;nao
+113;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Luciano Campos;0.00;8802.83;custo_operacional;recorrente_frequente;nao
+28;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Operação Câmbio;Operação Câmbio;0.00;8795.24;custo_operacional;nao_recorrente;sim
+107;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Edson Moraes;0.00;8348.46;custo_operacional;recorrente_frequente;nao
+116;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Tiago Fioreze;0.00;8312.44;custo_operacional;recorrente_frequente;nao
+124;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Cintia Barbara;0.00;8239.22;custo_operacional;recorrente_frequente;nao
+111;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Fabio Alexandre;0.00;8045.13;custo_operacional;recorrente_frequente;nao
+131;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Magda Lucia Giacomell;0.00;7285.47;custo_operacional;recorrente_frequente;nao
+123;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Arlete dos Santos Mel;0.00;6907.98;custo_operacional;recorrente_frequente;nao
+125;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Francisco Queiroz Vie;0.00;6800.56;custo_operacional;recorrente_frequente;nao
+121;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Anderson Junio Silva;0.00;6498.07;custo_operacional;recorrente_frequente;nao
+114;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Felipe de Lima Pinto;0.00;6089.84;custo_operacional;recorrente_frequente;nao
+592;06/11/2025;2025-11;Pagar;6 - BRADESCO;61;Despesas Administrativas;KLEBER LUIS FURST;Pagto KLEBER LUIS FURST;0.00;6000.00;custo_operacional;nao_recorrente;nao
+129;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Robertson Nascimento;0.00;5600.38;custo_operacional;recorrente_frequente;nao
+133;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Mauricio Massarin;0.00;5458.08;custo_operacional;recorrente_frequente;nao
+128;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Josoel Camargo;0.00;5220.20;custo_operacional;recorrente_frequente;nao
+108;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Antonio C Souza;0.00;5086.19;custo_operacional;recorrente_frequente;nao
+217;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Rayanne Mazim;0.00;4693.31;custo_operacional;recorrente_frequente;nao
+112;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Jair Meireles;0.00;4612.41;custo_operacional;recorrente_frequente;nao
+127;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Jorge Siqueira;0.00;4603.66;custo_operacional;recorrente_frequente;nao
+145;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;48;Vigilancia;SOFKA SEGURANCA LTDA;Pagto Sofka Segurança;0.00;4550.00;custo_operacional;recorrente_forte;nao
+122;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Salário Anderson Taborda;0.00;4402.79;custo_operacional;recorrente_frequente;nao
+134;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Salário Rodrigo Kavalkievicz;0.00;4398.65;custo_operacional;recorrente_frequente;nao
+135;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Tatiane Aparecida;0.00;3789.50;custo_operacional;recorrente_frequente;nao
+118;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Adriano Aparecido;0.00;3409.44;custo_operacional;recorrente_frequente;nao
+137;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto José Carlos Ducate;0.00;3219.84;custo_operacional;recorrente_frequente;nao
+115;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Gustavo Rochemba;0.00;3091.96;custo_operacional;recorrente_frequente;nao
+117;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Vanderley Jonas;0.00;3075.19;custo_operacional;recorrente_frequente;nao
+139;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Idete Fernandes;0.00;2906.67;custo_operacional;recorrente_frequente;nao
+120;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Ana Paula Oliveira;0.00;2735.09;custo_operacional;recorrente_frequente;nao
+130;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Valtonir Costa;0.00;2724.52;custo_operacional;recorrente_frequente;nao
+132;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Maria Eduarda Druzyk;0.00;2296.66;custo_operacional;recorrente_frequente;nao
+512;06/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;VOGA COM. REP. CORREIAS MANGUEIRAS ROLAMENTOS LTDA;Pagto Voga;0.00;1793.40;custo_operacional;recorrente_forte;nao
+26;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;33;Emprestimos/Parcelas;Parcela 25/36;Parcela 25/36;0.00;1770.67;custo_operacional;nao_recorrente;nao
+119;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Ana Beatriz;0.00;1222.76;custo_operacional;recorrente_frequente;nao
+109;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto IMDEPA Rolamentos;Pagto IMDEPA Rolamentos;0.00;1220.02;custo_operacional;nao_recorrente;nao
+27;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;31;Seguro Funcionarios;Seguro Vida Grupo;Seguro Vida Grupo;0.00;1025.86;custo_operacional;nao_recorrente;nao
+154;06/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;81;Despesas com Viagem;Sem Parar;Sem Parar;0.00;745.55;custo_operacional;nao_recorrente;nao
+30;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;59.00;custo_operacional;recorrente_forte;nao
+31;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;27.06;custo_operacional;recorrente_forte;nao
+802;06/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;23.96;custo_operacional;recorrente_forte;nao
+32;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Custas Cartoriais;Custas Cartoriais;0.00;9.19;custo_operacional;nao_recorrente;nao
+29;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Tarifa Prorrogação Título;Tarifa Prorrogação Título;0.00;6.20;custo_operacional;nao_recorrente;sim
+25;06/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;12128.12;0.00;entrada;;nao
+218;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;ANGELO PIPITONE;Rescisão Angelo Pipitone;0.00;40677.76;custo_operacional;nao_recorrente;sim
+140;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;LUCAS LICHTBLAU;Pagto Lucas Lichtblau;0.00;30680.00;custo_operacional;nao_recorrente;nao
+168;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;88;Salarios Rescisao;Pagto Tania Regina Rescisão;Pagto Tania Regina Rescisão;0.00;26738.41;custo_operacional;nao_recorrente;sim
+169;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Mito Industria;Pagto Mito Industria;0.00;23556.48;custo_operacional;nao_recorrente;nao
+171;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Metal Anjos;Pagto Metal Anjos;0.00;21328.63;custo_operacional;nao_recorrente;nao
+170;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto L.M.P. Metalurgica;Pagto L.M.P. Metalurgica;0.00;20866.65;custo_operacional;nao_recorrente;nao
+166;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;52;Aluguel;Pagto BRE-MAX Aluguel;Pagto BRE-MAX Aluguel;0.00;19000.00;custo_operacional;nao_recorrente;nao
+159;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Gunter Metall;Pagto Gunter Metall;0.00;15989.17;custo_operacional;nao_recorrente;nao
+152;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto EJ Soluções;0.00;15783.00;custo_operacional;recorrente_frequente;nao
+147;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;61;Despesas Administrativas;Pagto Alvin Alonso;Pagto Alvin Alonso;0.00;15000.00;custo_operacional;nao_recorrente;nao
+165;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;KLEBER LUIS FURST;Pagto Kleber TI;0.00;14894.00;custo_operacional;nao_recorrente;nao
+156;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Pagto TCP Terminal;Pagto TCP Terminal;0.00;11311.94;custo_operacional;nao_recorrente;sim
+143;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;54;Compras de Serviços;Pagto Tornearia Precimax;Pagto Tornearia Precimax;0.00;7709.15;custo_operacional;nao_recorrente;nao
+172;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto IFM Electronic;Pagto IFM Electronic;0.00;7545.42;custo_operacional;recorrente_forte;nao
+144;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Pagto Logistic Co Import;Pagto Logistic Co Import;0.00;7484.64;custo_operacional;nao_recorrente;sim
+160;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Cobrança;Pagto Cobrança;0.00;6527.14;custo_operacional;nao_recorrente;nao
+162;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Cobrança;Pagto Cobrança;0.00;6470.31;custo_operacional;nao_recorrente;nao
+163;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Cobrança Net Empresa;Pagto Cobrança Net Empresa;0.00;6413.47;custo_operacional;nao_recorrente;nao
+164;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Cobrança Net Empresa;Pagto Cobrança Net Empresa;0.00;6356.63;custo_operacional;nao_recorrente;nao
+167;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Pagto Logistic Co Import;Pagto Logistic Co Import;0.00;5453.07;custo_operacional;nao_recorrente;sim
+149;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Edson Valerio;0.00;3881.70;custo_operacional;recorrente_frequente;nao
+157;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;96;Compras de Importaçao;Pagto TCP Terminal;Pagto TCP Terminal;0.00;3827.29;custo_operacional;nao_recorrente;sim
+161;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;56;Vale Transporte;Vale Transporte;Vale Transporte;0.00;916.92;custo_operacional;recorrente_forte;nao
+174;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;63;Telefonia/Fixa/Movel/Internet;Telefone TIM;Telefone TIM;0.00;801.36;custo_operacional;nao_recorrente;nao
+173;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;56;Vale Transporte;Vale Transporte;Vale Transporte;0.00;542.40;custo_operacional;recorrente_forte;nao
+804;07/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;55.08;custo_operacional;recorrente_forte;nao
+33;07/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Cartório;Tarifa Cartório;0.00;6.20;custo_operacional;nao_recorrente;nao
+158;07/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Registro Cobrança;Tarifa Registro Cobrança;0.00;5.96;custo_operacional;nao_recorrente;nao
+40;07/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Cobrança Eletrônica;Tarifa Cobrança Eletrônica;0.00;2.95;custo_operacional;nao_recorrente;nao
+803;07/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;2467.90;0.00;entrada;;nao
+37;10/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Duplicata não paga;Duplicata não paga;0.00;4081.48;custo_operacional;nao_recorrente;nao
+516;10/11/2025;2025-11;Pagar;6 - BRADESCO;61;Despesas Administrativas;CONTABILIDADE FAZENDA S S LTDA;Pagto Contabilidade Fazenda;0.00;3937.50;custo_operacional;nao_recorrente;nao
+180;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;97;PLANO DE SAÚDE;Pagto Paraná Clínicas;Pagto Paraná Clínicas;0.00;3421.53;custo_operacional;nao_recorrente;nao
+517;10/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;RESIHEAT RESISTENCIAS ELETRICAS LTDA;Pagto Resiheat;0.00;2000.00;custo_operacional;nao_recorrente;nao
+36;10/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Débito Duplicata Não Paga;Débito Duplicata Não Paga;0.00;1251.34;custo_operacional;nao_recorrente;nao
+518;10/11/2025;2025-11;Pagar;6 - BRADESCO;77;Compras de Insumos;MATERCIC MATERIAIS DE CONSTRUCAO LTDA;Pagto Matercic;0.00;859.00;custo_operacional;nao_recorrente;nao
+177;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Frete Efitrans;Frete Efitrans;0.00;739.15;custo_operacional;recorrente_forte;nao
+182;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Andra Electric;Pagto Andra Electric;0.00;664.10;custo_operacional;nao_recorrente;nao
+178;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Pagto Efitrans Transportes;Pagto Efitrans Transportes;0.00;623.12;custo_operacional;nao_recorrente;nao
+519;10/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;ILEP INDUSTRIA DE LAMINADOS ESP. PALMIERO LTDA;Pagto ILEP Laminados;0.00;569.84;custo_operacional;nao_recorrente;nao
+184;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Proauto Electric;Pagto Proauto Electric;0.00;266.50;custo_operacional;nao_recorrente;nao
+807;10/11/2025;2025-11;Movto.Financeiro;4 - ITAU;65;Luz;Pagto Copel;Pagto Copel;0.00;64.05;custo_operacional;nao_recorrente;nao
+806;10/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;18.35;custo_operacional;recorrente_forte;nao
+186;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;10.00;transferencia_interna;;nao
+221;10/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;10.00;transferencia_interna;;nao
+176;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Registro Cobrança;Tarifa Registro Cobrança;0.00;1.49;custo_operacional;nao_recorrente;nao
+35;10/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;4908.07;0.00;entrada;;nao
+175;10/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;10.00;0.00;entrada;;nao
+220;10/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna;Transf Interna;10.00;0.00;entrada;;nao
+805;10/11/2025;2025-11;Movto.Financeiro;4 - ITAU;91;Devolucoes Fornecedores;Estorno COPEL;Estorno COPEL;64.05;0.00;entrada;;nao
+8;11/11/2025;2025-11;Transferências;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;400000.00;transferencia_interna;;nao
+189;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;MPA AUTOMACAO E INTEGRACAO LTDA;Pagto Protesto MPA;0.00;37619.73;custo_operacional;nao_recorrente;sim
+191;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Zenir Jose;0.00;12096.00;custo_operacional;recorrente_frequente;nao
+192;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Pedro Pinto Silva;0.00;2277.00;custo_operacional;recorrente_frequente;nao
+194;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Maria Pinto Silva;0.00;2277.00;custo_operacional;recorrente_frequente;nao
+193;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;24;Salarios;Folha (Salários);Pagto Jean de Paula;0.00;1484.15;custo_operacional;recorrente_frequente;nao
+685;11/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;M&H PRODUTOS INDUSTRIAIS LTDA;Pagto M&H Produtos;0.00;455.00;custo_operacional;nao_recorrente;nao
+520;11/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa Rolamentos;0.00;420.00;custo_operacional;recorrente_forte;nao
+49;11/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Integralização Capital;0.00;200.00;custo_operacional;recorrente_forte;sim
+195;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Reembolso MP Rayanne;Reembolso MP Rayanne;0.00;162.50;custo_operacional;nao_recorrente;nao
+199;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Frete Sidiclei Osmar;Frete Sidiclei Osmar;0.00;100.50;custo_operacional;nao_recorrente;nao
+809;11/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;7.34;custo_operacional;recorrente_forte;nao
+9;11/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna Bradesco;Transf Interna Bradesco;400000.00;0.00;entrada;;nao
+187;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;3;Venda de Produtos;Cobrança Liquidada;Cobrança Liquidada;832.82;0.00;entrada;;nao
+188;11/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;3;Venda de Produtos;Receb Hanna Haddad;Receb Hanna Haddad;10898.68;0.00;entrada;;nao
+222;11/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;ESQUADRIBRAS INDUSTRIA ESQUADRIAS LTDA;Receb Esquadribrás;262.20;0.00;entrada;;nao
+810;11/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb IND MOV Tres Irmaos;Receb IND MOV Tres Irmaos;24588.42;0.00;entrada;;nao
+808;11/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;637.63;0.00;entrada;;nao
+216;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;400000.00;transferencia_interna;;nao
+209;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;64;Agua;Água Sanepar;Água Sanepar;0.00;6512.14;custo_operacional;nao_recorrente;nao
+203;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;54;Compras de Serviços;Consultoria Engenharia;Consultoria Engenharia;0.00;1518.00;custo_operacional;nao_recorrente;nao
+204;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;54;Compras de Serviços;Consultoria Engenharia;Consultoria Engenharia;0.00;1518.00;custo_operacional;nao_recorrente;nao
+219;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;HELLERMANNTYTON LTDA;Pagto Hellermanntyton;0.00;1323.42;custo_operacional;nao_recorrente;nao
+200;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Frete Efitrans;Frete Efitrans;0.00;856.00;custo_operacional;recorrente_forte;nao
+208;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto PIX Marketplace;Pagto PIX Marketplace;0.00;843.24;custo_operacional;recorrente_forte;nao
+207;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;41;Compras de Materia Prima;Pagto Poleto Industria;Pagto Poleto Industria;0.00;591.61;custo_operacional;nao_recorrente;nao
+521;12/11/2025;2025-11;Pagar;6 - BRADESCO;41;Compras de Materia Prima;ELETROCOMERCIAL REYMASTER LTDA;Pagto Eletrocomercial Reymaster;0.00;398.26;custo_operacional;nao_recorrente;nao
+210;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;64;Agua;Água Sanepar;Água Sanepar;0.00;325.29;custo_operacional;nao_recorrente;nao
+201;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;56;Vale Transporte;Pagto Vale Transporte;Pagto Vale Transporte;0.00;124.92;custo_operacional;nao_recorrente;nao
+202;12/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;69;Fretes sobre Compras;Frete Transportes Mobiline;Frete Transportes Mobiline;0.00;90.00;custo_operacional;nao_recorrente;nao
+811;12/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;22.02;custo_operacional;recorrente_forte;nao
+39;12/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Baixa Cobrança;Tarifa Baixa Cobrança;0.00;5.90;custo_operacional;nao_recorrente;nao
+38;12/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Manutenção Título;Tarifa Manutenção Título;0.00;2.97;custo_operacional;nao_recorrente;nao
+224;12/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;2.20;custo_operacional;recorrente_forte;nao
+225;12/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna;Transf Interna;400000.00;0.00;entrada;;nao
+583;12/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;NICIOLI INDUSTRIA E COMERCIO DE MVS LTDA;Receb Nicioli Moveis;484.81;0.00;entrada;;nao
+584;12/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MD MOVEIS LTDA;MD MOVEIS LTDA;661.58;0.00;entrada;;nao
+812;12/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb IND MOV Tres Irmaos;Receb IND MOV Tres Irmaos;587.00;0.00;entrada;;nao
+211;13/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;21385.44;transferencia_interna;;nao
+230;13/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Poleto Correias;Pagto Poleto Correias;0.00;776.72;custo_operacional;recorrente_forte;nao
+813;13/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;66.06;custo_operacional;recorrente_forte;nao
+229;13/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;5;Implantaçao de Saldo;Pagto Lucas Lichtblau;Pagto Lucas Lichtblau;0.00;10.00;implantacao_saldo;;sim
+226;13/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna;Transf Interna;21385.44;0.00;entrada;;nao
+227;13/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;5;Implantaçao de Saldo;Receb Lucas Lichtblau;Receb Lucas Lichtblau;10.00;0.00;entrada;;sim
+228;13/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Grupo K1;Receb Grupo K1;3756.73;0.00;entrada;;nao
+237;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Magda Lucia Giacomelli;Pagto Magda Lucia Giacomelli;0.00;59395.00;custo_operacional;nao_recorrente;sim
+236;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;Reembolso Viagem Sanitto;Reembolso Viagem Sanitto;0.00;7374.41;custo_operacional;nao_recorrente;nao
+234;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;94;Ações Trabalhistas;Acordo Trabalhista;Acordo Trabalhista;0.00;5000.00;custo_operacional;nao_recorrente;sim
+238;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;24;Salarios;Folha (Salários);Salário Adriano Lopes;0.00;4339.51;custo_operacional;recorrente_frequente;nao
+235;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Fabio Peres;Pagto Fabio Peres;0.00;2500.00;custo_operacional;recorrente_forte;nao
+233;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Marketplace;Pagto Marketplace;0.00;622.93;custo_operacional;nao_recorrente;nao
+213;14/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Cesta Empresarial;Tarifa Cesta Empresarial;0.00;223.44;custo_operacional;recorrente_forte;nao
+41;14/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Adiantamento;Tarifa Adiantamento;0.00;89.00;custo_operacional;nao_recorrente;nao
+814;14/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;14.68;custo_operacional;recorrente_forte;nao
+232;14/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;3.30;custo_operacional;recorrente_forte;nao
+42;14/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;3;Venda de Produtos;Devolução Liquidação;Devolução Liquidação;3916.75;0.00;entrada;;sim
+212;14/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;3;Venda de Produtos;Receb Cobrança;Receb Cobrança;222.49;0.00;entrada;;nao
+580;14/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;BIANCHINI INDUSTRIA DE PLASTICOS LTDA;Receb Bianchini Plasticos;531.55;0.00;entrada;;nao
+581;14/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;COMERCIO INDUSTRIA E TRANSPORTES LOPAS S/A;Receb Lopas;563.72;0.00;entrada;;nao
+582;14/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;SCALCO BOMBONATO LTDA;Receb Scalco Bombonato;1048.78;0.00;entrada;;nao
+242;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;HANNA HADDAD & CIA LTDA;Pagto Hanna Haddad;0.00;155820.00;custo_operacional;nao_recorrente;nao
+245;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;70114.70;custo_operacional;nao_recorrente;sim
+255;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;VITAMOV INDUSTRIA E COMERCIO DE MOVEIS EIRELI;Pagto Vitamov;0.00;35474.16;custo_operacional;nao_recorrente;nao
+256;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;VITAMOV INDUSTRIA E COMERCIO DE MOVEIS EIRELI;Pagto Vitamov;0.00;22765.64;custo_operacional;nao_recorrente;nao
+818;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros Conta;Juros Conta;0.00;14800.15;custo_operacional;recorrente_forte;nao
+604;17/11/2025;2025-11;Pagar;1 - UNICREDI;67;Manutençao de Maquinas e Equipamentos;MDS INSTALACAO DE MAQUINAS LTDA;MDS Instalações;0.00;11865.00;custo_operacional;nao_recorrente;sim
+248;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto FESTO BRASIL;Pagto FESTO BRASIL;0.00;6110.09;custo_operacional;nao_recorrente;nao
+247;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto COFACO CORREIAS;Pagto COFACO CORREIAS;0.00;5740.35;custo_operacional;nao_recorrente;nao
+44;17/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;6;Transferencia entre Contas;Transf Interna;Transf Interna;0.00;5143.04;transferencia_interna;;nao
+603;17/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;LMP USINAGEM LTDA;LMP USINAGEM LTDA;0.00;4627.40;custo_operacional;recorrente_frequente;nao
+243;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;33;Emprestimos/Parcelas;Pagto Flavio Azanha;Pagto Flavio Azanha;0.00;3134.64;custo_operacional;nao_recorrente;nao
+601;17/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;LMP USINAGEM LTDA;LMP USINAGEM LTDA;0.00;2330.32;custo_operacional;recorrente_frequente;nao
+504;17/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;OBR EQUIPAMENTOS INDUSTRIAIS LTDA;Pagto OBR Equipamentos;0.00;1394.00;custo_operacional;nao_recorrente;nao
+600;17/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;LMP USINAGEM LTDA;LMP USINAGEM LTDA;0.00;1317.20;custo_operacional;recorrente_frequente;nao
+602;17/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;LMP USINAGEM LTDA;LMP USINAGEM LTDA;0.00;1095.10;custo_operacional;recorrente_frequente;nao
+244;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;54;Compras de Serviços;Pagto Alisson Abreu;Pagto Alisson Abreu;0.00;1030.00;custo_operacional;nao_recorrente;nao
+605;17/11/2025;2025-11;Pagar;1 - UNICREDI;26;Manutençao Predial;MDS INSTALACAO DE MAQUINAS LTDA;Pagto MDS Instalação;0.00;840.00;custo_operacional;nao_recorrente;sim
+508;17/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;MUNDIAL PRINT LTDA;MUNDIAL PRINT LTDA;0.00;752.40;custo_operacional;recorrente_forte;nao
+260;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;Viagem Edson Moraes;Viagem Edson Moraes;0.00;600.00;custo_operacional;nao_recorrente;nao
+249;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Presel Logística;Pagto Presel Logística;0.00;582.00;custo_operacional;nao_recorrente;nao
+252;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Resiheat Resistências;Pagto Resiheat Resistências;0.00;500.00;custo_operacional;nao_recorrente;nao
+258;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;Pagto Famegás;Pagto Famegás;0.00;482.16;custo_operacional;nao_recorrente;nao
+599;17/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;LMP USINAGEM LTDA;LMP USINAGEM LTDA;0.00;367.50;custo_operacional;recorrente_frequente;nao
+507;17/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;VOGA COM. REP. CORREIAS MANGUEIRAS ROLAMENTOS LTDA;Pagto Voga Rolamentos;0.00;206.40;custo_operacional;recorrente_forte;nao
+254;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Nectech;Pagto Nectech;0.00;186.75;custo_operacional;recorrente_forte;nao
+815;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;66.06;custo_operacional;recorrente_forte;nao
+440;17/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;TESTE DE CONTA;TESTE DE CONTA;0.00;10.00;transferencia_interna;;nao
+442;17/11/2025;2025-11;Transferências;2 - INTER;6;Transferencia entre Contas;TESTE DE CONTA;TESTE DE CONTA;0.00;10.00;transferencia_interna;;nao
+240;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;2.20;custo_operacional;recorrente_forte;nao
+46;17/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Multa Atraso;Multa Atraso;0.00;0.16;custo_operacional;nao_recorrente;nao
+45;17/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;34;Juros Bancarios;Juros Adiantamento;Juros Adiantamento;0.00;0.07;custo_operacional;nao_recorrente;nao
+43;17/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;3;Venda de Produtos;Cobrança Compensada;Cobrança Compensada;1323.41;0.00;entrada;;nao
+47;17/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;0;Sem Categoria;RENDIMENTO LIQUIDO DE CONTAMAX;Rendimento Contamax;0.01;0.00;entrada;;nao
+241;17/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna;Transf Interna;5143.04;0.00;entrada;;nao
+443;17/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;TESTE DE CONTA;TESTE DE CONTA;10.00;0.00;entrada;;nao
+441;17/11/2025;2025-11;Transferências;2 - INTER;6;Transferencia entre Contas;TESTE DE CONTA;TESTE DE CONTA;10.00;0.00;entrada;;nao
+578;17/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSTRIA DE MOVEIS THB LTDA;Receb Moveis THB;2418.88;0.00;entrada;;nao
+579;17/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;BIATEX IMPREGNADORA LTDA;Receb Biatex;3041.80;0.00;entrada;;nao
+819;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Desconto Título;Desconto Título;6112.27;0.00;entrada;;nao
+820;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb Westrock;Receb Westrock;6500.28;0.00;entrada;;nao
+816;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Desconto Título;Desconto Título;1569.60;0.00;entrada;;nao
+817;17/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Desconto Título;Desconto Título;1007.33;0.00;entrada;;nao
+48;18/11/2025;2025-11;Movto.Financeiro;3 - BANCO DO BRASIL;5;Implantaçao de Saldo;Implantação Saldo Negativo;Implantação Saldo Negativo;0.00;28016.93;implantacao_saldo;;sim
+281;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Octavio de Lima;Pagto Octavio de Lima;0.00;7646.25;custo_operacional;nao_recorrente;nao
+279;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Barbara Gresczyszin;Pagto Barbara Gresczyszin;0.00;5610.05;custo_operacional;nao_recorrente;nao
+273;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Arlete Melo;Adiant Arlete Melo;0.00;4739.00;custo_operacional;nao_recorrente;nao
+283;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Alexandre Oliveira;Adiant Alexandre Oliveira;0.00;4658.50;custo_operacional;nao_recorrente;nao
+285;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Fioreze;Adiant Fioreze;0.00;4658.50;custo_operacional;nao_recorrente;nao
+290;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Anderson Silva;Adiant Anderson Silva;0.00;4658.50;custo_operacional;nao_recorrente;nao
+291;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Edson Moraes;Adiant Edson Moraes;0.00;4658.50;custo_operacional;nao_recorrente;nao
+284;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Anderson Fonseca;Adiant Anderson Fonseca;0.00;4654.10;custo_operacional;nao_recorrente;nao
+286;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Robertson Nascimento;Adiant Robertson Nascimento;0.00;4134.14;custo_operacional;nao_recorrente;nao
+272;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Felipe Pinto;Adiant Felipe Pinto;0.00;4000.70;custo_operacional;nao_recorrente;nao
+275;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Alexandre Coelho;Adiant Alexandre Coelho;0.00;4000.00;custo_operacional;nao_recorrente;nao
+266;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Valtonir Costa;Pagto Valtonir Costa;0.00;3745.50;custo_operacional;nao_recorrente;nao
+269;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Antonio Carlos;Pagto Antonio Carlos;0.00;3377.00;custo_operacional;nao_recorrente;nao
+267;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Francisco Queiroz;Pagto Francisco Queiroz;0.00;3362.70;custo_operacional;nao_recorrente;nao
+289;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Jorge Antonio;Pagto Jorge Antonio;0.00;3271.40;custo_operacional;nao_recorrente;nao
+268;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Rayanne Carrara;Pagto Rayanne Carrara;0.00;3000.00;custo_operacional;nao_recorrente;nao
+292;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;NEW COMPANY INDUSTRIAL - EIRELI;Pagto New Company;0.00;2913.99;custo_operacional;nao_recorrente;nao
+282;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Rodrigo Kavalkievicz;Pagto Rodrigo Kavalkievicz;0.00;2761.00;custo_operacional;nao_recorrente;nao
+288;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Adriano Lopes;Adto Adriano Lopes;0.00;2646.60;custo_operacional;nao_recorrente;nao
+274;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Edson Nasilowski;Adto Edson Nasilowski;0.00;2374.90;custo_operacional;nao_recorrente;nao
+270;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Tatiane Farias;Adto Tatiane Farias;0.00;2210.42;custo_operacional;nao_recorrente;nao
+278;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Josoel Silva;Adto Josoel Silva;0.00;2062.50;custo_operacional;nao_recorrente;nao
+280;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;24;Salarios;Folha (Salários);Pagto Gustavo Rochembach;0.00;1750.00;custo_operacional;recorrente_frequente;nao
+276;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;73;13º Salario;WILSON DONIZETE CAMARGO;Pagto Fernandes Camargo;0.00;1614.80;custo_operacional;nao_recorrente;nao
+271;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Eduarda Druzyk;Pagto Eduarda Druzyk;0.00;1350.00;custo_operacional;nao_recorrente;nao
+277;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Paula Oliveira;Pagto Paula Oliveira;0.00;1225.00;custo_operacional;nao_recorrente;nao
+264;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Beatriz Borges;Adiant Beatriz Borges;0.00;386.46;custo_operacional;nao_recorrente;nao
+265;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Cleiton Freitas;Adto Cleiton Freitas;0.00;266.67;custo_operacional;nao_recorrente;nao
+287;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Walbeque Santos;Adto Walbeque Santos;0.00;133.33;custo_operacional;nao_recorrente;nao
+822;18/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Baixa Título;Tarifa Baixa Título;0.00;12.00;custo_operacional;nao_recorrente;nao
+821;18/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;11.01;custo_operacional;recorrente_forte;nao
+263;18/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;1.10;custo_operacional;recorrente_forte;nao
+577;18/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSTRIA DE MOVEIS CEDRO MIRASSOL LTDA;Receb Moveis Cedro;214.10;0.00;entrada;;nao
+444;19/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;Transf Interna Reserva;Transf Interna Reserva;0.00;77447.64;transferencia_interna;;nao
+353;19/11/2025;2025-11;Pagar;1 - UNICREDI;22;FGTS;FGTS - GRF - FUNDO DE GARANTIA;FGTS;0.00;76891.48;custo_operacional;nao_recorrente;nao
+340;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Meireles Silva Rescisão;Pagto Meireles Silva Rescisão;0.00;28298.32;custo_operacional;nao_recorrente;sim
+336;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Vanderley Jonas Rescisão;Pagto Vanderley Jonas Rescisão;0.00;21374.01;custo_operacional;nao_recorrente;sim
+335;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Rescisão Carlos Ducate;Rescisão Carlos Ducate;0.00;16441.22;custo_operacional;nao_recorrente;sim
+344;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;16340.38;custo_operacional;nao_recorrente;sim
+345;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;10102.70;custo_operacional;nao_recorrente;sim
+297;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;73;13º Salario;Pagto Luciano Campos Silva;Pagto Luciano Campos Silva;0.00;6724.30;custo_operacional;nao_recorrente;nao
+330;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;73;13º Salario;Pagto Luciano Campos Silva;Pagto Luciano Campos Silva;0.00;6724.30;custo_operacional;nao_recorrente;nao
+332;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Octavio de Lima;Pagto Octavio de Lima;0.00;6117.00;custo_operacional;nao_recorrente;nao
+308;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Luciano C Silva;Pagto Luciano C Silva;0.00;5379.44;custo_operacional;nao_recorrente;nao
+346;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;4950.30;custo_operacional;nao_recorrente;sim
+598;19/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;CUNHA EQUIPAMENTOS GALVANICOS LTDA;Cunha Equipamentos;0.00;4879.59;custo_operacional;nao_recorrente;nao
+328;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Barbara Cunha;Adiant Barbara Cunha;0.00;4488.04;custo_operacional;nao_recorrente;nao
+312;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Arlete Santos;Pagto Arlete Santos;0.00;3791.20;custo_operacional;nao_recorrente;nao
+306;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Alexandre Silva;Pagto Alexandre Silva;0.00;3726.80;custo_operacional;nao_recorrente;nao
+317;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Fioreze;Pagto Fioreze;0.00;3726.80;custo_operacional;nao_recorrente;nao
+321;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Edson Domingos;Pagto Edson Domingos;0.00;3726.80;custo_operacional;nao_recorrente;nao
+326;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Anderson Taborda;Pagto Anderson Taborda;0.00;3723.28;custo_operacional;nao_recorrente;nao
+352;19/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;RH VER CONSULTORIA EM RECURSOS HUMANOS EIRELI;Pagto RH Ver Consultoria;0.00;3654.00;custo_operacional;nao_recorrente;nao
+299;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;73;13º Salario;Pagto Mauricio Massarin;Pagto Mauricio Massarin;0.00;3377.00;custo_operacional;nao_recorrente;nao
+324;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Robertson Nascimento;Pagto Robertson Nascimento;0.00;3307.31;custo_operacional;nao_recorrente;nao
+320;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Felipe de Lima;Pagto Felipe de Lima;0.00;3200.56;custo_operacional;nao_recorrente;nao
+325;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Alexandre Coelho;Pagto Alexandre Coelho;0.00;3200.00;custo_operacional;nao_recorrente;nao
+313;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Antonio Carlos;Pagto Antonio Carlos;0.00;2701.60;custo_operacional;nao_recorrente;nao
+315;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Mauricio Massarin;Adto Mauricio Massarin;0.00;2701.60;custo_operacional;nao_recorrente;nao
+323;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Jorge Siqueira;Adto Jorge Siqueira;0.00;2617.12;custo_operacional;nao_recorrente;nao
+311;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Rayanne Mazim;Adto Rayanne Mazim;0.00;2400.00;custo_operacional;nao_recorrente;nao
+322;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Anderson Silva;Adto Anderson Silva;0.00;2318.46;custo_operacional;nao_recorrente;nao
+307;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Rodrigo Kavalkievicz;Adto Rodrigo Kavalkievicz;0.00;2208.80;custo_operacional;nao_recorrente;nao
+327;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Tatiane Farias;Pagto Tatiane Farias;0.00;1929.10;custo_operacional;nao_recorrente;nao
+333;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Edson Nasilowski;Pagto Edson Nasilowski;0.00;1899.92;custo_operacional;nao_recorrente;nao
+305;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Paula Marcelino;Pagto Paula Marcelino;0.00;1680.00;custo_operacional;nao_recorrente;nao
+498;19/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;POCOL CORREIAS E MAGUEIRAS LTDA;Pocol Correias;0.00;1450.63;custo_operacional;nao_recorrente;nao
+334;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Adriano Lopes;Pagto Adriano Lopes;0.00;1386.45;custo_operacional;nao_recorrente;nao
+683;19/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;GEFRAN BRASIL ELETROELETRONICA LTDA;Pagto Gefran Brasil;0.00;1370.81;custo_operacional;nao_recorrente;nao
+310;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;24;Salarios;WILSON DONIZETE CAMARGO;Pagto Fernandes Camargo;0.00;1291.84;custo_operacional;nao_recorrente;nao
+303;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Pagto Eduarda Druzyk;Pagto Eduarda Druzyk;0.00;1080.00;custo_operacional;nao_recorrente;nao
+316;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Cleiton Freitas;Adiant Cleiton Freitas;0.00;896.00;custo_operacional;nao_recorrente;nao
+318;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Beatriz Borges;Adiant Beatriz Borges;0.00;618.34;custo_operacional;nao_recorrente;nao
+319;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adiant Walbeque Santos;Adiant Walbeque Santos;0.00;597.33;custo_operacional;nao_recorrente;nao
+341;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Reembolso Mercado;Reembolso Mercado;0.00;319.90;custo_operacional;nao_recorrente;nao
+329;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;38;Adiantamento de Salario;Adto Francisco Queiroz;Adto Francisco Queiroz;0.00;188.86;custo_operacional;nao_recorrente;nao
+351;19/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa;0.00;153.00;custo_operacional;recorrente_forte;nao
+608;19/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ADL COMERCIO DE PECAS PARA VEICULOS LTDA;Pagto ADL Peças;0.00;109.79;custo_operacional;nao_recorrente;nao
+597;19/11/2025;2025-11;Pagar;1 - UNICREDI;26;Manutençao Predial;MATERCIC MATERIAIS DE CONSTRUCAO LTDA;Pagto Matercic;0.00;104.90;custo_operacional;nao_recorrente;nao
+509;19/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;RADIAS MOTO PARTS PECAS E ACESSORIOS LTDA;Pagto Radias Moto Parts;0.00;102.43;custo_operacional;nao_recorrente;nao
+339;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;Reembolso Meireles;Reembolso Meireles;0.00;28.00;custo_operacional;nao_recorrente;nao
+331;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa TED;Tarifa TED;0.00;9.50;custo_operacional;recorrente_frequente;nao
+314;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa TED;Tarifa TED;0.00;9.50;custo_operacional;recorrente_frequente;nao
+309;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa TED;Tarifa TED;0.00;9.50;custo_operacional;recorrente_frequente;nao
+300;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa TED;Tarifa TED;0.00;9.50;custo_operacional;recorrente_frequente;nao
+823;19/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;7.34;custo_operacional;recorrente_forte;nao
+294;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;5.50;custo_operacional;recorrente_forte;nao
+301;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;73;13º Salario;TED Devolvida;TED Devolvida;6724.30;0.00;entrada;;nao
+302;19/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb TJC Ltda;Receb TJC Ltda;77447.64;0.00;entrada;;nao
+445;19/11/2025;2025-11;Transferências;2 - INTER;6;Transferencia entre Contas;Transf Interna Inter;Transf Interna Inter;77447.64;0.00;entrada;;nao
+572;19/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;INDUSTRIA E COMERCIO MOVEIS CBG MIRASSOL LTDA-EPP;Receb Moveis CBG;1060.21;0.00;entrada;;nao
+573;19/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS CARRARO LTDA;MOVEIS CARRARO LTDA;5964.53;0.00;entrada;;nao
+574;19/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;VALVERDE INDUSTRIA E TRANSPORTES LTDA;Receb Valverde;900.58;0.00;entrada;;nao
+575;19/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;COMPENSADOS IMPERIO LTDA;Receb Compensados Imperio;1048.80;0.00;entrada;;nao
+576;19/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSTRIA DE MOVEIS PEROBA LTDA - ME;Receb Moveis Peroba;1065.64;0.00;entrada;;nao
+824;19/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Boleto Recebido;Boleto Recebido;10547.91;0.00;entrada;;nao
+357;21/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;97;PLANO DE SAÚDE;Sem descrição;;0.00;30412.02;custo_operacional;nao_recorrente;nao
+355;21/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;24;Salarios;Folha (Salários);Pagto Cintia Barbara;0.00;8311.37;custo_operacional;recorrente_frequente;nao
+728;21/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;W9 SERVICOS DE TECNOLOGIA LTDA;Pagto W9 Tecnologia;0.00;2798.30;custo_operacional;nao_recorrente;nao
+500;21/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;A DISTRIBUIDORA COMERCIAL LTDA;Pagto A Distribuidora;0.00;468.12;custo_operacional;nao_recorrente;nao
+825;21/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;14.68;custo_operacional;recorrente_forte;nao
+349;21/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;7.70;custo_operacional;recorrente_forte;nao
+359;21/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;GRUPO K1 S.A.;Receb Grupo K1;23020.64;0.00;entrada;;nao
+360;21/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;VIERO MOVEIS INDUSTRIA E COMERCIO LTDA;Receb Viero Móveis;4134.97;0.00;entrada;;nao
+585;21/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;DIVALOTO MOVEIS LTDA ME;Receb Divaloto Moveis;710.53;0.00;entrada;;nao
+586;21/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;VALVERDE INDUSTRIA E TRANSPORTES LTDA;Receb Valverde;893.09;0.00;entrada;;nao
+587;21/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;PHOENIX IND. COM. DE MOVEIS E ESTOFADOS - EIRELLI;Receb Phoenix Moveis;964.29;0.00;entrada;;nao
+588;21/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;COMPLETE MOVEIS PLANEJADOS LTDA;Receb Complete Moveis;2049.09;0.00;entrada;;nao
+589;21/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;MARIA MARIA IND. E COM. DE MOVEIS LTDA;Receb Maria Maria Móveis;315.00;0.00;entrada;;nao
+590;21/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;BUBAMASTER USINAGEM DE PECAS LTDA;Receb Bubamaster Usinagem;2104.90;0.00;entrada;;nao
+591;21/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;GRUPO K1 SA;GRUPO K1 SA;9373.78;0.00;entrada;;nao
+841;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;CAPITAL GIROPRE;CAPITAL GIROPRE;0.00;53291.60;custo_operacional;nao_recorrente;nao
+832;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Baixa DP;Baixa DP;0.00;15000.00;custo_operacional;nao_recorrente;nao
+446;24/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;Transf Inter;Transf Inter;0.00;14303.82;transferencia_interna;;nao
+372;24/11/2025;2025-11;Pagar;1 - UNICREDI;59;Alimentaçao;RESTAURANTE E LANCHONETE BUHRER LTDA;Restaurante Buhrer;0.00;11620.05;custo_operacional;nao_recorrente;sim
+830;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Despesa Financeira;Despesa Financeira;0.00;10500.00;custo_operacional;nao_recorrente;nao
+826;24/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;MORA CAPITAL DE GIRO;MORA CAPITAL DE GIRO;0.00;9788.00;custo_operacional;recorrente_forte;nao
+378;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;54;Compras de Serviços;ARTEFATOS DE BORRACHA PCR LTDA;Pagto Artefatos PCR;0.00;5020.00;custo_operacional;nao_recorrente;nao
+838;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;45;Veiculos de Trabalho;FIN VEIC 38/48;FIN VEIC 38/48;0.00;4323.01;custo_operacional;nao_recorrente;nao
+377;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;POLETO COMERCIAL;Pagto Poleto Correias;0.00;2076.08;custo_operacional;nao_recorrente;nao
+368;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;ANDERSON JUNIO DA SILVA;Pagto Anderson Silva;0.00;2000.00;custo_operacional;nao_recorrente;nao
+369;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;FRANCISCO QUEIROZ VIEIRA;Pagto Francisco Vieira;0.00;1500.00;custo_operacional;recorrente_forte;nao
+505;24/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;OBR EQUIPAMENTOS INDUSTRIAIS LTDA;Pagto OBR Equipamentos;0.00;1394.00;custo_operacional;nao_recorrente;nao
+834;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;ENC MORAT 05/12;ENC MORAT 05/12;0.00;1311.73;custo_operacional;nao_recorrente;nao
+366;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;RESIHEAT RESISTENCIAS ELETRICAS LTDA;Pagto RESIHEAT;0.00;1200.00;custo_operacional;nao_recorrente;nao
+839;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Multa GIROPRE;Multa GIROPRE;0.00;1065.83;custo_operacional;nao_recorrente;nao
+501;24/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;OBR EQUIPAMENTOS INDUSTRIAIS LTDA;Pagto OBR Equipamentos;0.00;1015.84;custo_operacional;nao_recorrente;nao
+837;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Tarifa Conta Empresa;Tarifa Conta Empresa;0.00;809.00;custo_operacional;nao_recorrente;nao
+828;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros/Mora;Juros/Mora;0.00;368.39;custo_operacional;nao_recorrente;nao
+380;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;39;Fretes;EMPRESA BRASILEIRA CORREIOS LTDA;Pagto Correios;0.00;251.57;custo_operacional;nao_recorrente;nao
+492;24/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;PK SOLUCOES TECNOLOGICAS EIRELE - ME;Pagto PK Soluções;0.00;190.00;custo_operacional;nao_recorrente;nao
+379;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;66;Seguros;Seguro Importação;Seguro Importação;0.00;155.40;custo_operacional;nao_recorrente;sim
+829;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Tarifa Limite Conta;Tarifa Limite Conta;0.00;118.00;custo_operacional;nao_recorrente;nao
+835;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Multa Financ Veículo 38/48;Multa Financ Veículo 38/48;0.00;86.46;custo_operacional;nao_recorrente;nao
+831;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros/Mora Desc;Juros/Mora Desc;0.00;75.21;custo_operacional;nao_recorrente;nao
+374;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Pagto Demil Express;Pagto Demil Express;0.00;60.00;custo_operacional;recorrente_forte;nao
+833;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;14.68;custo_operacional;recorrente_forte;nao
+840;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Financ Veículo 38/48;Financ Veículo 38/48;0.00;10.29;custo_operacional;nao_recorrente;nao
+836;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR PIX PGTO TRANSF;TAR PIX PGTO TRANSF;0.00;7.15;custo_operacional;nao_recorrente;nao
+362;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+363;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;TABLEROS INDUSTRIA E COMERCIO DE PAINEIS LTDA;Receb Tableros;14303.82;0.00;entrada;;nao
+364;24/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;91;Devolucoes Fornecedores;Maclinea Maquinas e Equipamentos Ltda;Devolução Maclinea;104.90;0.00;entrada;;nao
+447;24/11/2025;2025-11;Transferências;2 - INTER;6;Transferencia entre Contas;Transf Interna Inter;Transf Interna Inter;14303.82;0.00;entrada;;nao
+568;24/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MOVAL MOVEIS ARAPONGAS LTDA;Receb Moval;1767.63;0.00;entrada;;nao
+569;24/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MOVAL MOVEIS ARAPONGAS LTDA;Receb Moval;5984.39;0.00;entrada;;nao
+570;24/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;UNIVERSUM DO BRASIL INDUSTRIA MOVELEIRA LTDA;Receb Universum;321.14;0.00;entrada;;nao
+571;24/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;YTUMAD COMERCIO DE MADEIRAS LTDA - EPP;Receb Ytumad;651.05;0.00;entrada;;nao
+842;24/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb M D Móveis;Receb M D Móveis;100000.00;0.00;entrada;;nao
+827;24/11/2025;2025-11;Movto.Financeiro;6 - BRADESCO;3;Venda de Produtos;Receb Wafer Serviços;Receb Wafer Serviços;9800.00;0.00;entrada;;nao
+386;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;54;Compras de Serviços;TEMPERAPAR TRATAMENTO TERMICO LTDA;Pagto Temperapar;0.00;2992.50;custo_operacional;nao_recorrente;nao
+396;25/11/2025;2025-11;Pagar;1 - UNICREDI;46;Sistema Octus;DACTUS INFORMATICA LTDA;PGTO VIA BOLETO;0.00;2000.00;custo_operacional;nao_recorrente;nao
+502;25/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;AMV ARTEFATOS DE BORRACHAS LTDA;Pagto AMV Borrachas;0.00;1179.00;custo_operacional;nao_recorrente;nao
+389;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;56;Vale Transporte;Vale Transporte Metrocard;Vale Transporte Metrocard;0.00;428.40;custo_operacional;nao_recorrente;nao
+371;25/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa Rolamentos;0.00;410.00;custo_operacional;recorrente_forte;nao
+390;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;EFITRANS TRANSPORTES LTDA;Frete Efitrans;0.00;186.53;custo_operacional;nao_recorrente;nao
+493;25/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;CAROLFIX COMERCIO DE FIXACAO E ROLAMENTOS LTDA;Pagto Carolfix;0.00;89.15;custo_operacional;nao_recorrente;sim
+391;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;65;Luz;COPEL DISTRIBUICAO S/A;Pagto Copel;0.00;64.05;custo_operacional;recorrente_forte;nao
+503;25/11/2025;2025-11;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa;0.00;42.00;custo_operacional;recorrente_forte;nao
+388;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Pagto Demil Express;Pagto Demil Express;0.00;32.00;custo_operacional;recorrente_forte;nao
+845;25/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Custas Cartoriais;Custas Cartoriais;0.00;9.19;custo_operacional;nao_recorrente;nao
+846;25/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;7.34;custo_operacional;recorrente_forte;nao
+382;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;2.20;custo_operacional;recorrente_forte;nao
+383;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Instruções;0.00;1.10;custo_operacional;recorrente_forte;nao
+384;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;CASA D INDUSTRIA DE MOVEIS LTDA;Receb Casa D;1893.27;0.00;entrada;;nao
+385;25/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;REPINHO REFLORESTADORA MADEIRAS E COMPENSADOS LTDA;Receb Repinho;10077.91;0.00;entrada;;nao
+559;25/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;BARRETO LONCARCCI INDUSTRIA DE MOVEIS LTDA;Receb Barreto Loncarcci;892.77;0.00;entrada;;nao
+560;25/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MPA AUTOMACAO E INTEGRACAO LTDA;Receb MPA Automação;31500.00;0.00;entrada;;sim
+843;25/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BO TAR ADIANT;BO TAR ADIANT;0.07;0.00;entrada;;nao
+844;25/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BO TAR ADIANT;BO TAR ADIANT;0.34;0.00;entrada;;nao
+847;25/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BO TAR ADIANT;BO TAR ADIANT;0.36;0.00;entrada;;nao
+848;25/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BO TAR ADIANT;BO TAR ADIANT;0.33;0.00;entrada;;nao
+399;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;WEG EQUIPAMENTOS ELETRICOS S/A;Pagto WEG Equipamentos;0.00;24634.10;custo_operacional;nao_recorrente;nao
+400;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;59;Alimentaçao;RESTAURANTE E LANCHONETE BUHRER LTDA;Pagto Restaurante Buhrer;0.00;15138.75;custo_operacional;nao_recorrente;sim
+406;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Equip Eletricos;Pagto Equip Eletricos;0.00;13792.34;custo_operacional;nao_recorrente;nao
+405;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Equip Elétricos SA;Pagto Equip Elétricos SA;0.00;7351.99;custo_operacional;nao_recorrente;nao
+851;26/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BX TIT DESC 050053;BX TIT DESC 050053;0.00;1436.02;custo_operacional;nao_recorrente;nao
+849;26/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;BX TIT DESC 050054;BX TIT DESC 050054;0.00;1404.37;custo_operacional;nao_recorrente;nao
+401;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;63;Telefonia/Fixa/Movel/Internet;TIM S/A;Telefone TIM;0.00;797.96;custo_operacional;nao_recorrente;nao
+491;26/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;PK SOLUCOES TECNOLOGICAS EIRELE - ME;Pagto PK Soluções;0.00;33.00;custo_operacional;nao_recorrente;nao
+852;26/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;14.68;custo_operacional;recorrente_forte;nao
+394;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+398;26/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Instruções;0.00;1.10;custo_operacional;recorrente_forte;nao
+555;26/11/2025;2025-11;Receber;1 - UNICREDI;4;Venda de Serviços;INDUSTRIA E COMERCIO MOVEIS CBG MIRASSOL LTDA-EPP;Receb CBG Mirassol;1060.21;0.00;entrada;;nao
+556;26/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MM GABINETES LTDA;MM GABINETES LTDA;96.43;0.00;entrada;;nao
+557;26/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;FINESTRA INDUSTRIA E COMERCIO DE MADEIRAS LTDA;Receb Finestra;1851.36;0.00;entrada;;nao
+558;26/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;ACP INDUSTRIA DE MOVEIS LTDA;Receb ACP Móveis;264.69;0.00;entrada;;nao
+850;26/11/2025;2025-11;Movto.Financeiro;4 - ITAU;3;Venda de Produtos;Receb Sandro Cirelli;Receb Sandro Cirelli;15000.00;0.00;entrada;;nao
+403;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;94;Ações Trabalhistas;RICARDO DE OLIVEIRA FERNANDES;Acordo Ricardo Fernandes;0.00;107302.52;custo_operacional;nao_recorrente;sim
+402;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;94;Ações Trabalhistas;RICARDO DE OLIVEIRA FERNANDES;FGTS Ricardo Fernandes;0.00;87697.48;custo_operacional;nao_recorrente;sim
+994;27/11/2025;2025-11;Transferências;4 - ITAU;6;Transferencia entre Contas;Sem descrição;;0.00;14000.00;transferencia_interna;;nao
+499;27/11/2025;2025-11;Pagar;1 - UNICREDI;26;Manutençao Predial;J.O.F. SOLUCOES EM RECURSOS HUMANOS EIRELI;Pagto J.O.F. Soluções;0.00;4764.74;custo_operacional;nao_recorrente;nao
+495;27/11/2025;2025-11;Pagar;1 - UNICREDI;54;Compras de Serviços;NS LUZZI ESCOVAS INDUSTRIAIS - ME;Pagto NS Luzzi Escovas;0.00;3399.60;custo_operacional;nao_recorrente;nao
+421;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Do Brasil Ltda;Pagto Do Brasil Ltda;0.00;2011.00;custo_operacional;nao_recorrente;nao
+424;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Ind e Com;Pagto Ind e Com;0.00;1680.00;custo_operacional;nao_recorrente;nao
+430;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Specialty Product;Pagto Specialty Product;0.00;1644.19;custo_operacional;recorrente_forte;nao
+423;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto BRAVOLUZ;Pagto BRAVOLUZ;0.00;1050.00;custo_operacional;nao_recorrente;nao
+429;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto IFM Electronic;Pagto IFM Electronic;0.00;811.91;custo_operacional;recorrente_forte;nao
+413;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Frete Reunidas Transp;Frete Reunidas Transp;0.00;589.30;custo_operacional;nao_recorrente;nao
+496;27/11/2025;2025-11;Pagar;1 - UNICREDI;77;Compras de Insumos;MATERCIC MATERIAIS DE CONSTRUCAO LTDA;Pagto Matercic Materiais;0.00;585.40;custo_operacional;nao_recorrente;nao
+427;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Presel Logística;Pagto Presel Logística;0.00;534.80;custo_operacional;nao_recorrente;nao
+428;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Laser Corte Metais;Pagto Laser Corte Metais;0.00;450.60;custo_operacional;nao_recorrente;nao
+412;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Mundial Print;Pagto Mundial Print;0.00;160.20;custo_operacional;nao_recorrente;nao
+853;27/11/2025;2025-11;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Tarifa Adiantamento;Tarifa Adiantamento;0.00;89.00;custo_operacional;nao_recorrente;nao
+419;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Pagto Reunidas Transportadora;Pagto Reunidas Transportadora;0.00;74.00;custo_operacional;nao_recorrente;nao
+422;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Pagto Express Entregas;Pagto Express Entregas;0.00;35.00;custo_operacional;nao_recorrente;nao
+409;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+410;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Moveis Semmer;Receb Moveis Semmer;1027.63;0.00;entrada;;nao
+411;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Luhrs Industria;Receb Luhrs Industria;7220.78;0.00;entrada;;nao
+420;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Lenonn Moveis;Receb Lenonn Moveis;983.24;0.00;entrada;;nao
+414;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Ind Moveis Peroba;Receb Ind Moveis Peroba;9888.69;0.00;entrada;;nao
+415;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;79;Juros Recebidos / Aporte Capital Social;Aporte Capital Usifix;Aporte Capital Usifix;400000.00;0.00;entrada;;nao
+417;27/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Repinho;Receb Repinho;895.54;0.00;entrada;;nao
+551;27/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MTA INDUSTRIA E COMERCIO DE ARTEFATOS DE;Receb MTA Artefatos;2467.90;0.00;entrada;;nao
+552;27/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MADEMARQUES MOVEIS LTDA;Receb Mademarques;3370.43;0.00;entrada;;nao
+553;27/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MTA INDUSTRIA E COMERCIO DE ARTEFATOS DE;Receb MTA Artefatos;214.50;0.00;entrada;;nao
+554;27/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MTA INDUSTRIA E COMERCIO DE ARTEFATOS DE;Receb MTA Artefatos;214.50;0.00;entrada;;nao
+995;27/11/2025;2025-11;Transferências;1 - UNICREDI;6;Transferencia entre Contas;Sem descrição;;14000.00;0.00;entrada;;nao
+856;28/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;GIROPRE;GIROPRE;0.00;87917.67;custo_operacional;nao_recorrente;nao
+437;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;24;Salarios;Folha (Salários);Pagto Mauricio Massarin;0.00;5068.45;custo_operacional;recorrente_frequente;nao
+435;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Gustavo Rochembach;Pagto Gustavo Rochembach;0.00;4750.21;custo_operacional;nao_recorrente;sim
+606;28/11/2025;2025-11;Pagar;1 - UNICREDI;61;Despesas Administrativas;ACTTION DO BRASIL LTDA;Pagto Acttion;0.00;1912.65;custo_operacional;nao_recorrente;nao
+432;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;56;Vale Transporte;METROCARD;METROCARD;0.00;724.92;custo_operacional;nao_recorrente;nao
+494;28/11/2025;2025-11;Pagar;1 - UNICREDI;77;Compras de Insumos;MDF COMERCIO DE PRODUTOS PARA MARCENARIA LTDA;Pagto MDF Marcenaria;0.00;400.60;custo_operacional;nao_recorrente;nao
+438;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;TARIFA TED;TARIFA TED;0.00;9.50;custo_operacional;nao_recorrente;nao
+855;28/11/2025;2025-11;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;3.67;custo_operacional;recorrente_forte;nao
+433;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;2.20;custo_operacional;recorrente_forte;nao
+439;28/11/2025;2025-11;Movto.Financeiro;1 - UNICREDI;79;Juros Recebidos / Aporte Capital Social;Aporte Capital Usifix;Aporte Capital Usifix;200000.00;0.00;entrada;;nao
+549;28/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS RODIAL LTDA;MOVEIS RODIAL LTDA;6794.26;0.00;entrada;;nao
+550;28/11/2025;2025-11;Receber;1 - UNICREDI;3;Venda de Produtos;DJ INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb DJ Móveis;2173.90;0.00;entrada;;nao
+860;01/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros Conta;Juros Conta;0.00;51270.13;custo_operacional;recorrente_forte;nao
+458;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Fabio Alexandre Oliveira;Pagto Fabio Alexandre Oliveira;0.00;51266.35;custo_operacional;nao_recorrente;sim
+457;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Anderson Junio Silva;Pagto Anderson Junio Silva;0.00;50501.28;custo_operacional;nao_recorrente;sim
+459;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Tiago Fioreze;Pagto Tiago Fioreze;0.00;45718.75;custo_operacional;nao_recorrente;sim
+462;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Edson Domingos de Moraes;Pagto Edson Domingos de Moraes;0.00;44192.28;custo_operacional;nao_recorrente;sim
+497;01/12/2025;2025-12;Pagar;1 - UNICREDI;65;Luz;COPEL DISTRIBUICAO S/A;COPEL;0.00;5364.40;custo_operacional;recorrente_forte;nao
+862;01/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;Juros Excesso Limite;Juros Excesso Limite;0.00;5001.44;custo_operacional;recorrente_forte;nao
+460;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Fort Equipamentos;Pagto Fort Equipamentos;0.00;3924.20;custo_operacional;nao_recorrente;nao
+454;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;97;PLANO DE SAÚDE;Plano Saúde Amil;Plano Saúde Amil;0.00;727.21;custo_operacional;recorrente_forte;nao
+461;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;56;Vale Transporte;Vale Transporte;Vale Transporte;0.00;542.79;custo_operacional;recorrente_forte;nao
+506;01/12/2025;2025-12;Pagar;1 - UNICREDI;81;Despesas com Viagem;HOTEL BUENOS AIRES LTDA;Hotel Buenos Aires;0.00;520.00;custo_operacional;nao_recorrente;nao
+451;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+861;01/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;3.67;custo_operacional;recorrente_forte;nao
+450;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;3.30;custo_operacional;recorrente_forte;nao
+863;01/12/2025;2025-12;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Multa Atraso;Multa Atraso;0.00;1.96;custo_operacional;nao_recorrente;nao
+859;01/12/2025;2025-12;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;Juros Adiantamento;Juros Adiantamento;0.00;1.92;custo_operacional;nao_recorrente;nao
+858;01/12/2025;2025-12;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;IOF;IOF;0.00;0.38;custo_operacional;recorrente_forte;nao
+857;01/12/2025;2025-12;Movto.Financeiro;7 - SANTANDER;36;Despesas Financeiras;IOF;IOF;0.00;0.07;custo_operacional;recorrente_forte;nao
+452;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Serviço Nacional;Receb Serviço Nacional;3972.47;0.00;entrada;;nao
+456;01/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Corbelli;Receb Corbelli;1347.99;0.00;entrada;;nao
+542;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;AL INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb AL Moveis;2220.33;0.00;entrada;;nao
+543;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;AL INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb AL Moveis;3096.38;0.00;entrada;;nao
+544;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;AL INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb AL Moveis;6630.30;0.00;entrada;;nao
+545;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSPARQUET INDUSTRIA E COMERCIO DE MADEIRAS LTDA;Receb Indusparquet;234.43;0.00;entrada;;nao
+546;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SAN MARINO MOVEIS LTDA;Receb San Marino;480.18;0.00;entrada;;nao
+547;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;JB BECHARA INDUSTRIA DE MOVEIS LTDA;Receb JB Bechara;1634.15;0.00;entrada;;nao
+548;01/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;FINESTRA INDUSTRIA E COMERCIO DE MADEIRAS LTDA;Receb Finestra;1851.37;0.00;entrada;;nao
+527;02/12/2025;2025-12;Movto.Financeiro;5 - CAIXA ECONOMICA;5;Implantaçao de Saldo;Implantação Saldo;Implantação Saldo;0.00;175503.80;implantacao_saldo;;sim
+471;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Luciano Silva;Pagto Luciano Silva;0.00;86304.94;custo_operacional;nao_recorrente;sim
+474;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Luciano Silva;Pagto Luciano Silva;0.00;86304.94;custo_operacional;nao_recorrente;sim
+937;02/12/2025;2025-12;Pagar;8 - CAIXA FISICO;37;Maquinas e Equipamentos de Produçao;USIFIX INDUSTRIA E COMERCIO LTDA;Pagto Usifix;0.00;45000.00;custo_operacional;nao_recorrente;nao
+466;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Nectech;Pagto Nectech;0.00;5275.94;custo_operacional;recorrente_forte;nao
+465;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Nucleotec;Pagto Nucleotec;0.00;4348.68;custo_operacional;nao_recorrente;nao
+467;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Beltex Correias;Pagto Beltex Correias;0.00;2343.00;custo_operacional;nao_recorrente;nao
+476;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;Pagto Edelcio Silva;Pagto Edelcio Silva;0.00;1700.10;custo_operacional;nao_recorrente;nao
+469;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto IRC Rolamentos;Pagto IRC Rolamentos;0.00;1691.20;custo_operacional;nao_recorrente;nao
+865;02/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;IOF;IOF;0.00;1528.90;custo_operacional;recorrente_forte;nao
+468;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Corbelli Transporte;Pagto Corbelli Transporte;0.00;1347.99;custo_operacional;nao_recorrente;nao
+470;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto NECTECH;Pagto NECTECH;0.00;1198.41;custo_operacional;nao_recorrente;nao
+864;02/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;IOF;IOF;0.00;1117.72;custo_operacional;recorrente_forte;nao
+479;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Título 7610337300;Pagto Título 7610337300;0.00;609.05;custo_operacional;nao_recorrente;nao
+477;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Tarifa TED Festo;Tarifa TED Festo;0.00;6.63;custo_operacional;nao_recorrente;nao
+464;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+478;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Fabribam;Receb Fabribam;462.15;0.00;entrada;;nao
+475;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Fito Essencia;Receb Fito Essencia;33000.00;0.00;entrada;;nao
+472;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Devolução TED;Devolução TED;86304.94;0.00;entrada;;sim
+473;02/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Mavaular;Receb Mavaular;1347.99;0.00;entrada;;nao
+538;02/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSTRIA DE MOVEIS LEAO LTDA;Receb Moveis Leao;1071.85;0.00;entrada;;nao
+539;02/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;DEMOBILE INDUSTRIA DE MOVEIS LTDA;Receb Demobile;1362.69;0.00;entrada;;nao
+540;02/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;FINESTRA INDUSTRIA E COMERCIO DE MADEIRAS LTDA;Receb Finestra;1851.36;0.00;entrada;;nao
+541;02/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;BRAFER CONSTRUCOES METALICAS LTDA;Receb Brafer;130000.00;0.00;entrada;;nao
+938;02/12/2025;2025-12;Movto.Financeiro;8 - CAIXA FISICO;33;Emprestimos/Parcelas;USIFIX INDUSTRIA E COMERCIO LTDA;Empréstimo Usifix;45000.00;0.00;entrada;;nao
+487;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Valtonir Costa Rescisão;Pagto Valtonir Costa Rescisão;0.00;26441.94;custo_operacional;nao_recorrente;sim
+490;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;64;Agua;Água 09/2025;Água 09/2025;0.00;6584.90;custo_operacional;nao_recorrente;nao
+485;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;59;Alimentaçao;Alimentação;Alimentação;0.00;500.00;custo_operacional;nao_recorrente;sim
+489;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;EXPRESSO SAO MIGUEL LTDA;Pagto Expresso São Miguel;0.00;372.95;custo_operacional;nao_recorrente;nao
+486;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Tintas Franca;Pagto Tintas Franca;0.00;295.80;custo_operacional;nao_recorrente;nao
+483;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;64;Agua;Pagto Sanepar;Pagto Sanepar;0.00;197.56;custo_operacional;nao_recorrente;nao
+993;03/12/2025;2025-12;Pagar;1 - UNICREDI;61;Despesas Administrativas;ADNEI RIBEIRO NETO;ADNEI RIBEIRO NETO;0.00;48.00;custo_operacional;nao_recorrente;nao
+484;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Situ Acrílicos;Pagto Situ Acrílicos;0.00;20.00;custo_operacional;nao_recorrente;nao
+481;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;4.40;custo_operacional;recorrente_forte;nao
+866;03/12/2025;2025-12;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Encargos Descoberto;Encargos Descoberto;0.00;0.41;custo_operacional;nao_recorrente;nao
+488;03/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;59;Alimentaçao;Receb Alice Bonfim;Receb Alice Bonfim;42.39;0.00;entrada;;sim
+534;03/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS CARRARO LTDA;MOVEIS CARRARO LTDA;10934.80;0.00;entrada;;nao
+535;03/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;RIMO INDUSTRIA DE MOVEIS E COM.LTDA;Receb Rimo;16788.66;0.00;entrada;;nao
+536;03/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;TERA INOX SOLUTIONS INDUSTRIA METALURGICA LTDA;Receb Tera Inox;205.68;0.00;entrada;;nao
+537;03/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SCALCO BOMBONATO LTDA;Receb Scalco Bombonato;1023.06;0.00;entrada;;nao
+703;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Rescisão Magda Giacomelli;Rescisão Magda Giacomelli;0.00;17000.00;custo_operacional;nao_recorrente;sim
+700;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Fabio Peres;Pagto Fabio Peres;0.00;2500.00;custo_operacional;recorrente_forte;nao
+696;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Viti Industria;Pagto Viti Industria;0.00;2382.81;custo_operacional;nao_recorrente;nao
+875;04/12/2025;2025-12;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa;0.00;1708.00;custo_operacional;recorrente_forte;nao
+692;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Specialty Product;Pagto Specialty Product;0.00;1644.19;custo_operacional;recorrente_forte;nao
+689;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Gefran Brasil;Pagto Gefran Brasil;0.00;1370.81;custo_operacional;nao_recorrente;nao
+524;04/12/2025;2025-12;Pagar;1 - UNICREDI;58;Segurança no Trabalho;GARCIA PERICIA TECNICA DE SEGURANCA DO TRABALHO EI;Pagto Garcia Pericia;0.00;1301.55;custo_operacional;nao_recorrente;nao
+688;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto PIX Marketplace;Pagto PIX Marketplace;0.00;1041.49;custo_operacional;recorrente_forte;nao
+695;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto IFM Electronic;Pagto IFM Electronic;0.00;811.91;custo_operacional;recorrente_forte;nao
+697;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Frete ASX Logistics;Frete ASX Logistics;0.00;586.28;custo_operacional;nao_recorrente;nao
+690;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Damari Comércio;Pagto Damari Comércio;0.00;560.00;custo_operacional;nao_recorrente;nao
+687;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto MH Produtos;Pagto MH Produtos;0.00;559.00;custo_operacional;nao_recorrente;nao
+704;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Poleto Correias;Pagto Poleto Correias;0.00;524.49;custo_operacional;recorrente_forte;nao
+684;04/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;CNI EMPRESA NACIONAL DE SERVICOS TECNICOS ESPECIAL;Sistema Ponto Eletrônico;0.00;477.36;custo_operacional;nao_recorrente;nao
+693;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Pocol Polias;Pagto Pocol Polias;0.00;460.32;custo_operacional;nao_recorrente;nao
+699;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;Pagto Demil Express;Pagto Demil Express;0.00;270.00;custo_operacional;recorrente_forte;nao
+698;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;Pagto Exclusiva Embalagens;Pagto Exclusiva Embalagens;0.00;242.43;custo_operacional;nao_recorrente;nao
+526;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;216.70;custo_operacional;recorrente_forte;nao
+701;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Incavel Peças;Pagto Incavel Peças;0.00;140.03;custo_operacional;nao_recorrente;nao
+702;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Autoind Brasil Peças;Pagto Autoind Brasil Peças;0.00;121.41;custo_operacional;nao_recorrente;nao
+694;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto CREA ART;Pagto CREA ART;0.00;103.03;custo_operacional;nao_recorrente;nao
+525;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;6.60;custo_operacional;recorrente_forte;nao
+528;04/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;LUCIANE INDUSTRIA MOVELEIRA LTDA;Receb Luciane;750.45;0.00;entrada;;nao
+529;04/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS DALLA COSTA LTDA;Receb Dalla Costa;3691.52;0.00;entrada;;nao
+530;04/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS DALLA COSTA LTDA;Receb Dalla Costa;3691.53;0.00;entrada;;nao
+531;04/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MOVEIS DALLA COSTA LTDA;Receb Dalla Costa;3691.53;0.00;entrada;;nao
+532;04/12/2025;2025-12;Receber;1 - UNICREDI;4;Venda de Serviços;MADEBIL MADEIREIRA BITURUNA LTDA;Receb Madebil;3871.85;0.00;entrada;;nao
+533;04/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;COMPENSADOS IMPERIO LTDA;Receb Compensados Imperio;3925.76;0.00;entrada;;nao
+686;04/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Toreto Logística;Receb Toreto Logística;4789.74;0.00;entrada;;nao
+625;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Sannito Moretti;0.00;31766.43;custo_operacional;recorrente_frequente;nao
+623;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Lucas Lichtblau;0.00;30680.00;custo_operacional;recorrente_frequente;nao
+626;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário João Maria;0.00;23332.00;custo_operacional;recorrente_frequente;nao
+660;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão Valdonir;FGTS Rescisão Valdonir;0.00;18569.54;custo_operacional;nao_recorrente;sim
+643;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto José Alexandre;0.00;10225.87;custo_operacional;recorrente_frequente;nao
+624;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Edelcio EJ Soluções;0.00;8173.00;custo_operacional;recorrente_frequente;nao
+682;05/12/2025;2025-12;Pagar;1 - UNICREDI;66;Seguros;ALLIANZ SEGUROS S/A;Seguro Predial Allianz;0.00;7435.89;custo_operacional;nao_recorrente;nao
+627;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Francisco Queiroz;0.00;5948.27;custo_operacional;recorrente_frequente;nao
+634;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;JOAO OCTAVIO DE LIMA;0.00;5168.87;custo_operacional;recorrente_frequente;nao
+673;05/12/2025;2025-12;Transferências;1 - UNICREDI;6;Transferencia entre Contas;Sem descrição;;0.00;4789.74;transferencia_interna;;nao
+672;05/12/2025;2025-12;Pagar;1 - UNICREDI;52;Aluguel;BRE-MAX ADMINISTRACAO DE BENS PROPRIOS LTDA;Aluguel Bremax;0.00;4360.38;custo_operacional;nao_recorrente;sim
+628;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Josoel Camargo;0.00;3889.47;custo_operacional;recorrente_frequente;nao
+642;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Arlete dos Santos;0.00;3341.72;custo_operacional;recorrente_frequente;nao
+638;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Anderson Taborda;0.00;3185.92;custo_operacional;recorrente_frequente;nao
+635;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;FELIPE DE LIMA PINTO;0.00;2899.85;custo_operacional;recorrente_frequente;nao
+637;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Rayanne Mazim;0.00;2549.67;custo_operacional;recorrente_frequente;nao
+648;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Cintia Gresczyszin;0.00;2432.34;custo_operacional;recorrente_frequente;nao
+640;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Antonio Carlos;0.00;2319.23;custo_operacional;recorrente_frequente;nao
+632;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Robertson Nascimento;0.00;2284.23;custo_operacional;recorrente_frequente;nao
+651;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;MAURICIO MASSARIN;0.00;2208.70;custo_operacional;recorrente_frequente;nao
+630;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Jorge Siqueira;0.00;2144.43;custo_operacional;recorrente_frequente;nao
+681;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Edson Nasilowski;0.00;2122.87;custo_operacional;recorrente_frequente;nao
+645;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Tatiane Farias;0.00;2082.19;custo_operacional;recorrente_frequente;nao
+649;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;MARIA EDUARDA DRUZYK;0.00;2009.69;custo_operacional;recorrente_frequente;nao
+639;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Rodrigo Kavalkievicz;0.00;1608.91;custo_operacional;recorrente_frequente;nao
+652;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Wilson Camargo;0.00;1309.58;custo_operacional;recorrente_frequente;nao
+664;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;31;Seguro Funcionarios;Seguro Prudential;Seguro Prudential;0.00;1260.67;custo_operacional;nao_recorrente;nao
+641;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Ana Paula;0.00;1165.54;custo_operacional;recorrente_frequente;nao
+629;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Cleiton Freitas;0.00;1142.75;custo_operacional;recorrente_frequente;nao
+636;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Salário Jose Walbeque;0.00;704.01;custo_operacional;recorrente_frequente;nao
+680;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;MUNDIAL PRINT LTDA;Pagto Mundial Print;0.00;626.40;custo_operacional;recorrente_forte;nao
+663;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;31;Seguro Funcionarios;Seguro Prudential;Seguro Prudential;0.00;540.60;custo_operacional;nao_recorrente;nao
+666;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;58;Segurança no Trabalho;VICTORY DIRECT OTICA LTDA;Pagto Victory Ótica;0.00;505.50;custo_operacional;nao_recorrente;nao
+644;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Ana Beatriz;0.00;466.29;custo_operacional;recorrente_frequente;nao
+661;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;DISTRIBUIDORA DE TINTAS DARKA LTDA;Pagto Tintas Darka;0.00;454.00;custo_operacional;nao_recorrente;nao
+665;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;31;Seguro Funcionarios;Seguro Prudential;Seguro Prudential;0.00;342.90;custo_operacional;nao_recorrente;nao
+662;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;TINTAS FRANCA LTDA;Pagto Tintas Franca;0.00;341.50;custo_operacional;nao_recorrente;nao
+867;05/12/2025;2025-12;Movto.Financeiro;4 - ITAU;50;Pedagio;DEB AUTOR SEM PARAR;DEB AUTOR SEM PARAR;0.00;281.00;custo_operacional;recorrente_forte;nao
+631;05/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;Maclinea Maquinas e Equipamentos Ltda;Pagto Adriano Lopes;0.00;54.59;custo_operacional;recorrente_frequente;nao
+653;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa TED;0.00;9.50;custo_operacional;recorrente_forte;nao
+869;05/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;7.34;custo_operacional;recorrente_forte;nao
+654;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Cobrança;0.00;6.60;custo_operacional;recorrente_forte;nao
+610;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;PHOENIX IND. COM. DE MOVEIS E ESTOFADOS - EIRELLI;Receb Phoenix;964.28;0.00;entrada;;nao
+611;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;CLASSICA INDUSTRIA E COMERCIO MOVEIS MADEIRA LTDA;Receb Classica;578.83;0.00;entrada;;nao
+612;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;DJ INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb DJ Moveis;962.06;0.00;entrada;;nao
+613;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSPARQUET IND.E COM.DE MADEIRAS LTDA;Receb Indusparquet;1305.75;0.00;entrada;;nao
+614;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;IMCAL INDUSTRIA DE MOVEIS CANEIRA LTDA;Receb Imcal;744.63;0.00;entrada;;nao
+615;05/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;ELLIS DECOR MOVEIS LTDA;Receb Ellis Decor;3469.93;0.00;entrada;;nao
+674;05/12/2025;2025-12;Transferências;2 - INTER;6;Transferencia entre Contas;Sem descrição;;4789.74;0.00;entrada;;nao
+675;05/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;REPINHO REFLOREST. MAD E COMPENS. LTDA;Receb Repinho;119.94;0.00;entrada;;nao
+868;05/12/2025;2025-12;Movto.Financeiro;4 - ITAU;91;Devolucoes Fornecedores;EST DB AUTSEM PARAR;EST DB AUTSEM PARAR;281.00;0.00;entrada;;nao
+668;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;54;Compras de Serviços;P DOS ANJOS SERVICOS DE TORNEARIA E SOLDA;P dos Anjos Tornearia;0.00;9894.00;custo_operacional;nao_recorrente;nao
+594;08/12/2025;2025-12;Pagar;1 - UNICREDI;39;Fretes;RODOSHEL TRANSPORTES LTDA;Pagto Rodoshel Transportes;0.00;7500.00;custo_operacional;nao_recorrente;nao
+669;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;COFACO FABRICADORA DE CORREIAS LTDA;Pagto COFACO Correias;0.00;6904.61;custo_operacional;nao_recorrente;nao
+667;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;DAX AUTOMACAO INDUSTRIAL LTDA;Pagto DAX Automação;0.00;3325.13;custo_operacional;nao_recorrente;sim
+650;08/12/2025;2025-12;Pagar;1 - UNICREDI;69;Fretes sobre Compras;Frete Efitrans;Frete Efitrans;0.00;731.44;custo_operacional;recorrente_forte;nao
+593;08/12/2025;2025-12;Pagar;1 - UNICREDI;39;Fretes;MILENIUM TRANSPORTES LTDA;Pagto Milenium Transportes;0.00;272.01;custo_operacional;nao_recorrente;nao
+670;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;69;Fretes sobre Compras;TRANSFACE TRANSPORTES LTDA;Frete Transface;0.00;151.64;custo_operacional;nao_recorrente;nao
+658;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Reembolso Victor - Pastas;Reembolso Victor - Pastas;0.00;73.90;custo_operacional;nao_recorrente;nao
+671;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Cartório 4º Ofício;Pagto Cartório 4º Ofício;0.00;30.18;custo_operacional;nao_recorrente;nao
+656;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Cobrança;0.00;7.70;custo_operacional;recorrente_forte;nao
+657;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Tarifa Cobrança Instruções;0.00;6.60;custo_operacional;recorrente_forte;nao
+870;08/12/2025;2025-12;Movto.Financeiro;4 - ITAU;36;Despesas Financeiras;TAR/CUSTAS COBRANCA;TAR/CUSTAS COBRANCA;0.00;3.67;custo_operacional;recorrente_forte;nao
+616;08/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;VITAMOV INDUSTRIA E COMERCIO DE MOVEIS EIRELI;Receb Vitamov;33333.33;0.00;entrada;;nao
+617;08/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MTA INDUSTRIA E COMERCIO DE ARTEFATOS DE;Receb MTA;2467.91;0.00;entrada;;nao
+618;08/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MULTILINEA MOVEIS LTDA;Receb Multilinea;655.75;0.00;entrada;;nao
+619;08/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSPARQUET IND.E COM.DE MADEIRAS LTDA;Receb Indusparquet;234.43;0.00;entrada;;nao
+620;08/12/2025;2025-12;Receber;1 - UNICREDI;4;Venda de Serviços;MADINE INDUSTRIA E COPMERCIO DE MVS LTDA;Receb Madine;2017.96;0.00;entrada;;nao
+621;08/12/2025;2025-12;Receber;1 - UNICREDI;4;Venda de Serviços;POLLUS INDUSTRIA E COMERCIO DE MVS LTDA;Receb Pollus;3965.65;0.00;entrada;;nao
+622;08/12/2025;2025-12;Receber;1 - UNICREDI;4;Venda de Serviços;RV MOVEIS LTDA;RV MOVEIS LTDA;399.43;0.00;entrada;;nao
+677;08/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;GRUPO K1 S.A.;Receb Grupo K1;7350.00;0.00;entrada;;nao
+787;08/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MADESA MOVEIS LTDA;MADESA MOVEIS LTDA;6548.46;0.00;entrada;;nao
+596;09/12/2025;2025-12;Pagar;8 - CAIXA FISICO;41;Compras de Materia Prima;ACOS FAVORIT DISTRIBUIDORA LTDA;Encontro Contas Aços Favorit;0.00;85487.55;custo_operacional;nao_recorrente;sim
+753;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;71;Honorários Advocatícios/Consultoria;Pagto SOGEST Consultoria;Pagto SOGEST Consultoria;0.00;27431.98;custo_operacional;nao_recorrente;nao
+727;09/12/2025;2025-12;Pagar;1 - UNICREDI;65;Luz;COPEL DISTRIBUICAO S/A;Pagto Copel;0.00;18416.43;custo_operacional;recorrente_forte;nao
+949;09/12/2025;2025-12;Pagar;1 - UNICREDI;59;Alimentaçao;RESTAURANTE E LANCHONETE BUHRER LTDA;BX ACORDO ATRASADOS;0.00;15138.75;custo_operacional;nao_recorrente;sim
+872;09/12/2025;2025-12;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;MORA CAPITAL DE GIRO;MORA CAPITAL DE GIRO;0.00;10633.48;custo_operacional;recorrente_forte;nao
+756;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;CONSULT CONSULTORIA EMPRESARIAL;Pagto Consult Consultoria;0.00;6849.89;custo_operacional;nao_recorrente;nao
+750;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto KLEBER LUIS FURST;Pagto KLEBER LUIS FURST;0.00;6000.00;custo_operacional;nao_recorrente;nao
+762;09/12/2025;2025-12;Pagar;1 - UNICREDI;92;Custos com RJ;CONSULT ADMINISTRADOR JUDICIAL LTDA;Pagto Consult Administrador;0.00;4803.40;custo_operacional;nao_recorrente;sim
+755;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;92;Custos com RJ;Pagto Administrador Judicial;Pagto Administrador Judicial;0.00;3354.88;custo_operacional;nao_recorrente;sim
+729;09/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;W9 SERVICOS DE TECNOLOGIA LTDA;Pagto W9 Tecnologia;0.00;2876.66;custo_operacional;nao_recorrente;nao
+736;09/12/2025;2025-12;Pagar;1 - UNICREDI;48;Vigilancia;SOFKA SEGURANCA LTDA;SOFKA SEGURANCA LTDA;0.00;2162.30;custo_operacional;recorrente_forte;nao
+745;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Tese Electric;Pagto Tese Electric;0.00;1565.56;custo_operacional;nao_recorrente;nao
+737;09/12/2025;2025-12;Pagar;1 - UNICREDI;48;Vigilancia;SOFKA SEGURANCA LTDA;SOFKA SEGURANCA LTDA;0.00;1544.50;custo_operacional;recorrente_forte;nao
+935;09/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;F PRINTER LOCACAO MAQUINAS IMPRESSAO EIRELI;F Printer Locação;0.00;1424.70;custo_operacional;nao_recorrente;sim
+726;09/12/2025;2025-12;Pagar;1 - UNICREDI;63;Telefonia/Fixa/Movel/Internet;VIVO - TELEFONICA BRASIL S.A.;Vivo Telefonia;0.00;1202.08;custo_operacional;nao_recorrente;nao
+738;09/12/2025;2025-12;Pagar;1 - UNICREDI;63;Telefonia/Fixa/Movel/Internet;BALDUSSI SOLUCOES LTDA;Pagto Baldussi Soluções;0.00;992.88;custo_operacional;nao_recorrente;nao
+733;09/12/2025;2025-12;Pagar;1 - UNICREDI;48;Vigilancia;SOFKA SEGURANCA LTDA;SOFKA SEGURANCA LTDA;0.00;978.18;custo_operacional;recorrente_forte;nao
+744;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto GHPC Brasil;Pagto GHPC Brasil;0.00;872.88;custo_operacional;nao_recorrente;nao
+751;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;96;Compras de Importaçao;Pagto Logistic CO;Pagto Logistic CO;0.00;795.16;custo_operacional;nao_recorrente;sim
+732;09/12/2025;2025-12;Pagar;1 - UNICREDI;77;Compras de Insumos;FAMEGAS ASSISTENCIA TECNICA LTDA;Pagto Famegas;0.00;715.41;custo_operacional;nao_recorrente;nao
+754;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;71;Honorários Advocatícios/Consultoria;Consultoria Empresarial;Consultoria Empresarial;0.00;712.32;custo_operacional;nao_recorrente;nao
+752;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;96;Compras de Importaçao;Pagto Logistic Co;Pagto Logistic Co;0.00;504.05;custo_operacional;nao_recorrente;sim
+871;09/12/2025;2025-12;Movto.Financeiro;6 - BRADESCO;36;Despesas Financeiras;Tarifa Cesta Empresarial;Tarifa Cesta Empresarial;0.00;415.26;custo_operacional;recorrente_forte;nao
+743;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Wasinger;Pagto Wasinger;0.00;312.00;custo_operacional;nao_recorrente;nao
+730;09/12/2025;2025-12;Pagar;1 - UNICREDI;61;Despesas Administrativas;GTS GRUPO TECNICO EM SANITIZACAO;Pagto GTS Sanitização;0.00;307.90;custo_operacional;nao_recorrente;sim
+747;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Lucas Korelo;Pagto Lucas Korelo;0.00;191.88;custo_operacional;nao_recorrente;nao
+914;09/12/2025;2025-12;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;Pagto Rolpasa;0.00;90.50;custo_operacional;recorrente_forte;nao
+748;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Edilson Guilherme;Pagto Edilson Guilherme;0.00;73.84;custo_operacional;nao_recorrente;nao
+749;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;42;Retirada/Pagamento de Contas dos Socios;Energia Apto Batel;Energia Apto Batel;0.00;70.67;custo_operacional;nao_recorrente;nao
+741;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;16.50;custo_operacional;recorrente_forte;nao
+595;09/12/2025;2025-12;Receber;8 - CAIXA FISICO;3;Venda de Produtos;ACOS FAVORIT DISTRIBUIDORA LTDA;Encontro Contas Aços Favorit;85487.55;0.00;entrada;;sim
+742;09/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;Receb Casa D Moveis;Receb Casa D Moveis;4281.68;0.00;entrada;;nao
+763;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;A.J. RORATO & CIA LTDA;Receb A.J. Rorato;6168.62;0.00;entrada;;nao
+764;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;GRUPO K1 SA;GRUPO K1 SA;583.30;0.00;entrada;;nao
+765;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;GRUPO K1 SA;GRUPO K1 SA;3957.14;0.00;entrada;;nao
+766;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;ITAMARATI INDUSTRIA DE COMPENSADOS LTDA;Receb Itamarati;1537.10;0.00;entrada;;nao
+767;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;LINEA BRASIL IND E COM DE MOVEIS LTDA;Receb Linea Brasil;118.23;0.00;entrada;;nao
+768;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MM GABINETES LTDA;MM GABINETES LTDA;1763.92;0.00;entrada;;nao
+769;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;NEW CEVAL LTDA - EPP;NEW CEVAL LTDA - EPP;2761.53;0.00;entrada;;nao
+771;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;ROHDEN PORTAS E ARTEFATOS DE MADEIRA LTDA;Receb Rohden Portas;3185.96;0.00;entrada;;nao
+772;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;VALVERDE INDUSTRIA E TRANSPORTES LTDA;Receb Valverde;2173.25;0.00;entrada;;nao
+773;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;CASA D INDUSTRIA DE MOVEIS LTDA;Receb Casa D Móveis;1893.27;0.00;entrada;;nao
+774;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;IZIDORO CAVANHA COSTA COMERCIO;Receb Izidoro Cavanha;647.35;0.00;entrada;;nao
+775;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;ANTONIO R. FERREIRA M. NOGUEIRA MOVEIS LTDA;Receb Antonio Ferreira;565.95;0.00;entrada;;nao
+776;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;UPTEC MAQUINAS E SERVICOS LTDA;Receb Uptec Máquinas;3998.48;0.00;entrada;;nao
+777;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;RUD RACK INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Rud Rack;3039.01;0.00;entrada;;nao
+951;09/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;NICIOLI INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Nicioli;1412.38;0.00;entrada;;nao
+913;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;162053.83;custo_operacional;nao_recorrente;sim
+909;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;71315.74;custo_operacional;nao_recorrente;sim
+910;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;68173.33;custo_operacional;nao_recorrente;sim
+912;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;65432.56;custo_operacional;nao_recorrente;sim
+911;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;87;FGTS Rescisao;FGTS Rescisão;FGTS Rescisão;0.00;64533.03;custo_operacional;nao_recorrente;sim
+760;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto BC Industrial Laser;Pagto BC Industrial Laser;0.00;24750.81;custo_operacional;nao_recorrente;nao
+876;10/12/2025;2025-12;Pagar;1 - UNICREDI;24;Salarios;MDS INSTALACAO DE MAQUINAS LTDA;Pagto MDS Instalação;0.00;20940.00;custo_operacional;nao_recorrente;sim
+906;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;96;Compras de Importaçao;Pagto International Pump;Pagto International Pump;0.00;14629.20;custo_operacional;nao_recorrente;sim
+887;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Suemar Costa;Pagto Suemar Costa;0.00;10000.00;custo_operacional;nao_recorrente;sim
+898;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Seweurodrive Brasil;Pagto Seweurodrive Brasil;0.00;6815.24;custo_operacional;nao_recorrente;nao
+878;10/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;SYNNOVA SOFTWARE E SOLUÇÕES LTDA;Pagto SYNNOVA SOFTWARE;0.00;6000.00;custo_operacional;nao_recorrente;nao
+902;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Edson de Oliveira;Pagto Edson de Oliveira;0.00;5741.45;custo_operacional;nao_recorrente;sim
+893;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Thiago Pianowski;Pagto Thiago Pianowski;0.00;5073.20;custo_operacional;nao_recorrente;sim
+877;10/12/2025;2025-12;Pagar;1 - UNICREDI;30;Contabilidade;CONTABILIDADE FAZENDA S S LTDA;Contabilidade Fazenda;0.00;4937.50;custo_operacional;nao_recorrente;nao
+888;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Rescisão Vinicius Belem;Rescisão Vinicius Belem;0.00;4522.10;custo_operacional;nao_recorrente;sim
+901;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Rescisão Luis Paulo;Rescisão Luis Paulo;0.00;4510.00;custo_operacional;nao_recorrente;sim
+905;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Rescisão Patricia Zorzi;Rescisão Patricia Zorzi;0.00;4250.00;custo_operacional;nao_recorrente;sim
+891;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Wagner Inacio;Pagto Wagner Inacio;0.00;3787.30;custo_operacional;nao_recorrente;sim
+879;10/12/2025;2025-12;Pagar;1 - UNICREDI;48;Vigilancia;SOFKA SEGURANCA LTDA;SOFKA SEGURANCA LTDA;0.00;3600.00;custo_operacional;recorrente_forte;nao
+899;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;88;Salarios Rescisao;Pagto Taiane Barboza;Pagto Taiane Barboza;0.00;3600.00;custo_operacional;nao_recorrente;sim
+956;10/12/2025;2025-12;Pagar;1 - UNICREDI;97;PLANO DE SAÚDE;SUL AMERICA PARANA CLINICAS SERVICOS DE SAUDE S.A.;Pagto Sul América Plano Saúde;0.00;3429.14;custo_operacional;nao_recorrente;nao
+886;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Rolpasa;Pagto Rolpasa;0.00;2000.00;custo_operacional;nao_recorrente;nao
+761;10/12/2025;2025-12;Pagar;1 - UNICREDI;63;Telefonia/Fixa/Movel/Internet;CLARO S/A;CLARO S/A;0.00;1585.51;custo_operacional;nao_recorrente;nao
+952;10/12/2025;2025-12;Pagar;1 - UNICREDI;38;Adiantamento de Salario;SUL AMERICA PARANA CLINICAS SERVICOS DE SAUDE S.A.;Pagto Sul America Clinicas;0.00;1401.32;custo_operacional;nao_recorrente;nao
+896;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;96;Compras de Importaçao;Pagto Logistic CO;Pagto Logistic CO;0.00;1343.00;custo_operacional;nao_recorrente;sim
+895;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Pagto Luis Velasquez;Pagto Luis Velasquez;0.00;751.42;custo_operacional;nao_recorrente;nao
+889;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;Pagto Poleto Correias;Pagto Poleto Correias;0.00;669.89;custo_operacional;recorrente_forte;nao
+892;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Pagto Lucas Pereira;Pagto Lucas Pereira;0.00;600.00;custo_operacional;nao_recorrente;nao
+904;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Pagto Patricia Zorzi;Pagto Patricia Zorzi;0.00;600.00;custo_operacional;nao_recorrente;nao
+897;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Transf Luciano Silva;Transf Luciano Silva;0.00;357.21;custo_operacional;nao_recorrente;nao
+900;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Pagto Josoel Silva;Pagto Josoel Silva;0.00;253.42;custo_operacional;nao_recorrente;nao
+894;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;Pagto Florida Turismo;Pagto Florida Turismo;0.00;214.26;custo_operacional;nao_recorrente;nao
+757;10/12/2025;2025-12;Pagar;1 - UNICREDI;61;Despesas Administrativas;COOPERATIVA CENTRAL DE CREDITO UNICRED DO BRASIL - UNICRED DO BRASIL;Pagto Unicred Brasil;0.00;200.00;custo_operacional;recorrente_forte;nao
+885;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Pagto Wagner Souza;Pagto Wagner Souza;0.00;180.11;custo_operacional;nao_recorrente;nao
+890;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;Reembolso Rayanne Carrara;Reembolso Rayanne Carrara;0.00;124.48;custo_operacional;nao_recorrente;nao
+903;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Pagto Whirlpool;Pagto Whirlpool;0.00;122.69;custo_operacional;nao_recorrente;nao
+758;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;9.90;custo_operacional;recorrente_forte;nao
+759;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Instruções;Tarifa Instruções;0.00;1.10;custo_operacional;nao_recorrente;nao
+880;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;79;Juros Recebidos / Aporte Capital Social;Aporte Capital Usifix;Aporte Capital Usifix;50000.00;0.00;entrada;;nao
+881;10/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;79;Juros Recebidos / Aporte Capital Social;Aporte Capital Usifix;Aporte Capital Usifix;250000.00;0.00;entrada;;nao
+778;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;GRUPO K1 SA;GRUPO K1 SA;2201.23;0.00;entrada;;nao
+779;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MTA IND E COM DE ARTEF DE INOX LTDA;Receb MTA Inox;214.51;0.00;entrada;;nao
+780;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MTA IND E COM DE ARTEF DE INOX LTDA;Receb MTA Inox;930.77;0.00;entrada;;nao
+781;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;NEW CEVAL LTDA - EPP;NEW CEVAL LTDA - EPP;2499.50;0.00;entrada;;nao
+782;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;REPINHO REFLORESTADORA MADEIRAS E COMPENSADOS LTDA;Receb Repinho;1832.80;0.00;entrada;;nao
+783;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SALLETO INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Salleto;987.10;0.00;entrada;;nao
+784;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;FIEL MADEIRAS LTDA;FIEL MADEIRAS LTDA;239.28;0.00;entrada;;nao
+785;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;IANCO INDUSTRIA METALURGICA LTDA;Receb Ianco;42395.34;0.00;entrada;;nao
+786;10/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MECA METALURGICA E INDUSTRIA DE MAQUINAS LTDA;Receb Meca Metalúrgica;156400.00;0.00;entrada;;nao
+970;11/12/2025;2025-12;Pagar;1 - UNICREDI;97;PLANO DE SAÚDE;SUL AMERICA PARANA CLINICAS SERVICOS DE SAUDE S.A.;Pagto Sul America Saúde;0.00;17815.65;custo_operacional;nao_recorrente;nao
+991;11/12/2025;2025-12;Pagar;1 - UNICREDI;59;Alimentaçao;RESTAURANTE E LANCHONETE BUHRER LTDA;Restaurante Buhrer;0.00;11906.15;custo_operacional;nao_recorrente;sim
+958;11/12/2025;2025-12;Pagar;1 - UNICREDI;71;Honorários Advocatícios/Consultoria;MARAN, GEHLEN & ADVOGADOS ASSOCIADOS S/C;PGTO NF 122 MARAN;0.00;9569.50;custo_operacional;nao_recorrente;nao
+965;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;COFACO FABRICADORA DE CORREIAS LTDA;DEB PIX COFACO;0.00;6904.61;custo_operacional;nao_recorrente;nao
+947;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;MERCANTIL RAOLI COM E REPRE LTDA;Pagto MERCANTIL RAOLI;0.00;5742.03;custo_operacional;nao_recorrente;nao
+788;11/12/2025;2025-12;Movto.Financeiro;3 - BANCO DO BRASIL;36;Despesas Financeiras;Atualização Saldo Negativo;Atualização Saldo Negativo;0.00;3858.89;custo_operacional;nao_recorrente;sim
+954;11/12/2025;2025-12;Pagar;1 - UNICREDI;38;Adiantamento de Salario;SUL AMERICA PARANA CLINICAS SERVICOS DE SAUDE S.A.;Pagto Sul America;0.00;3775.42;custo_operacional;nao_recorrente;nao
+961;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;BC INDUSTRIAL LASER SOLUTIONS LTDA;Pagto BC Industrial;0.00;2803.00;custo_operacional;nao_recorrente;nao
+959;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;92;Custos com RJ;Taxa FUNJUS RJ;Taxa FUNJUS RJ;0.00;2517.11;custo_operacional;nao_recorrente;sim
+943;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;81;Despesas com Viagem;FRANCISCO QUEIROZ VIEIRA;Adto Viagem Francisco;0.00;2500.00;custo_operacional;recorrente_forte;nao
+948;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;92;Custos com RJ;Pagto Vaccao Carvalho;Pagto Vaccao Carvalho;0.00;2293.89;custo_operacional;nao_recorrente;sim
+964;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;AMERICAN CARBON IND E COM DE COMP ELET LTDA - ME;Pagto American Carbon;0.00;2250.00;custo_operacional;nao_recorrente;nao
+963;11/12/2025;2025-12;Pagar;1 - UNICREDI;41;Compras de Materia Prima;SPECIALTY PRODUCT TECH. COM. IND. EQUIP. LTDA;DEB PIX SPECIALTY;0.00;1644.19;custo_operacional;nao_recorrente;nao
+936;11/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;F PRINTER LOCACAO MAQUINAS IMPRESSAO EIRELI;F Printer Locação;0.00;1471.16;custo_operacional;nao_recorrente;sim
+933;11/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;F PRINTER LOCACAO MAQUINAS IMPRESSAO EIRELI;F Printer Locação;0.00;1457.82;custo_operacional;nao_recorrente;sim
+934;11/12/2025;2025-12;Pagar;1 - UNICREDI;89;Informatica;F PRINTER LOCACAO MAQUINAS IMPRESSAO EIRELI;F Printer Locação;0.00;1442.18;custo_operacional;nao_recorrente;sim
+966;11/12/2025;2025-12;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;DEB PIX ROLPASA;0.00;1100.00;custo_operacional;recorrente_forte;nao
+968;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;TOP LAMPADAS COMERCIAL EIRELLI;DEB PIX GLOBAL UV;0.00;500.00;custo_operacional;nao_recorrente;nao
+971;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;IFM ELECTRONIC LTDA;Pagto IFM Electronic;0.00;424.53;custo_operacional;nao_recorrente;nao
+945;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;DEB PIX DEMIL;DEB PIX DEMIL;0.00;270.00;custo_operacional;nao_recorrente;nao
+967;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;61;Despesas Administrativas;Taxa Junta Certidão;Taxa Junta Certidão;0.00;76.90;custo_operacional;nao_recorrente;nao
+946;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;77;Compras de Insumos;CAROLFIX COMERCIO DE FIXACAO E ROLAMENTOS LTDA;DEB. PIX CAROLFIX;0.00;74.53;custo_operacional;nao_recorrente;sim
+962;11/12/2025;2025-12;Pagar;1 - UNICREDI;41;Compras de Materia Prima;ROLPASA ROLAMENTOS PARANA LTDA;DEB PIX ROLPASA;0.00;53.00;custo_operacional;recorrente_forte;nao
+944;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;VOGA COM. REP. CORREIAS MANGUEIRAS ROLAMENTOS LTDA;Pagto Voga Correias;0.00;23.68;custo_operacional;recorrente_forte;nao
+930;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;16.50;custo_operacional;recorrente_forte;nao
+931;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;1.10;custo_operacional;recorrente_forte;nao
+969;11/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;3;Venda de Produtos;CASA D INDUSTRIA DE MOVEIS LTDA;CRED PIX CASA D;2821.66;0.00;entrada;;nao
+915;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;COZIMAX MOVEIS MIRASSOL LTDA;Receb Cozimax;3535.57;0.00;entrada;;nao
+916;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;KELAN INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Kelan;1951.83;0.00;entrada;;nao
+917;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MADEMARQUES MOVEIS LTDA;Receb Mademarques;3535.57;0.00;entrada;;nao
+918;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MADINE INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Madine;317.10;0.00;entrada;;nao
+919;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MADINE INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Madine;2945.41;0.00;entrada;;nao
+920;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MADESA MOVEIS LTDA;MADESA MOVEIS LTDA;2881.84;0.00;entrada;;nao
+921;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MOVIPRESS COMERCIO E REPRESENTACOES LTDA;Receb Movipress;6875.54;0.00;entrada;;nao
+922;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;PATRIMAR MOVEIS LTDA;PATRIMAR MOVEIS LTDA;1951.83;0.00;entrada;;nao
+923;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;VL MUNHOZ & CIA LTDA;VL MUNHOZ & CIA LTDA;1837.82;0.00;entrada;;nao
+924;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;INDUSTRIA DE MOVEIS LEAO LTDA;Receb Ind Moveis Leao;2133.58;0.00;entrada;;nao
+925;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SANTOS ANDIRA INDUSTRIA DE MOVEIS LTDA;Receb Santos Andira;1291.82;0.00;entrada;;nao
+926;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;NICIOLI INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Nicioli;1529.35;0.00;entrada;;nao
+927;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;MUNDIAL EXPORT ASS. COM. EXT. IMP. E EXP. EIRELI;Receb Mundial Export;84.29;0.00;entrada;;nao
+928;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;D DORO MOVEIS LTDA;D DORO MOVEIS LTDA;440.55;0.00;entrada;;nao
+929;11/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;FABRICA DE MOVEIS FLORENSE LTDA;Receb Florense;1164.78;0.00;entrada;;nao
+940;12/12/2025;2025-12;Pagar;8 - CAIXA FISICO;41;Compras de Materia Prima;PLASTOMERO PLASTICOS ELASTOMEROS ESPECIAIS LTDA;Pagto Plastomero;0.00;19320.00;custo_operacional;nao_recorrente;nao
+984;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;IRC COMERCIO DE PECAS LTDA;Pagto IRC Importador;0.00;977.70;custo_operacional;nao_recorrente;nao
+988;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;31;Seguro Funcionarios;Seguro Schultz;Seguro Schultz;0.00;840.39;custo_operacional;nao_recorrente;nao
+985;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;A.BETTEGA COMERCIAL LTDA;Pagto Abettega;0.00;820.20;custo_operacional;nao_recorrente;nao
+986;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;INCAVEL ONIBUS E PECAS LTDA;DEB PIX INCAVEL;0.00;275.60;custo_operacional;nao_recorrente;nao
+987;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;41;Compras de Materia Prima;TOFANELLI COMERCIAL EIRELI;DEB PIX TOFANELLI;0.00;90.00;custo_operacional;nao_recorrente;nao
+982;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Cobrança;Tarifa Cobrança;0.00;11.00;custo_operacional;recorrente_forte;nao
+983;12/12/2025;2025-12;Movto.Financeiro;1 - UNICREDI;36;Despesas Financeiras;Tarifa Instruções;Tarifa Instruções;0.00;2.20;custo_operacional;nao_recorrente;nao
+989;12/12/2025;2025-12;Receber;8 - CAIXA FISICO;37;Maquinas e Equipamentos de Produçao;USIFIX INDUSTRIA E COMERCIO LTDA;Quitação dívidas Usifix;21704.00;0.00;entrada;;sim
+990;12/12/2025;2025-12;Receber;8 - CAIXA FISICO;37;Maquinas e Equipamentos de Produçao;USIFIX INDUSTRIA E COMERCIO LTDA;Encontro contas Usifix;19320.00;0.00;entrada;;sim
+972;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;LUKALIAM MOVEIS LTDA;LUKALIAM MOVEIS LTDA;236.75;0.00;entrada;;nao
+974;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;PB ZANZINI & CIA LTDA;Receb PB Zanzini;390.06;0.00;entrada;;nao
+975;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;ADRIANO AMBROSIO & CIA LTDA;Receb Adriano Ambrosio;626.52;0.00;entrada;;nao
+976;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;DEMOBILE INDUSTRIA DE MOVEIS LTDA;Receb Demobile;653.21;0.00;entrada;;nao
+977;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SALLETO INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Salleto;736.38;0.00;entrada;;nao
+978;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;SALLETO INDUSTRIA E COMERCIO DE MOVEIS LTDA;Receb Salleto;1420.23;0.00;entrada;;nao
+979;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;BORTOLLOTI INDUSTRIA E COMERCIO LTDA;Receb Bortolloti;1666.33;0.00;entrada;;nao
+980;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;R P DO NASCIMENTO;R P DO NASCIMENTO;1961.04;0.00;entrada;;nao
+981;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;RV MOVEIS LTDA;RV MOVEIS LTDA;2941.56;0.00;entrada;;nao
+992;12/12/2025;2025-12;Receber;1 - UNICREDI;3;Venda de Produtos;J&A MOVEIS LTDA - EPP;Receb J&A Moveis;323.62;0.00;entrada;;nao

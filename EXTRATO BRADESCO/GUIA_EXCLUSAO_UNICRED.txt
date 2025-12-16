@@ -1,0 +1,128 @@
+════════════════════════════════════════════════════════════════
+          🗑️  ROBÔ DE EXCLUSÃO - UNICRED 🗑️
+════════════════════════════════════════════════════════════════
+
+✅ MAPEAMENTO COMPLETO VIA BROWSER MCP
+
+════════════════════════════════════════════════════════════════
+          📍 BOTÕES MAPEADOS
+════════════════════════════════════════════════════════════════
+
+TELA DE CONSULTA:
+  ✓ Botão Editar: a[title="Editar o Registro"]
+  ✓ Total encontrado: 100 botões
+
+FORMULÁRIO DE EDIÇÃO:
+  ✓ Botão Excluir: ID = sc_b_del_t (vermelho)
+  ✓ Botão Voltar: ID = sc_b_sai_t
+  ✓ Nro. Registro: visível no formulário
+
+POPUP DE CONFIRMAÇÃO:
+  ✓ Tipo: Dialog HTML
+  ✓ Mensagem: "Confirma a exclusão do registro?"
+  ✓ Botão OK: //button[contains(., 'Ok')]
+  ✓ Botão Cancelar: //button[contains(., 'Cancelar')]
+
+════════════════════════════════════════════════════════════════
+          🎯 FUNCIONAMENTO
+════════════════════════════════════════════════════════════════
+
+Para cada registro (exceto IDs 9 e 49):
+  1. Clica em "Editar" (primeiro da lista)
+  2. Verifica o ID do registro
+  3. Se for ID 9 ou 49 → PULA (não exclui)
+  4. Clica em "Excluir" (botão vermelho)
+  5. Confirma no popup clicando em "Ok"
+  6. Volta automaticamente para consulta
+  7. Repete até sobrar apenas IDs 9 e 49
+
+════════════════════════════════════════════════════════════════
+          🚀 EXECUTAR
+════════════════════════════════════════════════════════════════
+
+python robo_excluir_unicred_v2.py
+
+Instruções:
+  1. LOGIN no Octus ERP
+  2. Financeiro > Movimento Financeiro
+  3. Filtre: Conta = 1 - UNICREDI
+  4. PESQUISA
+  5. ENTER para iniciar
+
+⚠️  ATENÇÃO: Isto VAI EXCLUIR registros permanentemente!
+
+════════════════════════════════════════════════════════════════
+          ⏱️  TEMPO ESTIMADO
+════════════════════════════════════════════════════════════════
+
+Total a excluir: ~100-112 registros
+Por registro: ~8 segundos
+  - Editar: 2s
+  - Excluir: 1s
+  - Confirmar: 2s
+  - Voltar: 2s
+  - Aguardar: 1s
+
+Tempo total: ~13-15 minutos
+
+════════════════════════════════════════════════════════════════
+          ✅ SEGURANÇA
+════════════════════════════════════════════════════════════════
+
+✓ IDs 9 e 49 são verificados ANTES de excluir
+✓ Se encontrar ID protegido, volta sem excluir
+✓ Logs completos em: exclusao_unicred.log
+✓ Para a qualquer momento com Ctrl+C
+
+════════════════════════════════════════════════════════════════
+          📊 PRÓXIMO PASSO APÓS EXCLUSÃO
+════════════════════════════════════════════════════════════════
+
+Após excluir todos os registros antigos:
+
+  python robo_unicred.py
+
+Para lançar os 113 novos registros do extrato!
+
+════════════════════════════════════════════════════════════════
+          📝 ARQUIVOS
+════════════════════════════════════════════════════════════════
+
+✅ robo_excluir_unicred_v2.py - Robô de exclusão
+✅ exclusao_unicred.log - Log de exclusões
+✅ robo_unicred.py - Robô de lançamento (usar depois)
+✅ extrato_unicred_importacao.csv - Dados novos (113 reg)
+
+════════════════════════════════════════════════════════════════
+          🎯 FLUXO COMPLETO
+════════════════════════════════════════════════════════════════
+
+PASSO 1: Excluir antigos
+  python robo_excluir_unicred_v2.py
+  Tempo: ~13-15 min
+  
+PASSO 2: Lançar novos
+  python robo_unicred.py
+  Tempo: ~47 min
+
+TEMPO TOTAL: ~1 hora
+
+════════════════════════════════════════════════════════════════
+          ⚠️  IMPORTANTE
+════════════════════════════════════════════════════════════════
+
+✓ Execute PRIMEIRO o robô de exclusão
+✓ DEPOIS execute o robô de lançamento
+✓ Não feche o navegador durante o processo
+✓ IDs 9 e 49 ficarão intactos
+
+════════════════════════════════════════════════════════════════
+
+EXECUTE AGORA:
+
+  python robo_excluir_unicred_v2.py
+
+════════════════════════════════════════════════════════════════
+
+
+

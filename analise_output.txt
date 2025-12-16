@@ -1,0 +1,121 @@
+Analisando arquivo: Informações Maclinea para Usifix.xlsx
+
+
+================================================================================
+INICIANDO ANÁLISE GERENCIAL COMPLETA - MACLINEA
+================================================================================
+================================================================================
+ANÁLISE 1: EMPRÉSTIMOS E ENDIVIDAMENTO
+================================================================================
+
+💰 ENDIVIDAMENTO TOTAL: R$ 35,239,817.26
+💸 JUROS MENSAIS: R$ 232,193.29
+📊 CUSTO ANUAL DE JUROS: R$ 2,786,319.48
+
+📈 TAXA MÉDIA IMPLÍCITA: 0.66% a.m.
+
+🏦 PRINCIPAIS CREDORES:
+  • N/A: R$ 16,689,390.53 (47.4%)
+  • Banco Itau: R$ 7,934,425.98 (22.5%)
+  • Banco Brasil: R$ 4,987,595.32 (14.2%)
+  • BANCO BRASIL: R$ 1,419,752.34 (4.0%)
+  • Copel: R$ 1,372,792.67 (3.9%)
+
+================================================================================
+ANÁLISE 2: RESCISÕES PLANEJADAS
+================================================================================
+
+👥 TOTAL DE COLABORADORES: 79
+   • CLT: 68
+   • PJ: 11
+
+📋 CENÁRIO 1 - CORTE MÁQ + PEÇAS:
+   • Colaboradores a desligar: 45
+   • Custo de rescisões: R$ 1,839,649.80
+   • Economia mensal na folha: R$ 414,510.17
+
+📋 CENÁRIO 2 - CORTE APENAS PEÇAS:
+   • Colaboradores a desligar: 60
+   • Custo de rescisões: R$ 2,679,329.06
+   • Economia mensal na folha: R$ 515,164.57
+
+⏱️ PAYBACK CENÁRIO 1: 4.4 meses
+⏱️ PAYBACK CENÁRIO 2: 5.2 meses
+
+================================================================================
+ANÁLISE 3: CUSTOS FIXOS ESTRUTURAIS
+================================================================================
+
+💼 TOTAL DE CUSTOS FIXOS MENSAIS: R$ 176,065.00
+📅 PROJEÇÃO ANUAL: R$ 2,112,780.00
+📊 PERCENTUAL DA RECEITA LÍQUIDA: 10.0%
+
+🔍 DETALHAMENTO POR CATEGORIA:
+   • Limpeza e Conservação: R$ 67,784.00 (38.5%)
+   • Aluguel e Condomínios: R$ 56,500.00 (32.1%)
+   • Serviços de Terceiros: R$ 15,000.00 (8.5%)
+   • Seguros: R$ 11,685.00 (6.6%)
+   • Manutenção e Reparos: R$ 11,463.00 (6.5%)
+   • Energia Elétrica: R$ 7,703.00 (4.4%)
+   • Telefone: R$ 3,283.00 (1.9%)
+   • Água: R$ 2,647.00 (1.5%)
+
+📈 BENCHMARK DE MERCADO:
+   • Indústria de Máquinas (padrão): 15-25% da RL
+   • Maclinea atual: 10.0% da RL
+   ✅ Custos fixos dentro do benchmark
+
+================================================================================
+ANÁLISE 4: FATURAMENTO E MARGENS
+================================================================================
+
+💰 RECEITA BRUTA MENSAL: R$ 2,171,500.00
+💵 RECEITA LÍQUIDA MENSAL: R$ 1,757,518.40
+📅 PROJEÇÃO ANUAL (BRUTA): R$ 26,058,000.00
+📅 PROJEÇÃO ANUAL (LÍQUIDA): R$ 21,090,220.80
+
+📊 MARGEM DE CONTRIBUIÇÃO TOTAL: R$ 789,107.11
+📈 PERCENTUAL MARGEM GLOBAL: 44.9%
+
+🎯 ANÁLISE POR LINHA DE PRODUTO:
+
+   Máquinas Grandes:
+      • Receita Bruta: R$ 955,666.67
+      • Receita Líquida: R$ 790,909.74
+      • Margem Contrib.: R$ 344,396.97 (44.6%)
+      • Participação Receita: 44.0%
+      • Participação Margem: 43.6%
+
+   Service:
+      • Receita Bruta: R$ 150,000.00
+      • Receita Líquida: R$ 128,625.00
+      • Margem Contrib.: R$ 127,467.38 (100.0%)
+      • Participação Receita: 6.9%
+      • Participação Margem: 16.2%
+
+   Peças Fabricadas:
+      • Receita Bruta: R$ 300,000.00
+      • Receita Líquida: R$ 229,380.00
+      • Margem Contrib.: R$ 125,309.58 (55.1%)
+      • Participação Receita: 13.8%
+      • Participação Margem: 15.9%
+
+   Máquinas Pequenas:
+      • Receita Bruta: R$ 365,833.33
+      • Receita Líquida: R$ 302,763.66
+      • Margem Contrib.: R$ 115,525.74 (32.7%)
+      • Participação Receita: 16.8%
+      • Participação Margem: 14.6%
+
+   Peças Compradas:
+      • Receita Bruta: R$ 400,000.00
+      • Receita Líquida: R$ 305,840.00
+      • Margem Contrib.: R$ 76,407.44 (25.2%)
+      • Participação Receita: 18.4%
+      • Participação Margem: 9.7%
+
+================================================================================
+✅ ANÁLISE CONCLUÍDA COM SUCESSO!
+================================================================================
+
+📄 Resultado salvo em: resultado_analise.json

@@ -1,0 +1,96 @@
+================================================================================
+                    ROBO V3 - PRONTO PARA USO
+================================================================================
+
+VERSAO: V3 (Completa e Testada)
+DATA: 25/11/2025
+STATUS: 100% FUNCIONAL
+
+================================================================================
+                    CAMPOS TRATADOS
+================================================================================
+
+CAMPOS OBRIGATORIOS (*):
+  - Data Cadastro          (automatico - nao preenche)
+  - Ativo                  (RADIO: Sim/Nao baseado em 'indativo')
+  - Tipo Cadastro          (SELECT: "Fornecedor" padrao)
+  - Tipo Pessoa            (RADIO: baseado em 'indfisjur' J/F)
+  - Nome/Razao Social      (INPUT: coluna 'razaosocial')
+  - CEP                    (INPUT: coluna 'cep' - apenas numeros)
+  - Endereco               (INPUT: coluna 'endereco')
+  - Numero                 (INPUT: "S/N" padrao - PLANILHA NAO TEM)
+  - Bairro                 (INPUT: coluna 'bairro')
+  - Municipio              (MANTEM EXISTENTE)
+  - Pais                   (SELECT: "1058" = Brasil)
+  - Telefone 1             (INPUT: coluna 'telefone' - apenas numeros)
+
+CAMPOS OPCIONAIS:
+  - Nome Fantasia          (INPUT: coluna 'nome')
+  - CNPJ/CPF               (INPUT: coluna 'cnpj_cpf')
+  - Inscricao Estadual     (INPUT: coluna 'inscrestad_rg')
+  - Inscricao Municipal    (INPUT: coluna 'inscmunicipal')
+  - Complemento            (INPUT: coluna 'complemento')
+  - Email Principal        (INPUT: coluna 'email')
+
+================================================================================
+                    COMO EXECUTAR
+================================================================================
+
+OPCAO 1 - Processar TODOS (8.000+ registros):
+    Clique duplo em: EXECUTAR_V3.bat
+
+OPCAO 2 - Teste com poucos registros:
+    Abra o CMD na pasta e execute:
+    python robo_fornecedores_v3.py 10
+    (processa apenas 10 registros)
+
+================================================================================
+                    FUNCIONALIDADES
+================================================================================
+
+[X] Login automatico no Octus ERP
+[X] Navegacao para Cliente/Fornecedores
+[X] Ordenacao por codigo (crescente 1 a infinito)
+[X] Busca de codigo EXATO na pagina
+[X] Navegacao entre paginas (se nao encontrar)
+[X] Preenchimento de INPUT com 3 eventos (input/change/blur)
+[X] Preenchimento de SELECT com evento change
+[X] Preenchimento de RADIO com evento change
+[X] Tratamento de modal SweetAlert
+[X] Salvamento automatico
+[X] Retorno para listagem
+[X] Sistema de progresso (retoma de onde parou)
+[X] Log detalhado
+[X] Relatorio de erros em CSV
+
+================================================================================
+                    ARQUIVOS IMPORTANTES
+================================================================================
+
+robo_fornecedores_v3.py         - Robo principal (use este!)
+EXECUTAR_V3.bat                 - Script de execucao
+MAPEAMENTO_CAMPOS_V3.md         - Documentacao dos campos
+progresso_v3.json               - Progresso salvo
+erros_v3.csv                    - Registros com erro
+robo_v3.log                     - Log de execucao
+
+================================================================================
+                    TESTADO EM: 25/11/2025
+================================================================================
+
+Teste manual via Browser confirmou:
+  [OK] INPUT funcionando com mascara
+  [OK] SELECT funcionando
+  [OK] RADIO funcionando
+  [OK] Salvar funcionando
+  [OK] Modal tratado
+
+================================================================================
+
+
+
+
+
+
+
+

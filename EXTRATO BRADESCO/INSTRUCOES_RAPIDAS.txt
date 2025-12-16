@@ -1,0 +1,197 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║         LANÇAMENTO AUTOMÁTICO EM LOTE - BRADESCO                         ║
+║         Sistema: Octus ERP | Módulo: Movimento Financeiro                ║
+║                                                                            ║
+║         Total de Registros: 174                                          ║
+║         Data: 03/11/2025 a 19/11/2025                                   ║
+║         Status: ✅ PRONTO PARA USAR                                      ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 MÉTODO RECOMENDADO (Mais simples)
+
+   PASSO 1: Abra o sistema
+   ────────────────────
+   http://sistema.maclinea.com.br:4586/app/
+   
+   PASSO 2: Abra o console do navegador
+   ────────────────────────────────────
+   Pressione: F12
+   Clique em: Console
+   
+   PASSO 3: Copie todo o conteúdo de:
+   ──────────────────────────────────
+   lancar_com_dados_embutidos.js
+   
+   PASSO 4: Cole no console e pressione ENTER
+   ──────────────────────────────────────────
+   
+   PASSO 5: Aguarde a mensagem "OK: 174 registros"
+   ──────────────────────────────────────────────
+   
+   PASSO 6: Execute o lançamento
+   ──────────────────────────────
+   Cole no console:
+   
+   >>> autoLancador.iniciar()
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⏱️  TEMPO ESPERADO
+
+   Velocidade padrão (1.5s): ~6-8 minutos
+   
+   Para acelerar, execute antes:
+   >>> autoLancador.setDelay(1000)  // 1 segundo
+   
+   Tempo com velocidade máxima: ~3-4 minutos
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 MONITORAR DURANTE EXECUÇÃO
+
+   Ver progresso em tempo real:
+   >>> autoLancador.status()
+   
+   Pausar a execução (se necessário):
+   >>> autoLancador.pausar()
+   
+   Retomar após pausa:
+   >>> autoLancador.continuar()
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❌ SE RECEBER ERRO
+
+   Erro 1: "iframe não encontrado"
+   ─────────────────────────────
+   Solução: 
+   1. Feche o console
+   2. Clique em "+Novo" para abrir formulário
+   3. Abra o console novamente (F12)
+   4. Cole o script novamente
+
+   Erro 2: "Identifier already declared"
+   ──────────────────────────────────────
+   Solução:
+   1. Atualize a página (F5)
+   2. Cole o script novamente
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ VERIFICAÇÃO PÓS-EXECUÇÃO
+
+   Após conclusão, verifique:
+   
+   1. No console deve aparecer: "Fim: 174 OK"
+   
+   2. Na lista de movimentos (F5 para atualizar)
+   
+   3. Filtros devem estar ativados:
+      Período: 01/11/2025 a 30/11/2025
+      Conta: 6 - BRADESCO
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 ARQUIVOS DISPONÍVEIS
+
+   1. lancar_com_dados_embutidos.js (RECOMENDADO)
+      └─ 83 KB | Dados já inclusos | Cole e use
+
+   2. extrato_json_completo.js
+      └─ 77 KB | JSON puro | Para outras integrações
+
+   3. auto_lancer_selenium.py
+      └─ Versão Python com Selenium | Para automação completa
+
+   4. lancar_automatico_console.js
+      └─ Versão completa com mais opções
+
+   5. README_AUTOMACAO.md
+      └─ Documentação detalhada
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 ALTERNATIVA - MÉTODO PYTHON (Automação Completa)
+
+   Se preferir não usar o console, execute:
+   
+   $ python auto_lancer_selenium.py
+   
+   Vantagens:
+   • Automático (sem intervenção)
+   • Mais rápido (~4-6 min)
+   • Melhor tratamento de erros
+   • Relatório detalhado
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💾 DADOS INCLUSOS (174 Registros)
+
+   Operações de Entrada:     ~30 registros
+   Operações de Saída:       ~144 registros
+   
+   Principais contas de débito:
+   • Transferências PIX
+   • Pagamentos Eletrônicos
+   • Faturas (Luz, Água, Internet)
+   • Despesas Financeiras
+   
+   Empresa: MACLINEA MAQUINAS E EQUIPAMENTOS LTDA
+   Conta Bancária: 6 - BRADESCO
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 CHECKLIST ANTES DE COMEÇAR
+
+   ☐ Conectado ao sistema (http://sistema.maclinea.com.br:4586/app/)
+   ☐ Logado com usuário válido
+   ☐ Navegado até: Financeiro > Movimento Financeiro
+   ☐ Console aberto (F12 > Console)
+   ☐ Arquivo lancar_com_dados_embutidos.js aberto para copiar
+   ☐ Nenhuma janela modal aberta
+   ☐ Conexão com internet estável
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 RESULTADO ESPERADO
+
+   ✓ 174 registros lançados no sistema
+   ✓ Período: 03/11/2025 a 19/11/2025
+   ✓ Todos vinculados à conta Bradesco
+   ✓ Validação de campos automática
+   ✓ Histórico de movimento preenchido
+   ✓ Plano de contas classificado
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 PRÓXIMOS PASSOS
+
+   1. ✅ Execute o script de lançamento
+   2. ⏳ Aguarde conclusão (~10 minutos)
+   3. 📊 Valide os dados no sistema
+   4. 🔄 Repita para outros períodos/contas se necessário
+   5. 📁 Archive os dados de origem
+
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║ Gerado: 19/11/2025 | Versão: 1.0 | Status: Produção                      ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+
+

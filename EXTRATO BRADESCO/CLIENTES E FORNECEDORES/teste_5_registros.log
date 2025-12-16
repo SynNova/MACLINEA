@@ -1,0 +1,27 @@
+2025-11-25 19:01:23,314 [INFO] Carregando dados para teste...
+2025-11-25 19:01:26,068 [INFO] ✓ 5 registros carregados para teste
+
+2025-11-25 19:01:26,068 [INFO] Registros que serão testados:
+2025-11-25 19:01:26,069 [INFO]   1. Código 1 - TUDINO
+2025-11-25 19:01:26,069 [INFO]   2. Código 2 - 3D
+2025-11-25 19:01:26,069 [INFO]   3. Código 4 - SINCOL - MATRIZ
+2025-11-25 19:01:26,069 [INFO]   4. Código 5 - LAVRASUL
+2025-11-25 19:01:26,069 [INFO]   5. Código 6 - GLOBAL MOBILINEA
+2025-11-25 19:01:26,069 [INFO] 
+2025-11-25 19:01:26,070 [INFO] 
+================================================================================
+2025-11-25 19:01:26,070 [INFO] TESTE 1: NAVEGAÇÃO E LOGIN
+2025-11-25 19:01:26,070 [INFO] ================================================================================
+2025-11-25 19:01:29,774 [INFO] 1. Acessando página de login...
+2025-11-25 19:01:31,085 [INFO] 2. Preenchendo credenciais...
+2025-11-25 19:01:32,162 [INFO] 3. Fazendo login...
+2025-11-25 19:01:36,958 [INFO] 4. Navegando para Cliente/Fornecedores...
+2025-11-25 19:01:46,085 [INFO] ✓ Navegação funcionando corretamente!
+
+2025-11-25 19:01:46,085 [INFO] 5. Testando busca de fornecedor...
+2025-11-25 19:02:16,890 [ERROR] ✗ Erro no teste de navegação: Locator.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("iframe").nth(1).content_frame.locator("input[title=\"Busca Rapida\"]")
+
+2025-11-25 19:02:16,890 [ERROR] 
+✗ Teste de navegação falhou. Corrija antes de prosseguir.

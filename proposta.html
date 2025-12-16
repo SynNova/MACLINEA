@@ -1,0 +1,463 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Cooperação - Usifix &amp; Maclinea</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Paleta Italiana Sofisticada */
+            --italian-navy: #1a2841;
+            --italian-blue: #2e5090;
+            --italian-gold: #d4a574;
+            --italian-bronze: #8b6f47;
+            --italian-cream: #f8f5f0;
+            --italian-terracotta: #c1502e;
+            --value-green: #2d6a3e;
+            --accent-highlight: #c1502e;
+            --text-dark: #2d3748;
+            --text-light: #5a5a5a;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: white;
+        }
+
+        /* Card de Parceria - Topo - Estilo Clean & Profissional */
+        .partnership-card {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 40px rgba(30, 41, 59, 0.3);
+        }
+
+        .partnership-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(212, 165, 116, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .partnership-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .logos-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 2rem;
+            flex-wrap: nowrap;
+        }
+
+        .logo-wrapper {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo-wrapper:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+        }
+
+        .logo-wrapper img {
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+
+        .partnership-symbol {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4);
+            position: relative;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            flex-shrink: 0;
+        }
+
+        .partnership-symbol::before {
+            content: 'PARCERIA';
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .partnership-symbol svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+
+        .company-label {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .company-role {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .company-name {
+            font-size: 1rem;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .company-name.usifix {
+            color: #3b82f6;
+        }
+
+        .company-name.maclinea {
+            color: #d4a574;
+        }
+
+        .partnership-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--italian-gold), transparent);
+            margin: 1.5rem auto;
+            width: 60%;
+        }
+
+        .partnership-title {
+            color: white;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            font-family: 'Garamond', 'Georgia', serif;
+        }
+
+        .partnership-subtitle {
+            color: var(--italian-cream);
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 0.8rem;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Container Principal */
+        .container {
+            margin: 0 auto;
+            padding: 2rem 3rem;
+        }
+
+        /* Tipografia - Estilo Italiano */
+        h1 {
+            font-size: 2rem;
+            color: var(--italian-navy);
+            margin: 3rem 0 1.5rem 0;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid var(--italian-gold);
+            padding-bottom: 0.5rem;
+            position: relative;
+            page-break-after: avoid;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--italian-bronze);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--italian-blue);
+            margin: 2.5rem 0 1.2rem 0;
+            font-weight: 600;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--italian-bronze);
+            margin: 2rem 0 1rem 0;
+            font-weight: 600;
+            page-break-after: avoid;
+        }
+
+        p {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            color: var(--text-dark);
+        }
+
+        /* Listas */
+        ul {
+            margin: 1.3rem 0 1.5rem 2rem;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+        }
+
+        ul li {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+        }
+
+        /* Destaque de valores - Estilo Italiano */
+        .value-highlight {
+            background: var(--italian-cream);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            page-break-inside: avoid;
+        }
+
+        .value-highlight strong {
+            color: var(--italian-navy);
+            font-size: 1.1rem;
+        }
+
+        /* Destaque de valores monetários no texto */
+        .monetary-value {
+            color: var(--value-green);
+            font-weight: 700;
+            font-size: 1.05em;
+            background: rgba(45, 106, 62, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .important-value {
+            color: var(--italian-terracotta);
+            font-weight: 700;
+            font-size: 1.05em;
+        }
+
+        .highlight-emphasis {
+            background: rgba(212, 165, 116, 0.15);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* Seções para evitar quebra de página */
+        .section-no-break {
+            page-break-inside: avoid;
+        }
+
+        .topic-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+
+        /* Citações - Estilo Italiano */
+        blockquote {
+            border-left: 5px solid var(--italian-gold);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background: var(--italian-cream);
+            font-style: italic;
+            color: var(--text-light);
+            font-family: 'Arial', sans-serif;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 10px rgba(212, 165, 116, 0.1);
+            page-break-inside: avoid;
+        }
+
+        /* Seção de Proposta - Destaque Italiano Elaborado */
+        .proposal-section {
+            background: white;
+            padding: 3rem;
+            margin: 3rem 0;
+            position: relative;
+            page-break-before: always;
+            page-break-inside: avoid;
+        }
+
+        .proposal-section h1 {
+            color: var(--italian-navy);
+            text-align: center;
+            font-size: 2.4rem;
+            border: none;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0…</style>
+</head>
+<body>
+    <!-- Card de Parceria -->
+    <div class="partnership-card">
+        <div class="partnership-content">
+            <div class="logos-container">
+                <div style="text-align: center;">
+                    <div class="logo-wrapper">
+                        <img src="USIFIX VETOR LOGO.svg" alt="Logo Usifix" onerror="this.src='USIFIX.png'">
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div style="text-align: center;">
+                    <div class="logo-wrapper">
+                        <img src="MACLINEA LOGO.png" alt="Logo Maclinea">
+                    </div>
+                    <div class="company-label">
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="partnership-divider"></div>
+            <div class="partnership-title">Proposta de Cooperação</div>
+            <div class="partnership-subtitle">Em Seguimento ao Acordo de Confidencialidade e Intenções</div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <h1>Considerações Iniciais</h1>
+        <p>Primeiramente, em nome da Usifix, representada por mim, Fernando, e pelo meu irmão Jovano, gostaria de agradecer a todas as pessoas com quem tive contato diretamente na Maclinea e indiretamente com as consultorias, pois sempre fui muito bem recebido e atendido. Desde o dia 8 deste mês, após assinatura do termo de confidencialidade, posso afirmar que vivi intensamente a Maclinea, deixando em segundo plano minhas funções na Usifix. Meus pensamentos neste período foram em função de achar uma solução viável para a situação atual desta renomada empresa chamada Maclinea, empresa que sempre foi referência para mim e para meu irmão, assim como para o mercado moveleiro e para a cidade de Curitiba.</p>
+
+        <h1>Nossa Visão sobre a Situação Atual</h1>
+        <p>Infelizmente, como é sabido por todos, encontramos uma empresa em grandes dificuldades financeiras e organizacionais, com uma estrutura inchada e com o peso dos 50 anos nas costas. Os mesmos 50 anos de história que geram credibilidade e colocaram a Maclinea num lugar de destaque, em seu lado negativo, geram um peso excessivo. Este peso passa por colaboradores antigos com altos salários, pela falta de modernização do parque fabril e do próprio portfólio de máquinas que a Maclinea oferece aos seus clientes. Poderíamos culpar o momento econômico atual, em que temos um governo de esquerda que não apoia a indústria nacional, ou também o tarifaço do Trump, mas não é o caso. O momento atual só evidenciou o que a Maclinea vem vivendo há alguns anos, pelo que pude apurar. Mesmo assim, ainda vemos que a essência da Maclinea ainda vive e, por isso, ela é capaz de se reerguer de forma lenta e austera, mas é possível uma retomada, desde que seja entendido o atual tamanho dela e seus custos e vendas sejam adequados a este novo tamanho. Por fim, a Maclinea precisa ser reinventada para sobreviver, mantendo a sua essência, como dito anteriormente.</p>
+
+        <h1>Pontos Importantes a Serem Debatidos</h1>
+
+        <div class="topic-section">
+            <h2>1. Quadro de Trabalhadores</h2>
+            <p>Sei que existe um estudo para diminuição da quantidade de pessoas, e, na minha opinião, este número não pode ser superior a <span class="highlight-emphasis">25 colaboradores</span>. Destes 25, alguns vão ter que ter negociações para ganho variável de acordo com o resultado, não ganho fixo independente se a empresa vai bem ou não. Sendo assim, teremos que ter um teto para estes gastos, e todos os esforços financeiros atuais devem ser concentrados em pagar as rescisões e manter os salários em dia.</p>
+            <p>O maior exemplo que encontrei de discrepância da realidade foi o salário de alguns colaboradores, tornando impossível atingir lucro operacional. Como exemplo, posso citar o valor pago ao Diretor Geral, <span class="important-value">R$ 50.664,00</span>, incompatível com uma empresa que não tem lucro operacional e incompatível com o mercado. Peço uma reflexão baseada no maior salário do funcionalismo público brasileiro, que é o do presidente da república:</p>
+            <blockquote>
+                <em>"Em 2025, o salário bruto mensal do presidente do Brasil, Luiz Inácio Lula da Silva, é de <span class="monetary-value">R$ 46.366,19</span>. Este valor entrou em vigor em fevereiro de 2025, conforme o Decreto Legislativo nº 471/2022."</em>
+            </blockquote>
+        </div>
+
+        <h2>2. Parque Fabril</h2>
+        <p>Com exceção de algumas máquinas, o parque fabril da Maclinea está obsoleto e perigoso, pois, a qualquer momento, pode ser interditado devido à ausência de NR 12 na grande maioria das máquinas, além de ter funcionários demasiadamente caros para suas funções. Além disso, a maior parte do tempo acaba ficando com ociosidade. Considerando estas informações, o parque fabril deve ser diminuído a algumas poucas máquinas específicas e utilizado este ativo como moeda de troca das dívidas.</p>
+
+        <h2>3. Custo Fixo</h2>
+        <p>O custo fixo mensal da Maclinea, apesar de algumas tentativas em diminuir, ainda é muito alto e deve ser reduzido um pouco mais, de acordo com o tamanho atual da empresa, renegociando contratos e eliminando alguns. Um grande exemplo de descaso e falta de análise contínua é que o sistema solar ficou desligado por meses devido a um disjuntor queimado, gerando a perda da energia gerada pelo sistema.</p>
+
+        <div class="topic-section">
+            <h2>4. Endividamento</h2>
+            <p>Os valores de endividamento são muito preocupantes, e, principalmente, o que piora a situação é a <span class="highlight-emphasis">exigibilidade em curto prazo</span>. Estes fatores, somados à falta de garantias a oferecer para novos empréstimos, fazem com que a operação não consiga mais fôlego para continuar devido à falta de alternativas financeiras para tocar a operação.</p>
+            <p>Fora o endividamento bancário, que dá em torno de <span class="important-value">R$ 19 milhões</span>, temos o endividamento com os fornecedores, que chega a, no mínimo, <span class="important-value">R$ 5 milhões</span> e gera uma imagem pior com o mercado, pois é mais pulverizado do que o dos bancos. Com isso, a impressão do mercado de que a Maclinea quebrou fica mais evidente.</p>
+            <p>Este endividamento exagerado levou a outro fator preocupante, que foi o <span class="highlight-emphasis">autoendividamento</span>, que explico melhor: a Maclinea passou a vender o próprio faturamento, descontando títulos e, ao final, devido aos adiantamentos, acabou vendendo a entrega futura, adiantando até o que ainda não foi produzido. Como a Maclinea não está entregando seus projetos, esta informação já chegou aos clientes e também deteriora a credibilidade da marca.</p>
+            <p>Os dados nos levam à conclusão de que, se nada for feito imediatamente quanto aos clientes e fornecedores, todo legado da Maclinea será perdido. O endividamento bancário, acredito, tem um tempo maior para ser resolvido.</p>
+        </div>
+
+        <div class="topic-section">
+            <h2>5. Carteira de Entregas Pendentes</h2>
+            <p>Pelos dados levantados e informados, hoje a Maclinea tem em torno de <span class="monetary-value">R$ 9 milhões</span> de carteira pendente de entrega, e, destes R$ 9 milhões, só tem a receber em torno de <span class="monetary-value">R$ 1 milhão</span>.</p>
+            <p>O maior problema é que, para finalizar estes R$ 9 milhões, tem que ser investido, no mínimo, <span class="important-value">R$ 2 milhões</span>. Fora estes números, o tempo para terminar estes projetos é em torno de <span class="highlight-emphasis">3 a 4 meses</span>.</p>
+            <p>Sendo assim, para voltar a ser viável, a operação tem, no mínimo, <span class="highlight-emphasis">3 meses</span> para pagar o passado e manter o nome Maclinea, honrando a entrega com os clientes. Nestes 3 ou 4 meses, teremos custos com as despesas do dia a dia e com a folha de pessoal, o que, pelos números fornecidos, necessitamos de mais <span class="important-value">R$ 3 milhões</span> para suprir estes 3 meses de reestruturação.</p>
+        </div>
+
+        <div class="topic-section">
+            <h2>6. Risco Jurídico</h2>
+            <p>Mais uma vez lembro que a Maclinea tem <span class="highlight-emphasis">50 anos</span> e o peso destes 50 anos acaba aumentando o risco para algumas situações, quais sejam:</p>
+            <ul>
+                <li>Serão feitas em torno de <span class="highlight-emphasis">40 rescisões</span> de pessoas antigas com alto custo e que podem vir a gerar ações trabalhistas, que, se não forem bem administradas, podem afetar o funcionamento e o patrimônio da família Brivio, inclusive o imóvel, pois, no Brasil, a justiça trabalhista realmente funciona e, se tiver alguma possibilidade de pegar o imóvel, mesmo que já protegido, um bom advogado trabalhista consegue. Por isso, devem ser resolvidas as questões trabalhistas com <span class="highlight-emphasis">primazia a qualquer outro problema</span>.</li>
+                <li>Possíveis <span class="important-value">pedidos de falência</span>, bloqueios judiciais e, consequentemente, intervenção. Neste ponto ainda se tem um tempo até que os credores se movimentem, mas tem que ser rápido, pois a falta de movimento e conversa com o mercado potencializa este tipo de ações.</li>
+                <li>Por fim, chamo atenção para ações em andamento de que ainda não sei o conteúdo, mas de cuja existência fiquei sabendo.</li>
+            </ul>
+        </div>
+
+        <h1>Considerações Finais antes da Proposta</h1>
+        <p>Sabemos que todas estas informações já são de seu domínio, pois foram passadas pela própria equipe da Maclinea, mas achamos importante passar nossa impressão.</p>
+        <p>Uma das coisas que mais me chamou a atenção foi que, nos <span class="highlight-emphasis">últimos 5 anos</span>, a Maclinea <span class="important-value">não teve lucro operacional</span>, ou seja, lucro na sua atividade sem contar endividamentos ou investimentos, como se todos estivessem ali, por 5 anos, trabalhando para aumentar a dívida. Todos sabemos que uma empresa tem como primeiro objetivo a obtenção de lucro, e foi nos passado que esta situação de falta de lucro operacional é muito superior aos 5 anos apresentados. Neste cenário, encontrar os salários que encontramos e os custos operacionais elevados como encontramos nos leva à conclusão de que, se nada for feito imediatamente, o único caminho encontrado será o <span class="important-value">fim das atividades da Maclinea</span>.</p>
+        <p>Sendo assim, entendemos que a situação é <span class="highlight-emphasis">limite</span> para a Maclinea, pois a empresa está na eminência de perder sua credibilidade de forma definitiva, pois, momentaneamente, esta credibilidade já está perdida. Sendo assim, é necessária uma <span class="highlight-emphasis">ação rápida</span> para estancar o rombo gerado pelos altos salários, e, para isso, só tem uma maneira: fazer o corte de pessoal e pagar as rescisões.</p>
+        <p>Uma vez que o corte foi feito, deve-se pegar a equipe escolhida e motivá-la para salvar a empresa e pôr a casa em ordem, garantindo aos que ficam que os <span class="highlight-emphasis">salários não vão mais atrasar</span>, colocando esta conta acima de todas as outras.</p>
+        <p>Para o mercado em geral, mas principalmente aos clientes, é necessário passar a mensagem de <span class="highlight-emphasis">retomada e reestruturação</span>, gerando confiabilidade e segurança para fechamento de novos negócios e a retomada comercial. Acreditamos que, se for feita de forma correta, com os aportes pontuais corretos, não vai ser fácil, mas vai acontecer a retomada a médio prazo.</p>
+
+        <!-- Seção de Proposta com Destaque -->
+        <div class="proposal-section">
+            <h1>PROPOSTA</h1>
+            <p>Respeitosamente perante a Família Brivio e as pessoas que aqui a representam, eu, Fernando Junior Iancoski, e Jovano Iancoski comunicamos que nossa decisão, no momento, é de não apresentar nenhuma proposta de compra de percentual da empresa Maclinea ou de fusão com o grupo USIFIX. Justificamos nossa decisão baseada em todo conteúdo exposto após ter acesso aos dados, pois acreditamos que, no momento, sem organizar a Maclinea e deixá-la passar pelo seu pior momento, a Maclinea não vai se curar. Os cortes têm que ser sentidos e a estrutura ser modificada. Se entrar um grande aporte de capital, este será perdido, irá ser consumido rapidamente, como se jogássemos um copo d'água no deserto. Desta maneira, a estrutura continuará vivendo sem objetivo de lucro e, o pior, sem obter lucro.</p>
+            <p>Entretanto, gostaríamos de oferecer uma proposta de cooperação para salvar a Maclinea e, posteriormente, realizar a compra ou fusão.</p>
+
+            <h2>Para isso, qual seria a proposta:</h2>
+            <ul>
+                <li>Durante 8 meses, a Usifix, na pessoa dos seus proprietários Fernando e Jovano, teria liberdade para atuar junto ao seu diretor, com poderes de decisão para fazer as mudanças necessárias, com o intuito de:</li>
+                <li>Fornecer as peças e condições necessárias para finalizar os projetos em andamento e entregá-los aos clientes, recuperando, desta forma, a credibilidade já perdida, emprestando o nome e a credibilidade da Usifix para retomar esta confiança.</li>
+                <li>Fornecer peças usinadas para o setor de peças de reposição da Maclinea, a fim de manter os itens que mais saem e reestabelecer um faturamento mínimo capaz de pagar os custos mensais.</li>
+                <li>Acompanhar os novos orçamentos de máquinas, analisando os custos e participando direto da venda, fornecendo garantia ao cliente de que vai receber o equipamento que comprar (esta venda e garantia sendo dada pela Usifix).</li>
+            </ul>
+
+            <p>De forma geral, promovendo vendas saudáveis em que Usifix e Maclinea vendem em conjunto, dando segurança ao cliente, possibilitando, inclusive, alguns faturamentos diretos ao cliente, evitando bitributação.</p>
+            <p>Nesta proposta, eu, Fernando, cuidaria da parte administrativa e vendas de peças de reposição, e o Jovano cuidaria da parte industrial e vendas de equipamentos. Por nossa atuação, não cobraríamos nada da Maclinea.</p>
+            <p>Em 30 anos de empresa, enfrentamos muitos desafios. Já ficamos devendo mais de 8 vezes nosso faturamento, mas nunca, em 30 anos, tivemos um ano sequer de prejuízo operacional. Tivemos, sim, anos de prejuízo gerado por endividamento bancário devido a capital de giro ou investimentos em imóveis ou máquinas. Por isso, nosso maior compromisso seria colocar a Maclinea nos trilhos e devolvê-la a um lucro operacional para, posteriormente, poder vislumbrar um futuro.</p>
+            <p>Se vamos administrar sem ganhar nada, qual seria a vantagem da Usifix e qual seria a garantia da Usifix caso a Maclinea não pague as peças que vamos entregar? A resposta para isso são as premissas que vamos colocar a seguir e deverão ser contratadas para não gerar riscos para ambas as empresas.</p>
+            <p>A grande vantagem da Usifix seria conhecer melhor todos os detalhes da Maclinea e tornar possível uma futura aquisição ou fusão.</p>
+
+            <div class="value-highlight">
+                <p><strong>Como limite para ajuda durante estes 8 meses, determinamos o valor de R$ 2.035.000,00 provenientes da compra de 3 máquinas:</strong></p>
+                <ul>
+                    <li><strong>MANDRILHADORA ROMI HBM 130T</strong> – R$ 1.500.000,00</li>
+                    <li><strong>TORNO CNC ROMI G240</strong> – R$ 220.000,00</li>
+                    <li><strong>CENTRO DE USINAGEM CNC ROMI D 1250</strong> – R$ 315.000,00</li>
+                </ul>
+                <p>Este valor será pago em dinheiro ou peças, conforme a necessidade e urgência.</p>
+            </div>
+
+            <p>Outra grande vantagem será a possibilidade de passar a vender máquinas em conjunto com a Maclinea, aumentando, assim, nosso volume de negócios e, principalmente, a diversidade de serviços prestados pela USIFIX.</p>
+            <p>Além destes valores, será de suma importância que a família faça as demissões e pague as devidas rescisões com recursos próprios, pois, sem este principal aporte, a Maclinea já está parada e não seria possível fazer mais nada.</p>
+            <p>Estamos abertos às suas considerações. Entendemos como possível e viável a proposta, mas entendemos também que a decisão final é da família e respeitaremos, seja qual for ela.</p>
+        </div>
+
+        <!-- Assinatura -->
+        <div class="signature-section">
+            <p>Para finalizar, eu, Fernando, e meu irmão Jovano Iancoski ficamos honrados em ser convidados a participar desta negociação. Deixamos registrado o respeito à MACLINEA E À FAMÍLIA Brivio e, independente da resposta, nossos votos de que a Maclinea sobreviva a este momento e volte a figurar como a grande empresa que sempre foi.</p>
+
+            
+
+            
+        </div>
+    </div>
+
+
+</body></html>
