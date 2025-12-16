@@ -42,8 +42,11 @@ jobs:
         working-directory: apresentacao-investimentos
         run: npm run build
         env:
-          # Define o base path para o subdiretório do repo
-          BASE_PATH: /MACLINEA/
+          # Domínio customizado usa base path /
+          BASE_PATH: /
+
+      - name: Create CNAME for custom domain
+        run: echo "rar.maclinea.com.br" > apresentacao-investimentos/dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
