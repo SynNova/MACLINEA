@@ -22,3 +22,4 @@ npm run reescrever
 - Se uma chave já foi colada em algum arquivo, **revogue/roteie** a chave no OpenRouter e gere uma nova.
 
 
+

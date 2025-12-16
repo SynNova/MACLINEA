@@ -290,3 +290,4 @@ export function FluxoDayModal({ isOpen, onClose, dataStr, movimentos }: FluxoDay
   );
 }
 
+

@@ -65,3 +65,4 @@ export function getCategoriaColor(categoria: string): string {
   );
 }
 
+

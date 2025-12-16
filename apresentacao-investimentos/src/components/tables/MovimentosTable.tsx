@@ -479,6 +479,10 @@ export function MovimentosTable({ data }: MovimentosTableProps) {
       cell: (info) => <span className="text-gray-300 whitespace-nowrap text-xs md:text-sm">{info.getValue()}</span>,
       size: 90,
       meta: { sortable: true, contextMenu: 'date' },
+      sortingFn: (rowA, rowB) => {
+        // Ordena usando o campo Date, não a string formatada
+        return rowA.original.data.getTime() - rowB.original.data.getTime();
+      },
     });
 
     const colTipo = columnHelper.accessor('tipo', {
