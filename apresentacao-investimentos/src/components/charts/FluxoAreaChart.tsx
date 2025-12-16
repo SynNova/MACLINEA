@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useMemo, useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import {
   ComposedChart,
@@ -24,6 +24,23 @@ interface FluxoAreaChartProps {
 
 export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
   const { t } = useI18n();
+  // Guarda o índice ativo atual do tooltip
+  const activeIndexRef = useRef<number | null>(null);
+  
+  // Handler de clique que usa o índice ativo
+  const handleChartClick = useCallback(() => {
+    if (onDayClick && activeIndexRef.current !== null && data[activeIndexRef.current]) {
+      onDayClick(data[activeIndexRef.current].data);
+    }
+  }, [onDayClick, data]);
+  
+  // Handler do mouse move para atualizar o índice ativo
+  const handleMouseMove = useCallback((state: unknown) => {
+    const s = state as { activeTooltipIndex?: number } | null;
+    if (s?.activeTooltipIndex !== undefined) {
+      activeIndexRef.current = s.activeTooltipIndex;
+    }
+  }, []);
   // Calcula totais
   const totalEntradas = data.reduce((sum, d) => sum + d.entradas, 0);
   const totalSaidas = data.reduce((sum, d) => sum + d.saidas, 0);
@@ -153,15 +170,8 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
           <ComposedChart
             data={data}
             margin={{ top: 20, right: 20, left: 20, bottom: 30 }}
-            onClick={(e: unknown) => {
-              const evt = e as { activeLabel?: string; activePayload?: Array<{ payload?: { data?: string } }> } | null;
-              // activeLabel é o valor do eixo X (dataFormatada)
-              // payload.data contém o dataStr original
-              const dateStr = evt?.activePayload?.[0]?.payload?.data || evt?.activeLabel;
-              if (dateStr && onDayClick) {
-                onDayClick(dateStr);
-              }
-            }}
+            onClick={handleChartClick}
+            onMouseMove={handleMouseMove}
             style={{ cursor: onDayClick ? 'pointer' : 'default' }}
           >
             <defs>
@@ -241,18 +251,7 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               fill="url(#colorEntradas)"
               animationBegin={200}
               animationDuration={1000}
-              activeDot={{ 
-                r: 6, 
-                fill: '#00C853', 
-                stroke: '#fff', 
-                strokeWidth: 2,
-                cursor: 'pointer',
-                onClick: (_, payload) => {
-                  if (onDayClick && payload?.payload?.data) {
-                    onDayClick(payload.payload.data);
-                  }
-                }
-              }}
+              activeDot={{ r: 6, fill: '#00C853', stroke: '#fff', strokeWidth: 2, cursor: 'pointer' }}
             />
             
             <Area
@@ -264,18 +263,7 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               fill="url(#colorSaidas)"
               animationBegin={400}
               animationDuration={1000}
-              activeDot={{ 
-                r: 6, 
-                fill: '#FF5252', 
-                stroke: '#fff', 
-                strokeWidth: 2,
-                cursor: 'pointer',
-                onClick: (_, payload) => {
-                  if (onDayClick && payload?.payload?.data) {
-                    onDayClick(payload.payload.data);
-                  }
-                }
-              }}
+              activeDot={{ r: 6, fill: '#FF5252', stroke: '#fff', strokeWidth: 2, cursor: 'pointer' }}
             />
             
             {/* Linha pontilhada do saldo acumulado */}
@@ -287,18 +275,7 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               strokeWidth={2}
               strokeDasharray="8 4"
               dot={false}
-              activeDot={{ 
-                r: 6, 
-                fill: '#008DD0', 
-                stroke: '#fff', 
-                strokeWidth: 2,
-                cursor: 'pointer',
-                onClick: (_, payload) => {
-                  if (onDayClick && payload?.payload?.data) {
-                    onDayClick(payload.payload.data);
-                  }
-                }
-              }}
+              activeDot={{ r: 6, fill: '#008DD0', stroke: '#fff', strokeWidth: 2, cursor: 'pointer' }}
               animationBegin={600}
               animationDuration={1000}
             />
