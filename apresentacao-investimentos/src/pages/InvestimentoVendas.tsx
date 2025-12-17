@@ -153,9 +153,7 @@ export default function InvestimentoVendas() {
     totalLiquidacao,
     vendasAgrupadas,
     deficitPagina2,
-    resultadoFinal,
-    vendasUnicred,
-    vendasInter
+    resultadoFinal
   } = useMemo(() => {
     if (!dados) {
       return { 
