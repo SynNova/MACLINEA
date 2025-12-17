@@ -166,9 +166,7 @@ export default function InvestimentoVendas() {
         vendasAgrupadas: [],
         deficitPagina1: 0,
         deficitPagina2: 0,
-        resultadoFinal: 0,
-        vendasUnicred: 0,
-        vendasInter: 0
+        resultadoFinal: 0
       };
     }
 
@@ -242,9 +240,7 @@ export default function InvestimentoVendas() {
       vendasAgrupadas,
       deficitPagina1: deficitPagina1 > 0 ? deficitPagina1 : 0,
       deficitPagina2: deficitPagina2 > 0 ? deficitPagina2 : 0,
-      resultadoFinal,
-      vendasUnicred,
-      vendasInter
+      resultadoFinal
     };
   }, [dados]);
 
