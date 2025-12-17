@@ -28,7 +28,6 @@ import {
   ShoppingCart,
   Info,
   Package,
-  Building2,
   HandCoins,
   ChevronUp,
   ChevronDown,
@@ -124,12 +123,6 @@ const PIE_COLORS = [
   '#AB47BC', // purple
 ];
 
-// Cores para liquidação de ativos
-const LIQUIDACAO_COLORS = [
-  '#008DD0', // usifix
-  '#95C6EB', // usifix-light
-];
-
 // Verifica se é aporte da família Brivio
 function isAporteBrivio(mov: Movimento): boolean {
   if (mov.categoriaId !== 79) return false;
@@ -176,19 +169,6 @@ function isGastoOperacional(mov: Movimento): boolean {
   return true;
 }
 
-// Verifica se é liquidação de ativos (vendas para empresas do grupo Usifix)
-function isLiquidacaoAtivos(mov: Movimento): boolean {
-  if (!CATEGORIAS_VENDAS.includes(mov.categoriaId)) return false;
-  if (mov.credito <= 0) return false;
-  
-  const historico = (mov.historico || '').toUpperCase();
-  const fornecedor = (mov.fornecedor || '').toUpperCase();
-  
-  return TERMOS_LIQUIDACAO_ATIVOS.some(termo => 
-    historico.includes(termo) || fornecedor.includes(termo)
-  );
-}
-
 interface GastoCategoria {
   categoria: string;
   categoriaId: number;
@@ -199,18 +179,8 @@ interface GastoCategoria {
   valorAporteDireto?: number; // Valor pago diretamente pela Usifix nesta categoria
 }
 
-interface LiquidacaoItem {
-  descricao: string;
-  total: number;
-  count: number;
-  percentual: number;
-  lancamentos: Movimento[];
-}
-
 export default function InvestimentoOperacional() {
   const { dados, loading, error } = useMovimentos(withBase('dados/movimentos.csv'));
-  const [expandedLiquidacao, setExpandedLiquidacao] = useState<string | null>(null);
-  const [isLiquidacaoExpanded, setIsLiquidacaoExpanded] = useState(false);
   const [isAporteDiretoExpanded, setIsAporteDiretoExpanded] = useState(false);
   const [selectedCategoria, setSelectedCategoria] = useState<CategoriaAgregada | null>(null);
   const [showAporteModal, setShowAporteModal] = useState(false);
@@ -221,12 +191,9 @@ export default function InvestimentoOperacional() {
     aporteUsifixTotal, 
     aporteUsifixBancario,
     totalGastosOper,
-    totalLiquidacao,
     categorias,
-    liquidacaoAgrupada,
     deficitPagina1,
     saldoAposAporte,
-    saldoComLiquidacao,
     deficitFinal
   } = useMemo(() => {
     if (!dados) {
@@ -266,10 +233,6 @@ export default function InvestimentoOperacional() {
     const totalGastosOperBancario = gastosOper.reduce((sum, m) => sum + m.debito, 0);
     const totalGastosOper = totalGastosOperBancario + TOTAL_APORTES_DIRETOS;
 
-    // Calcula liquidação de ativos (venda interna para empresas do grupo)
-    const liquidacaoAtivos = movimentos.filter(isLiquidacaoAtivos);
-    const totalLiquidacao = liquidacaoAtivos.reduce((sum, m) => sum + m.credito, 0);
-
     // Aporte total Usifix = transferências bancárias + pagamentos diretos (MDS + SOFKA)
     const aporteUsifixTotal = totalAporteUsifix + TOTAL_APORTES_DIRETOS;
 
@@ -277,11 +240,8 @@ export default function InvestimentoOperacional() {
     const deficitPagina1 = totalGastosColab - totalAporteBrivio; // Déficit vindo da página 1
     const saldoAposAporte = aporteUsifixTotal - (deficitPagina1 > 0 ? deficitPagina1 : 0);
     
-    // Saldo COM liquidação de ativos
-    const saldoComLiquidacao = saldoAposAporte + totalLiquidacao;
-    
-    // Déficit final considera todos os recursos
-    const deficitFinal = totalGastosOper - saldoComLiquidacao;
+    // Déficit final (SEM liquidação - ela vai para página 3)
+    const deficitFinal = totalGastosOper - saldoAposAporte;
 
     // Agrupa por categoria
     const porCategoria = new Map<number, Movimento[]>();
@@ -316,28 +276,6 @@ export default function InvestimentoOperacional() {
       })
       .sort((a, b) => b.total - a.total);
 
-    // Agrupa liquidação de ativos
-    const porLiquidacao = new Map<string, Movimento[]>();
-    liquidacaoAtivos.forEach((mov) => {
-      const desc = mov.historico || mov.fornecedor || 'Liquidação';
-      const lista = porLiquidacao.get(desc) || [];
-      lista.push(mov);
-      porLiquidacao.set(desc, lista);
-    });
-
-    const liquidacaoAgrupada: LiquidacaoItem[] = Array.from(porLiquidacao.entries())
-      .map(([desc, lista]) => {
-        const total = lista.reduce((sum, m) => sum + m.credito, 0);
-        return {
-          descricao: desc,
-          total,
-          count: lista.length,
-          percentual: totalLiquidacao > 0 ? (total / totalLiquidacao) * 100 : 0,
-          lancamentos: lista.sort((a, b) => b.credito - a.credito),
-        };
-      })
-      .sort((a, b) => b.total - a.total);
-
     return {
       aporteBrivio: totalAporteBrivio,
       aporteUsifixTotal,
@@ -346,12 +284,9 @@ export default function InvestimentoOperacional() {
       gastosOperacionais: gastosOper,
       totalGastosColab,
       totalGastosOper,
-      totalLiquidacao,
       categorias: cats,
-      liquidacaoAgrupada,
       deficitPagina1: deficitPagina1 > 0 ? deficitPagina1 : 0,
       saldoAposAporte,
-      saldoComLiquidacao,
       deficitFinal
     };
   }, [dados]);
@@ -430,8 +365,8 @@ export default function InvestimentoOperacional() {
     );
   }
 
-  // Total de investimento Usifix (aporte bancário + aportes diretos + liquidação)
-  const totalInvestimentoUsifix = aporteUsifixTotal + totalLiquidacao;
+  // Total de investimento Usifix (aporte bancário + aportes diretos)
+  const totalInvestimentoUsifix = aporteUsifixTotal;
 
   return (
     <motion.div 
@@ -507,7 +442,7 @@ export default function InvestimentoOperacional() {
           className="mb-8"
         >
           {/* Linha 1: Entradas */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {/* 1. DÉFICIT (da página anterior) */}
             <div className="glass-card p-6 bg-gradient-to-br from-red-500/10 to-transparent border-red-500/20">
               <div className="flex items-center justify-between mb-4">
@@ -547,30 +482,14 @@ export default function InvestimentoOperacional() {
                 <Info size={14} className="text-usifix-light opacity-60" />
               </p>
             </motion.button>
-
-            {/* 3. LIQUIDAÇÃO */}
-            <div className="glass-card p-6 bg-gradient-to-br from-usifix/10 to-transparent border-usifix/20">
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Liquidação Ativos
-                </span>
-                <div className="p-2 rounded-lg bg-usifix/20 text-usifix-light">
-                  <Building2 size={18} />
-                </div>
-              </div>
-              <div className="text-3xl font-bold text-usifix-light mb-2">
-                +{formatCurrency(totalLiquidacao)}
-              </div>
-              <p className="text-gray-500 text-sm">MECA + IANCO</p>
-            </div>
           </div>
 
           {/* Seta indicadora de fluxo */}
           <div className="flex justify-center my-4">
             <div className="flex items-center gap-3 px-6 py-2 rounded-full bg-white/5 border border-white/10">
-              <span className="text-gray-400 text-sm">Déficit + Aportes + Liquidação</span>
+              <span className="text-gray-400 text-sm">Déficit + Aportes</span>
               <span className="text-gray-500">→</span>
-              <span className="text-green-400 font-semibold">{formatCurrency(saldoComLiquidacao)}</span>
+              <span className="text-green-400 font-semibold">{formatCurrency(saldoAposAporte)}</span>
               <span className="text-gray-500">→</span>
               <span className="text-gray-400 text-sm">Gastos Operacionais</span>
             </div>
@@ -579,17 +498,17 @@ export default function InvestimentoOperacional() {
           {/* Linha 2: Saídas */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* 4. SALDO */}
-            <div className={`glass-card p-6 bg-gradient-to-br ${saldoComLiquidacao >= 0 ? 'from-green-500/10 to-transparent border-green-500/20' : 'from-red-500/10 to-transparent border-red-500/20'}`}>
+            <div className={`glass-card p-6 bg-gradient-to-br ${saldoAposAporte >= 0 ? 'from-green-500/10 to-transparent border-green-500/20' : 'from-red-500/10 to-transparent border-red-500/20'}`}>
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Saldo Disponível
                 </span>
-                <div className={`p-2 rounded-lg ${saldoComLiquidacao >= 0 ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'}`}>
+                <div className={`p-2 rounded-lg ${saldoAposAporte >= 0 ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'}`}>
                   <Wallet size={18} />
                 </div>
               </div>
-              <div className={`text-3xl font-bold mb-2 ${saldoComLiquidacao >= 0 ? 'text-green-400' : 'text-red-400'}`}>
-                {formatCurrency(saldoComLiquidacao)}
+              <div className={`text-3xl font-bold mb-2 ${saldoAposAporte >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+                {formatCurrency(saldoAposAporte)}
               </div>
               <p className="text-gray-500 text-sm">Após investimentos</p>
             </div>
@@ -637,162 +556,6 @@ export default function InvestimentoOperacional() {
             </div>
           </div>
         </motion.section>
-
-        {/* Seção de Liquidação de Ativos - Detalhamento (Recolhível) */}
-        {liquidacaoAgrupada.length > 0 && (
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mb-8"
-          >
-            <div className="glass-card bg-gradient-to-r from-usifix/10 to-usifix-light/5 border-usifix/30 overflow-hidden">
-              {/* Header clicável */}
-              <button
-                onClick={() => setIsLiquidacaoExpanded(!isLiquidacaoExpanded)}
-                className="w-full p-6 flex items-center gap-3 hover:bg-white/5 transition-colors"
-              >
-                <div className="p-2 rounded-lg bg-usifix/20 text-usifix-light">
-                  <Package size={20} />
-                </div>
-                <div className="flex-1 text-left">
-                  <h3 className="text-lg font-bold text-white">
-                    Liquidação de Ativos e Estoque
-                  </h3>
-                  <p className="text-gray-400 text-sm">
-                    Venda de ativos para empresas do grupo Usifix
-                  </p>
-                </div>
-                <div className="text-right mr-4">
-                  <p className="text-2xl font-bold text-usifix-light">
-                    +{formatCurrency(totalLiquidacao)}
-                  </p>
-                  <p className="text-xs text-gray-500">{liquidacaoAgrupada.length} item(s)</p>
-                </div>
-                <div className="p-2 rounded-lg bg-white/5">
-                  {isLiquidacaoExpanded ? (
-                    <ChevronUp size={20} className="text-gray-400" />
-                  ) : (
-                    <ChevronDown size={20} className="text-gray-400" />
-                  )}
-                </div>
-              </button>
-              
-              {/* Conteúdo expansível */}
-              {isLiquidacaoExpanded && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="border-t border-white/10"
-                >
-                  <div className="p-6 pt-4">
-                    {/* Lista de Liquidações */}
-                    <div className="space-y-3">
-                      {liquidacaoAgrupada.map((item, index) => (
-                        <div
-                          key={item.descricao}
-                          className="glass-card overflow-hidden bg-white/5"
-                        >
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setExpandedLiquidacao(
-                                expandedLiquidacao === item.descricao ? null : item.descricao
-                              );
-                            }}
-                            className="w-full p-4 flex items-center justify-between hover:bg-white/5 transition-colors"
-                          >
-                            <div className="flex items-center gap-3">
-                              <div
-                                className="w-3 h-3 rounded-full flex-shrink-0"
-                                style={{ backgroundColor: LIQUIDACAO_COLORS[index % LIQUIDACAO_COLORS.length] }}
-                              />
-                              <div className="text-left">
-                                <h4 className="font-semibold text-white">{item.descricao}</h4>
-                                <p className="text-xs text-gray-500">
-                                  {item.descricao.includes('MECA') || item.descricao.toLowerCase().includes('meca') 
-                                    ? 'MECA Metalúrgica - Empresa do Grupo' 
-                                    : 'IANCO Metalúrgica - Empresa do Grupo Usifix'
-                                  }
-                                </p>
-                              </div>
-                            </div>
-
-                            <div className="flex items-center gap-4">
-                              <div className="text-right">
-                                <p className="font-bold text-usifix-light">{formatCurrency(item.total)}</p>
-                                <p className="text-xs text-gray-500">{formatPercentage(item.percentual)}</p>
-                              </div>
-                              {expandedLiquidacao === item.descricao ? (
-                                <ChevronUp size={18} className="text-gray-400" />
-                              ) : (
-                                <ChevronDown size={18} className="text-gray-400" />
-                              )}
-                            </div>
-                          </button>
-
-                          {expandedLiquidacao === item.descricao && (
-                            <motion.div
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: 'auto', opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              className="border-t border-white/10"
-                            >
-                              <div className="p-4">
-                                <table className="w-full text-sm">
-                                  <thead className="text-gray-500 border-b border-white/10">
-                                    <tr>
-                                      <th className="text-left py-2 px-2">Descrição</th>
-                                      <th className="text-left py-2 px-2 hidden md:table-cell">Empresa</th>
-                                      <th className="text-right py-2 px-2">Valor</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {item.lancamentos.map((lanc, idx) => (
-                                      <tr
-                                        key={`${lanc.id}-${idx}`}
-                                        className="border-b border-white/5 hover:bg-white/5"
-                                      >
-                                        <td className="py-3 px-2 text-gray-300">
-                                          {lanc.historico || lanc.categoria}
-                                        </td>
-                                        <td className="py-3 px-2 text-gray-500 hidden md:table-cell">
-                                          {lanc.fornecedor || '-'}
-                                        </td>
-                                        <td className="py-3 px-2 text-right font-medium text-usifix-light">
-                                          {formatCurrency(lanc.credito)}
-                                        </td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-                                </table>
-                              </div>
-                            </motion.div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Nota explicativa */}
-                    <div className="mt-4 p-3 rounded-lg bg-white/5 border border-usifix/20">
-                      <div className="flex items-start gap-2">
-                        <Info size={16} className="text-usifix-light mt-0.5 flex-shrink-0" />
-                        <p className="text-gray-400 text-xs leading-relaxed">
-                          Estes valores representam <strong className="text-usifix-light">vendas de ativos e estoque</strong> para 
-                          empresas do grupo Usifix (MECA Metalúrgica e IANCO). Embora registrados como vendas, 
-                          <strong className="text-green-400"> são considerados investimento adicional</strong> pois representam 
-                          recursos internos do grupo aplicados na operação da Maclinea.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              )}
-            </div>
-          </motion.section>
-        )}
 
         {/* Seção de Aportes Diretos da Usifix (Recolhível) */}
         {APORTES_DIRETOS_USIFIX.length > 0 && (
@@ -897,7 +660,7 @@ export default function InvestimentoOperacional() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
-          className="mb-24"
+          className="mb-55"
         >
           <div className="glass-card p-5 bg-gradient-to-r from-usifix/5 to-transparent border-usifix/20">
             <div className="flex items-start gap-4">
