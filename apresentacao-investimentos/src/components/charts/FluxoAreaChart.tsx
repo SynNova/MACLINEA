@@ -16,6 +16,7 @@ import { CustomTooltip } from './CustomTooltip';
 import { formatCurrencyCompact, formatCurrency } from '../../utils/formatters';
 import { COLORS } from '../../utils/colors';
 import { useI18n } from '../../i18n/I18nProvider';
+import { useChartTheme } from '../../hooks/useChartTheme';
 
 interface FluxoAreaChartProps {
   data: FluxoDiario[];
@@ -24,6 +25,7 @@ interface FluxoAreaChartProps {
 
 export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
   const { t } = useI18n();
+  const { colors } = useChartTheme();
   // Guarda o índice ativo atual do tooltip
   const activeIndexRef = useRef<number | null>(null);
   
@@ -187,13 +189,13 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
             
             <CartesianGrid 
               strokeDasharray="3 3" 
-              stroke="rgba(255,255,255,0.05)" 
+              stroke={colors.grid} 
               vertical={false}
             />
             
             <XAxis 
               dataKey="dataFormatada" 
-              tick={{ fill: '#8B98A5', fontSize: 10 }}
+              tick={{ fill: colors.textSecondary, fontSize: 10 }}
               axisLine={false}
               tickLine={false}
               interval="preserveStartEnd"
@@ -209,8 +211,8 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               domain={leftDomain}
               ticks={leftTicks}
               tickFormatter={(value) => formatCurrencyCompact(value)}
-              tick={{ fill: '#8B98A5', fontSize: 10 }}
-              axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+              tick={{ fill: colors.textSecondary, fontSize: 10 }}
+              axisLine={{ stroke: colors.axis }}
               tickLine={false}
               width={75}
             />
@@ -222,8 +224,8 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
               domain={rightDomain}
               ticks={rightTicks}
               tickFormatter={(value) => formatCurrencyCompact(value)}
-              tick={{ fill: '#008DD0', fontSize: 10 }}
-              axisLine={{ stroke: '#008DD0', strokeOpacity: 0.3 }}
+              tick={{ fill: colors.usifix.text, fontSize: 10 }}
+              axisLine={{ stroke: colors.usifix.text, strokeOpacity: 0.3 }}
               tickLine={false}
               width={75}
             />
@@ -237,7 +239,8 @@ export function FluxoAreaChart({ data, onDayClick }: FluxoAreaChartProps) {
             <ReferenceLine 
               yAxisId="left"
               y={0} 
-              stroke="rgba(255,255,255,0.6)" 
+              stroke={colors.text} 
+              strokeOpacity={0.3}
               strokeWidth={2}
               ifOverflow="extendDomain"
             />

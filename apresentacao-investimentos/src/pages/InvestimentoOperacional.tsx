@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
   BarChart,
@@ -22,8 +22,6 @@ import {
   PieChartIcon, 
   BarChart3, 
   FileText, 
-  ChevronDown, 
-  ChevronUp,
   ArrowLeft,
   ArrowRight,
   AlertTriangle,
@@ -31,12 +29,20 @@ import {
   Info,
   Package,
   Building2,
-  HandCoins
+  HandCoins,
+  ChevronUp,
+  ChevronDown,
+  X,
+  CreditCard,
+  Banknote
 } from 'lucide-react';
 import { useMovimentos } from '../hooks/useMovimentos';
 import { formatCurrency, formatCurrencyCompact, formatPercentage } from '../utils/formatters';
 import { withBase } from '../utils/assetUrl';
-import type { Movimento } from '../types/movimento';
+import { ThemeToggle } from '../components/ui/ThemeToggle';
+import { DrillDownModal } from '../components/ui/DrillDownModal';
+import { useChartTheme } from '../hooks/useChartTheme';
+import type { Movimento, CategoriaAgregada } from '../types/movimento';
 
 // IDs das categorias trabalhistas (gastos com colaboradores) - EXCLUÍDAS nesta página
 const CATEGORIAS_COLABORADORES: number[] = [87, 88, 94, 24, 73, 38, 22, 56, 59, 97, 31, 58];
@@ -203,10 +209,12 @@ interface LiquidacaoItem {
 
 export default function InvestimentoOperacional() {
   const { dados, loading, error } = useMovimentos(withBase('dados/movimentos.csv'));
-  const [expandedCategoria, setExpandedCategoria] = useState<number | null>(null);
   const [expandedLiquidacao, setExpandedLiquidacao] = useState<string | null>(null);
   const [isLiquidacaoExpanded, setIsLiquidacaoExpanded] = useState(false);
   const [isAporteDiretoExpanded, setIsAporteDiretoExpanded] = useState(false);
+  const [selectedCategoria, setSelectedCategoria] = useState<CategoriaAgregada | null>(null);
+  const [showAporteModal, setShowAporteModal] = useState(false);
+  const { colors, isDark } = useChartTheme();
 
   // Processa dados
   const { 
@@ -348,6 +356,20 @@ export default function InvestimentoOperacional() {
     };
   }, [dados]);
 
+  // Função para converter GastoCategoria para CategoriaAgregada (para o modal)
+  const handleCategoriaClick = (cat: GastoCategoria) => {
+    const categoriaAgregada: CategoriaAgregada = {
+      categoria: cat.categoria,
+      categoriaId: cat.categoriaId,
+      total: cat.total,
+      count: cat.count,
+      lancamentos: cat.lancamentos,
+      top3: cat.lancamentos.slice(0, 3),
+      percentual: cat.percentual,
+    };
+    setSelectedCategoria(categoriaAgregada);
+  };
+
   // Dados para gráficos
   const chartData = categorias.map((cat, index) => ({
     ...cat,
@@ -419,6 +441,11 @@ export default function InvestimentoOperacional() {
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
+      {/* Botão Toggle de Tema - Fixo no canto superior direito */}
+      <div className="fixed top-6 right-6 z-50">
+        <ThemeToggle />
+      </div>
+
       {/* Botão Flutuante - Página Anterior */}
       <Link
         to="/"
@@ -497,8 +524,13 @@ export default function InvestimentoOperacional() {
               <p className="text-gray-500 text-sm">Vindo da Página 1</p>
             </div>
 
-            {/* 2. APORTE USIFIX */}
-            <div className="glass-card p-6 bg-gradient-to-br from-usifix/10 to-transparent border-usifix/20">
+            {/* 2. APORTE USIFIX - Clicável */}
+            <motion.button
+              onClick={() => setShowAporteModal(true)}
+              whileHover={{ scale: 1.02, y: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="glass-card p-6 bg-gradient-to-br from-usifix/10 to-transparent border-usifix/20 text-left cursor-pointer hover:border-usifix/40 transition-colors"
+            >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Aporte Usifix
@@ -510,8 +542,11 @@ export default function InvestimentoOperacional() {
               <div className="text-3xl font-bold text-usifix-light mb-2">
                 +{formatCurrency(aporteUsifixTotal)}
               </div>
-              <p className="text-gray-500 text-sm">Bancário + Diretos</p>
-            </div>
+              <p className="text-gray-500 text-sm flex items-center gap-2">
+                Bancário + Diretos
+                <Info size={14} className="text-usifix-light opacity-60" />
+              </p>
+            </motion.button>
 
             {/* 3. LIQUIDAÇÃO */}
             <div className="glass-card p-6 bg-gradient-to-br from-usifix/10 to-transparent border-usifix/20">
@@ -909,18 +944,18 @@ export default function InvestimentoOperacional() {
                   layout="vertical"
                   margin={{ top: 10, right: 80, left: 140, bottom: 10 }}
                 >
-                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <CartesianGrid strokeDasharray="3 3" stroke={colors.grid} />
                   <XAxis
                     type="number"
                     tickFormatter={(value) => formatCurrencyCompact(value)}
-                    tick={{ fill: '#8B98A5', fontSize: 11 }}
-                    axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                    tick={{ fill: colors.textSecondary, fontSize: 11 }}
+                    axisLine={{ stroke: colors.axis }}
                   />
                   <YAxis
                     type="category"
                     dataKey="categoria"
-                    tick={{ fill: '#8B98A5', fontSize: 10 }}
-                    axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                    tick={{ fill: colors.textSecondary, fontSize: 10 }}
+                    axisLine={{ stroke: colors.axis }}
                     width={130}
                   />
                   <Tooltip
@@ -928,7 +963,7 @@ export default function InvestimentoOperacional() {
                       if (!active || !payload?.length) return null;
                       const data = payload[0].payload as GastoCategoria;
                       return (
-                        <div className="bg-card border border-white/10 rounded-lg p-4 shadow-xl">
+                        <div className={`rounded-lg p-4 shadow-xl ${isDark ? 'bg-card border border-white/10' : 'bg-white border border-gray-200'}`}>
                           <p className="font-bold text-white mb-2">{data.categoria}</p>
                           <p className="text-usifix-light text-lg font-semibold">
                             {formatCurrency(data.total)}
@@ -940,7 +975,16 @@ export default function InvestimentoOperacional() {
                       );
                     }}
                   />
-                  <Bar dataKey="total" radius={[0, 6, 6, 0]}>
+                  <Bar 
+                    dataKey="total" 
+                    radius={[0, 6, 6, 0]}
+                    onClick={(data) => {
+                      const payload = data as unknown as GastoCategoria;
+                      const cat = categorias.find(c => c.categoria === payload.categoria);
+                      if (cat) handleCategoriaClick(cat);
+                    }}
+                    style={{ cursor: 'pointer' }}
+                  >
                     {chartData.slice(0, 15).map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.fill} />
                     ))}
@@ -948,7 +992,7 @@ export default function InvestimentoOperacional() {
                       dataKey="total"
                       position="right"
                       formatter={(value) => formatCurrency(Number(value) || 0)}
-                      style={{ fill: '#E5E7EB', fontSize: 10, fontWeight: 500 }}
+                      style={{ fill: colors.text, fontSize: 10, fontWeight: 500 }}
                     />
                   </Bar>
                 </BarChart>
@@ -987,7 +1031,13 @@ export default function InvestimentoOperacional() {
                     label={({ percent }) => 
                       (percent ?? 0) > 0.01 ? `${((percent ?? 0) * 100).toFixed(1)}%` : ''
                     }
-                    labelLine={{ stroke: '#8B98A5', strokeWidth: 1 }}
+                    labelLine={{ stroke: colors.textSecondary, strokeWidth: 1 }}
+                    onClick={(data) => {
+                      if (data.categoriaId === -1) return; // Ignora "Outros"
+                      const cat = categorias.find(c => c.categoriaId === data.categoriaId);
+                      if (cat) handleCategoriaClick(cat);
+                    }}
+                    style={{ cursor: 'pointer' }}
                   >
                     {pieChartData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.fill} />
@@ -998,7 +1048,7 @@ export default function InvestimentoOperacional() {
                       if (!active || !payload?.length) return null;
                       const data = payload[0].payload as GastoCategoria;
                       return (
-                        <div className="bg-card border border-white/10 rounded-lg p-4 shadow-xl">
+                        <div className={`rounded-lg p-4 shadow-xl ${isDark ? 'bg-card border border-white/10' : 'bg-white border border-gray-200'}`}>
                           <p className="font-bold text-white mb-2">{data.categoria}</p>
                           <p className="text-usifix-light text-lg font-semibold">
                             {formatCurrency(data.total)}
@@ -1018,7 +1068,7 @@ export default function InvestimentoOperacional() {
                     iconSize={8}
                     wrapperStyle={{ paddingTop: 20 }}
                     formatter={(value) => (
-                      <span className="text-gray-300 text-xs">{value}</span>
+                      <span style={{ color: colors.textSecondary }} className="text-xs">{value}</span>
                     )}
                   />
                 </PieChart>
@@ -1054,9 +1104,7 @@ export default function InvestimentoOperacional() {
               >
                 {/* Header da Categoria */}
                 <button
-                  onClick={() => setExpandedCategoria(
-                    expandedCategoria === cat.categoriaId ? null : cat.categoriaId
-                  )}
+                  onClick={() => handleCategoriaClick(cat)}
                   className="w-full p-5 flex items-center justify-between hover:bg-white/5 transition-colors"
                 >
                   <div className="flex items-center gap-4">
@@ -1084,71 +1132,16 @@ export default function InvestimentoOperacional() {
                       <p className="font-bold text-white">{formatCurrency(cat.total)}</p>
                       <p className="text-sm text-gray-500">{formatPercentage(cat.percentual)}</p>
                     </div>
-                    {expandedCategoria === cat.categoriaId ? (
-                      <ChevronUp size={20} className="text-gray-400" />
-                    ) : (
-                      <ChevronDown size={20} className="text-gray-400" />
-                    )}
+                    <ArrowRight size={20} className="text-gray-400" />
                   </div>
                 </button>
 
-                {/* Lançamentos Expandidos */}
-                {expandedCategoria === cat.categoriaId && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="border-t border-white/10"
-                  >
-                    <div className="p-4 max-h-96 overflow-y-auto">
-                      <table className="w-full text-sm">
-                        <thead className="text-gray-500 border-b border-white/10">
-                          <tr>
-                            <th className="text-left py-2 px-2">Descrição</th>
-                            <th className="text-left py-2 px-2 hidden md:table-cell">Fornecedor</th>
-                            <th className="text-right py-2 px-2">Valor</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {cat.lancamentos.map((lanc, idx) => (
-                            <tr
-                              key={`${lanc.id}-${idx}`}
-                              className="border-b border-white/5 hover:bg-white/5"
-                            >
-                              <td className="py-3 px-2 text-gray-300">
-                                {lanc.historico || lanc.categoria}
-                              </td>
-                              <td className="py-3 px-2 text-gray-500 hidden md:table-cell">
-                                {lanc.fornecedor || '-'}
-                              </td>
-                              <td className="py-3 px-2 text-right font-medium text-white">
-                                {formatCurrency(lanc.debito)}
-                              </td>
-                            </tr>
-                          ))}
-                          {/* Linha especial para aporte direto */}
-                          {cat.valorAporteDireto && cat.valorAporteDireto > 0 && (
-                            <tr className="border-b border-usifix/20 bg-usifix/10">
-                              <td className="py-3 px-2 text-usifix-light font-medium">
-                                {APORTES_DIRETOS_USIFIX.find(a => a.categoriaId === cat.categoriaId)?.descricao || 'Aporte Direto Usifix'}
-                              </td>
-                              <td className="py-3 px-2 text-usifix-light hidden md:table-cell">
-                                {APORTES_DIRETOS_USIFIX.find(a => a.categoriaId === cat.categoriaId)?.empresa || 'Usifix'}
-                                <span className="ml-2 text-xs text-usifix/70">(Pago direto)</span>
-                              </td>
-                              <td className="py-3 px-2 text-right font-bold text-usifix-light">
-                                {formatCurrency(cat.valorAporteDireto)}
-                              </td>
-                            </tr>
-                          )}
-                        </tbody>
-                      </table>
-                    </div>
-                  </motion.div>
-                )}
               </motion.div>
             ))}
           </div>
+          <p className="text-xs text-gray-500 mt-4 text-center">
+            Clique em uma categoria para ver detalhes e gráficos
+          </p>
         </motion.section>
 
         {/* Card de Continuação */}
@@ -1214,6 +1207,159 @@ export default function InvestimentoOperacional() {
           </div>
         </footer>
       </main>
+
+      {/* Modal de Detalhes com Overlay Charts */}
+      <DrillDownModal
+        isOpen={selectedCategoria !== null}
+        onClose={() => setSelectedCategoria(null)}
+        categoria={selectedCategoria}
+      />
+
+      {/* Modal de Aporte Usifix */}
+      <AnimatePresence>
+        {showAporteModal && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowAporteModal(false)}
+              className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+            />
+
+            {/* Modal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className={`fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
+                         w-full max-w-lg mx-4 z-50 rounded-2xl shadow-2xl overflow-hidden
+                         ${isDark ? 'bg-card border border-white/10' : 'bg-white border border-gray-200'}`}
+            >
+              {/* Header */}
+              <div className={`flex items-center justify-between p-6 border-b ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-xl bg-usifix/20">
+                    <Wallet className="text-usifix-light" size={24} />
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-bold text-white">Aporte Usifix</h2>
+                    <p className="text-gray-400 text-sm">Detalhamento do investimento</p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowAporteModal(false)}
+                  className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+                  title="Fechar"
+                  aria-label="Fechar modal"
+                >
+                  <X className="w-5 h-5 text-gray-400" />
+                </button>
+              </div>
+
+              {/* Content */}
+              <div className="p-6 space-y-6">
+                {/* Total */}
+                <div className={`p-4 rounded-xl ${isDark ? 'bg-usifix/10 border border-usifix/20' : 'bg-blue-50 border border-blue-100'}`}>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-400 font-medium">Total Aporte Usifix</span>
+                    <span className="text-2xl font-bold text-usifix-light">
+                      {formatCurrency(aporteUsifixTotal)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Detalhamento */}
+                <div className="space-y-3">
+                  <h3 className="text-sm font-medium text-gray-400 uppercase tracking-wider">
+                    Composição do Aporte
+                  </h3>
+                  
+                  {/* Aporte Bancário */}
+                  <div className={`p-4 rounded-xl ${isDark ? 'bg-white/5 border border-white/10' : 'bg-gray-50 border border-gray-100'}`}>
+                    <div className="flex items-start gap-3">
+                      <div className={`p-2 rounded-lg ${isDark ? 'bg-usifix/20' : 'bg-blue-100'}`}>
+                        <Banknote className="text-usifix-light" size={18} />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center justify-between">
+                          <span className="font-medium text-white">Transferências Bancárias</span>
+                          <span className="font-bold text-usifix-light">
+                            {formatCurrency(aporteUsifixBancario)}
+                          </span>
+                        </div>
+                        <p className="text-sm text-gray-500 mt-1">
+                          Recursos transferidos diretamente para conta Maclinea
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Aportes Diretos */}
+                  <div className={`p-4 rounded-xl ${isDark ? 'bg-white/5 border border-white/10' : 'bg-gray-50 border border-gray-100'}`}>
+                    <div className="flex items-start gap-3">
+                      <div className={`p-2 rounded-lg ${isDark ? 'bg-usifix/20' : 'bg-blue-100'}`}>
+                        <CreditCard className="text-usifix-light" size={18} />
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center justify-between mb-2">
+                          <span className="font-medium text-white">Pagamentos Diretos</span>
+                          <span className="font-bold text-usifix-light">
+                            {formatCurrency(TOTAL_APORTES_DIRETOS)}
+                          </span>
+                        </div>
+                        <p className="text-sm text-gray-500 mb-3">
+                          Pagamentos feitos diretamente pela Usifix a fornecedores da Maclinea
+                        </p>
+                        
+                        {/* Lista de pagamentos diretos */}
+                        <div className="space-y-2 pt-2 border-t border-white/5">
+                          {APORTES_DIRETOS_USIFIX.map((aporte, index) => (
+                            <div key={index} className="flex items-center justify-between text-sm">
+                              <div>
+                                <span className="text-gray-300">{aporte.empresa}</span>
+                                <span className={`ml-2 px-2 py-0.5 rounded text-xs ${isDark ? 'bg-white/10 text-gray-400' : 'bg-gray-200 text-gray-600'}`}>
+                                  {aporte.categoriaGasto}
+                                </span>
+                              </div>
+                              <span className="text-white font-medium">
+                                {formatCurrency(aporte.valor)}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Nota explicativa */}
+                <div className={`flex items-start gap-3 p-4 rounded-xl ${isDark ? 'bg-amber-500/10 border border-amber-500/20' : 'bg-amber-50 border border-amber-100'}`}>
+                  <Info className="text-amber-400 mt-0.5 flex-shrink-0" size={18} />
+                  <p className="text-sm text-gray-400">
+                    <strong className="text-amber-400">Nota:</strong> Os pagamentos diretos representam serviços 
+                    contratados pela Maclinea mas pagos diretamente pela Usifix, funcionando tanto como 
+                    investimento quanto como despesa operacional.
+                  </p>
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className={`px-6 py-4 border-t ${isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-gray-50'}`}>
+                <button
+                  onClick={() => setShowAporteModal(false)}
+                  className="w-full py-2.5 px-4 rounded-lg bg-usifix/20 hover:bg-usifix/30 
+                           text-usifix-light font-medium transition-colors"
+                >
+                  Fechar
+                </button>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 }

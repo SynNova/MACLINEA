@@ -11,11 +11,12 @@ interface DrillDownModalProps {
   isOpen: boolean;
   onClose: () => void;
   categoria: CategoriaAgregada | null;
+  valueField?: 'debito' | 'credito';
 }
 
 type ViewMode = 'list' | 'chart';
 
-export function DrillDownModal({ isOpen, onClose, categoria }: DrillDownModalProps) {
+export function DrillDownModal({ isOpen, onClose, categoria, valueField = 'debito' }: DrillDownModalProps) {
   const { t } = useI18n();
   const { tData } = useDataTranslation();
   const [q, setQ] = useState('');
@@ -47,13 +48,15 @@ export function DrillDownModal({ isOpen, onClose, categoria }: DrillDownModalPro
 
     const dir = sortDir === 'asc' ? 1 : -1;
     filtered.sort((a, b) => {
-      if (sortKey === 'valor') return (a.debito - b.debito) * dir;
+      const aValue = a[valueField] || 0;
+      const bValue = b[valueField] || 0;
+      if (sortKey === 'valor') return (aValue - bValue) * dir;
       if (sortKey === 'data') return (a.data.getTime() - b.data.getTime()) * dir;
       const aDesc = normalizeText(tData(a.historico || a.categoria || ''));
       const bDesc = normalizeText(tData(b.historico || b.categoria || ''));
       const cmp = aDesc.localeCompare(bDesc);
       if (cmp !== 0) return cmp * dir;
-      return (a.debito - b.debito) * dir;
+      return (aValue - bValue) * dir;
     });
 
     return filtered;
@@ -127,7 +130,7 @@ export function DrillDownModal({ isOpen, onClose, categoria }: DrillDownModalPro
             {/* Content */}
             <div className="flex-1 overflow-y-auto p-4 md:p-6">
               {viewMode === 'chart' ? (
-                <OverlayCharts movimentos={categoria.lancamentos} valueField="debito" />
+                <OverlayCharts movimentos={categoria.lancamentos} valueField={valueField} />
               ) : (
                 <>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
@@ -201,8 +204,8 @@ export function DrillDownModal({ isOpen, onClose, categoria }: DrillDownModalPro
                                 </div>
                               )}
                             </div>
-                            <span className="flex-shrink-0 font-bold text-maclinea-light">
-                              {formatCurrency(mov.debito)}
+                            <span className={`flex-shrink-0 font-bold ${valueField === 'credito' ? 'text-green-400' : 'text-maclinea-light'}`}>
+                              {formatCurrency(mov[valueField] || 0)}
                             </span>
                           </div>
                           

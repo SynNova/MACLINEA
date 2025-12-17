@@ -9,6 +9,7 @@ import { DestinoBarChart } from './components/charts/DestinoBarChart';
 import { FluxoAreaChart } from './components/charts/FluxoAreaChart';
 import { MovimentosTable } from './components/tables/MovimentosTable';
 import { FluxoDayModal } from './components/ui/FluxoDayModal';
+import { ThemeToggle } from './components/ui/ThemeToggle';
 import { isAporteBrivio, isAporteIanco, isDespesaValida, isVenda, isTransferenciaInterna, isImplantacaoSaldo, parseMovimentosCSV } from './utils/csvParser';
 import { useI18n } from './i18n/I18nProvider';
 import { translateGrupo } from './i18n/mappings';
@@ -324,6 +325,9 @@ function App() {
                 <RefreshCw size={16} />
                 {t('actions.update')}
               </button>
+
+              {/* Theme Toggle */}
+              <ThemeToggle />
             </div>
           </div>
         </div>

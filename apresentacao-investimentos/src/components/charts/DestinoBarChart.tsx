@@ -17,6 +17,7 @@ import { DrillDownModal } from '../ui/DrillDownModal';
 import { formatCurrencyCompact, formatCurrency, formatPercentage } from '../../utils/formatters';
 import { getChartColor } from '../../utils/colors';
 import { useI18n } from '../../i18n/I18nProvider';
+import { useChartTheme } from '../../hooks/useChartTheme';
 
 interface DestinoBarChartProps {
   data: CategoriaAgregada[];
@@ -25,6 +26,7 @@ interface DestinoBarChartProps {
 
 export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
   const { t } = useI18n();
+  const { colors, isDark } = useChartTheme();
   const [selectedCategoria, setSelectedCategoria] = useState<CategoriaAgregada | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -45,7 +47,7 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
           y={0}
           dy={4}
           textAnchor="end"
-          fill="#8B98A5"
+          fill={colors.textSecondary}
           fontSize={11}
         >
           {payload.value}
@@ -73,7 +75,7 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
       <text
         x={x + width + 8}
         y={y + height / 2 + 4}
-        fill="#E5E7EB"
+        fill={colors.text}
         fontSize={11}
         textAnchor="start"
       >
@@ -114,8 +116,11 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.02 }}
                 onClick={() => handleBarClick(item)}
-                className="w-full text-left p-4 rounded-xl bg-white/5 border border-white/10
-                           hover:bg-white/10 hover:border-white/15 transition-colors"
+                className={`w-full text-left p-4 rounded-xl transition-colors
+                  ${isDark 
+                    ? 'bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/15' 
+                    : 'bg-gray-50 border border-gray-200 hover:bg-gray-100 hover:border-gray-300'
+                  }`}
               >
                 <div className="flex items-start gap-3">
                   <div
@@ -138,7 +143,7 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
                       </div>
                     </div>
 
-                    <div className="mt-3 h-2 rounded-full bg-white/10 overflow-hidden">
+                    <div className={`mt-3 h-2 rounded-full overflow-hidden ${isDark ? 'bg-white/10' : 'bg-gray-200'}`}>
                       <div
                         className="h-full rounded-full"
                         style={{
@@ -170,26 +175,26 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
               >
                 <CartesianGrid 
                   strokeDasharray="3 3" 
-                  stroke="rgba(255,255,255,0.05)" 
+                  stroke={colors.grid} 
                   horizontal={true}
                   vertical={false}
                 />
                 <XAxis 
                   type="number" 
                   tickFormatter={(value) => formatCurrencyCompact(value)}
-                  tick={{ fill: '#8B98A5', fontSize: 12 }}
-                  axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                  tick={{ fill: colors.textSecondary, fontSize: 12 }}
+                  axisLine={{ stroke: colors.axis }}
                 />
                 <YAxis 
                   type="category" 
                   dataKey="categoria"
                   tick={<CustomXAxisTick x={0} y={0} payload={{ value: '' }} />}
-                  axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                  axisLine={{ stroke: colors.axis }}
                   width={190}
                 />
                 <Tooltip 
                   content={<CustomTooltip type="destino" />}
-                  cursor={{ fill: 'rgba(255,255,255,0.05)' }}
+                  cursor={{ fill: colors.cursor }}
                   wrapperStyle={{ outline: 'none' }}
                 />
                 <Bar 
@@ -217,7 +222,7 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
           </div>
 
           {/* Summary cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-white/10">
+          <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 pt-6 border-t ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
             {chartData.slice(0, 4).map((item, index) => (
               <motion.div
                 key={item.categoria}
@@ -226,8 +231,11 @@ export function DestinoBarChart({ data, maxItems = 10 }: DestinoBarChartProps) {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => handleBarClick(item)}
-                className="p-3 rounded-lg bg-white/5 border border-white/5 
-                           hover:bg-white/10 hover:border-white/10 cursor-pointer transition-all"
+                className={`p-3 rounded-lg cursor-pointer transition-all
+                  ${isDark 
+                    ? 'bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/10' 
+                    : 'bg-gray-50 border border-gray-100 hover:bg-gray-100 hover:border-gray-200'
+                  }`}
               >
                 <div className="flex items-center gap-2 mb-2">
                   <div 

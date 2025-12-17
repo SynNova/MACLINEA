@@ -16,10 +16,10 @@ interface KPICardProps {
 }
 
 const colorClasses = {
-  maclinea: 'from-maclinea/20 to-maclinea/5 border-maclinea/30',
-  usifix: 'from-usifix/20 to-usifix/5 border-usifix/30',
-  success: 'from-green-500/20 to-green-500/5 border-green-500/30',
-  default: 'from-card to-card border-white/10',
+  maclinea: 'from-maclinea/20 to-maclinea/5 border-maclinea/30 light:from-maclinea/15 light:to-maclinea/5',
+  usifix: 'from-usifix/20 to-usifix/5 border-usifix/30 light:from-usifix/15 light:to-usifix/5',
+  success: 'from-green-500/20 to-green-500/5 border-green-500/30 light:from-green-600/15 light:to-green-600/5',
+  default: 'from-card to-card border-white/10 light:border-gray-200',
 };
 
 const iconColorClasses = {
@@ -74,7 +74,7 @@ export function KPICard({
       `}
     >
       {/* Decorative glow */}
-      <div className="absolute -top-12 -right-12 w-24 h-24 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-2xl" />
+      <div className="absolute -top-12 -right-12 w-24 h-24 bg-gradient-to-br from-white/5 to-transparent dark:from-white/5 light:from-black/5 rounded-full blur-2xl" />
       
       <div className="relative z-10">
         <div className="flex items-start justify-between mb-4">
@@ -105,6 +105,7 @@ export function KPICard({
                   font-semibold px-2 py-0.5 rounded-full text-xs
                   ${color === 'maclinea' ? 'bg-maclinea/30 text-maclinea-light' : 
                     color === 'usifix' ? 'bg-usifix/30 text-usifix-light' : 
+                    color === 'success' ? 'bg-green-500/30 text-green-400' :
                     'bg-white/10 text-gray-300'}
                 `}>
                   {formatPercentage(percentage)}

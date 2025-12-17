@@ -22,6 +22,19 @@ export const COLORS = {
   warning: '#FFB300',
 };
 
+// Cores de texto para modo claro
+export const COLORS_LIGHT = {
+  text: {
+    primary: '#0f172a',
+    secondary: '#475569',
+    muted: '#64748b',
+  },
+  background: '#f1f5f9',
+  card: '#ffffff',
+  grid: 'rgba(0, 0, 0, 0.08)',
+  axis: 'rgba(0, 0, 0, 0.15)',
+};
+
 // Cores para gráficos alternando entre maclinea e usifix
 export const CHART_COLORS = [
   COLORS.maclinea.DEFAULT,
@@ -65,4 +78,20 @@ export function getCategoriaColor(categoria: string): string {
   );
 }
 
+// Utilitário para obter cores de tema
+export function getThemeColors(isDark: boolean) {
+  return {
+    text: isDark ? '#E5E7EB' : '#1e293b',
+    textSecondary: isDark ? '#8B98A5' : '#475569',
+    textMuted: isDark ? '#6b7280' : '#94a3b8',
+    grid: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.08)',
+    axis: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.15)',
+    tooltip: {
+      bg: isDark ? '#1A1F26' : '#ffffff',
+      border: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)',
+      shadow: isDark ? 'rgba(0,0,0,0.5)' : 'rgba(0,0,0,0.1)',
+    },
+    cursor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
+  };
+}
 

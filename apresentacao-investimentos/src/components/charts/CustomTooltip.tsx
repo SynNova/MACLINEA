@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { formatCurrency, formatPercentage, truncateText } from '../../utils/formatters';
 import { useI18n } from '../../i18n/I18nProvider';
 import { useDataTranslation } from '../../hooks/useDataTranslation';
+import { useTheme } from '../../theme/ThemeProvider';
 
 interface TooltipPayload {
   name: string;
@@ -30,6 +31,9 @@ interface CustomTooltipProps {
 export function CustomTooltip({ active, payload, label, type = 'destino' }: CustomTooltipProps) {
   const { t } = useI18n();
   const { tData } = useDataTranslation();
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
+  
   if (!active || !payload?.length) return null;
 
   const data = payload[0].payload;
@@ -38,8 +42,12 @@ export function CustomTooltip({ active, payload, label, type = 'destino' }: Cust
     <motion.div
       initial={{ opacity: 0, scale: 0.9, y: 5 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
-      className="bg-card/95 backdrop-blur-xl p-4 rounded-xl border border-white/10 
-                 shadow-2xl shadow-black/50 min-w-[220px] max-w-[300px]"
+      className={`backdrop-blur-xl p-4 rounded-xl border min-w-[220px] max-w-[300px]
+        ${isDark 
+          ? 'bg-card/95 border-white/10 shadow-2xl shadow-black/50' 
+          : 'bg-white/98 border-gray-200 shadow-xl shadow-black/10'
+        }
+      `}
     >
       {type === 'origem' && (
         <OrigemTooltipContent data={data} t={t} />
@@ -53,7 +61,7 @@ export function CustomTooltip({ active, payload, label, type = 'destino' }: Cust
         <FluxoTooltipContent data={data} label={label} t={t} />
       )}
 
-      <p className="text-xs text-gray-500 mt-3 pt-2 border-t border-white/5">
+      <p className={`text-xs mt-3 pt-2 border-t ${isDark ? 'text-gray-500 border-white/5' : 'text-gray-400 border-gray-200'}`}>
         {t('tooltip.clickDetalhes')}
       </p>
     </motion.div>

@@ -22,15 +22,16 @@ import {
   PieChartIcon, 
   BarChart3, 
   FileText, 
-  ChevronDown, 
-  ChevronUp, 
   ArrowRight,
   AlertTriangle
 } from 'lucide-react';
 import { useMovimentos } from '../hooks/useMovimentos';
 import { formatCurrency, formatCurrencyCompact, formatPercentage } from '../utils/formatters';
 import { withBase } from '../utils/assetUrl';
-import type { Movimento } from '../types/movimento';
+import { ThemeToggle } from '../components/ui/ThemeToggle';
+import { DrillDownModal } from '../components/ui/DrillDownModal';
+import { useChartTheme } from '../hooks/useChartTheme';
+import type { Movimento, CategoriaAgregada } from '../types/movimento';
 
 // IDs das categorias trabalhistas (gastos com colaboradores)
 const CATEGORIAS_COLABORADORES: Record<number, string> = {
@@ -96,7 +97,8 @@ interface GastoCategoria {
 
 export default function InvestimentoColaboradores() {
   const { dados, loading, error } = useMovimentos(withBase('dados/movimentos.csv'));
-  const [expandedCategoria, setExpandedCategoria] = useState<number | null>(null);
+  const [selectedCategoria, setSelectedCategoria] = useState<CategoriaAgregada | null>(null);
+  const { colors, isDark } = useChartTheme();
 
   // Processa dados
   const { aporteBrivio, totalGastos, categorias } = useMemo(() => {
@@ -146,6 +148,20 @@ export default function InvestimentoColaboradores() {
   }, [dados]);
 
   const saldoRestante = aporteBrivio - totalGastos;
+
+  // Função para converter GastoCategoria para CategoriaAgregada (para o modal)
+  const handleCategoriaClick = (cat: GastoCategoria) => {
+    const categoriaAgregada: CategoriaAgregada = {
+      categoria: cat.categoria,
+      categoriaId: cat.categoriaId,
+      total: cat.total,
+      count: cat.count,
+      lancamentos: cat.lancamentos,
+      top3: cat.lancamentos.slice(0, 3),
+      percentual: cat.percentual,
+    };
+    setSelectedCategoria(categoriaAgregada);
+  };
 
   // Dados para gráficos
   const chartData = categorias.map((cat, index) => ({
@@ -215,6 +231,11 @@ export default function InvestimentoColaboradores() {
       exit={{ opacity: 0, x: 20 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
     >
+      {/* Botão Toggle de Tema - Fixo no canto superior direito */}
+      <div className="fixed top-6 right-6 z-50">
+        <ThemeToggle />
+      </div>
+
       {/* Botão Flutuante - Próxima Página */}
       <Link
         to="/investimento-operacional"
@@ -361,18 +382,18 @@ export default function InvestimentoColaboradores() {
                   layout="vertical"
                   margin={{ top: 10, right: 80, left: 120, bottom: 10 }}
                 >
-                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" />
+                  <CartesianGrid strokeDasharray="3 3" stroke={colors.grid} />
                   <XAxis
                     type="number"
                     tickFormatter={(value) => formatCurrencyCompact(value)}
-                    tick={{ fill: '#8B98A5', fontSize: 11 }}
-                    axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                    tick={{ fill: colors.textSecondary, fontSize: 11 }}
+                    axisLine={{ stroke: colors.axis }}
                   />
                   <YAxis
                     type="category"
                     dataKey="categoria"
-                    tick={{ fill: '#8B98A5', fontSize: 11 }}
-                    axisLine={{ stroke: 'rgba(255,255,255,0.1)' }}
+                    tick={{ fill: colors.textSecondary, fontSize: 11 }}
+                    axisLine={{ stroke: colors.axis }}
                     width={110}
                   />
                   <Tooltip
@@ -380,7 +401,7 @@ export default function InvestimentoColaboradores() {
                       if (!active || !payload?.length) return null;
                       const data = payload[0].payload as GastoCategoria;
                       return (
-                        <div className="bg-card border border-white/10 rounded-lg p-4 shadow-xl">
+                        <div className={`rounded-lg p-4 shadow-xl ${isDark ? 'bg-card border border-white/10' : 'bg-white border border-gray-200'}`}>
                           <p className="font-bold text-white mb-2">{data.categoria}</p>
                           <p className="text-maclinea-light text-lg font-semibold">
                             {formatCurrency(data.total)}
@@ -392,7 +413,16 @@ export default function InvestimentoColaboradores() {
                       );
                     }}
                   />
-                  <Bar dataKey="total" radius={[0, 6, 6, 0]}>
+                  <Bar 
+                    dataKey="total" 
+                    radius={[0, 6, 6, 0]}
+                    onClick={(data) => {
+                      const payload = data as unknown as GastoCategoria;
+                      const cat = categorias.find(c => c.categoria === payload.categoria);
+                      if (cat) handleCategoriaClick(cat);
+                    }}
+                    style={{ cursor: 'pointer' }}
+                  >
                     {chartData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.fill} />
                     ))}
@@ -400,12 +430,15 @@ export default function InvestimentoColaboradores() {
                       dataKey="total"
                       position="right"
                       formatter={(value) => formatCurrency(Number(value) || 0)}
-                      style={{ fill: '#E5E7EB', fontSize: 10, fontWeight: 500 }}
+                      style={{ fill: colors.text, fontSize: 10, fontWeight: 500 }}
                     />
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
             </div>
+            <p className="text-xs text-gray-500 mt-3 text-center">
+              Clique nas barras para ver detalhes
+            </p>
           </motion.section>
 
           {/* Gráfico de Pizza */}
@@ -439,7 +472,13 @@ export default function InvestimentoColaboradores() {
                     label={({ percent }) => 
                       (percent ?? 0) > 0.01 ? `${((percent ?? 0) * 100).toFixed(1)}%` : ''
                     }
-                    labelLine={{ stroke: '#8B98A5', strokeWidth: 1 }}
+                    labelLine={{ stroke: colors.textSecondary, strokeWidth: 1 }}
+                    onClick={(data) => {
+                      if (data.categoriaId === -1) return; // Ignora "Outros"
+                      const cat = categorias.find(c => c.categoriaId === data.categoriaId);
+                      if (cat) handleCategoriaClick(cat);
+                    }}
+                    style={{ cursor: 'pointer' }}
                   >
                     {pieChartData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.fill} />
@@ -450,7 +489,7 @@ export default function InvestimentoColaboradores() {
                       if (!active || !payload?.length) return null;
                       const data = payload[0].payload as GastoCategoria;
                       return (
-                        <div className="bg-card border border-white/10 rounded-lg p-4 shadow-xl">
+                        <div className={`rounded-lg p-4 shadow-xl ${isDark ? 'bg-card border border-white/10' : 'bg-white border border-gray-200'}`}>
                           <p className="font-bold text-white mb-2">{data.categoria}</p>
                           <p className="text-maclinea-light text-lg font-semibold">
                             {formatCurrency(data.total)}
@@ -470,12 +509,15 @@ export default function InvestimentoColaboradores() {
                     iconSize={8}
                     wrapperStyle={{ paddingTop: 20 }}
                     formatter={(value) => (
-                      <span className="text-gray-300 text-xs">{value}</span>
+                      <span style={{ color: colors.textSecondary }} className="text-xs">{value}</span>
                     )}
                   />
                 </PieChart>
               </ResponsiveContainer>
             </div>
+            <p className="text-xs text-gray-500 mt-3 text-center">
+              Clique nas fatias para ver detalhes
+            </p>
           </motion.section>
         </div>
 
@@ -506,9 +548,7 @@ export default function InvestimentoColaboradores() {
               >
                 {/* Header da Categoria */}
                 <button
-                  onClick={() => setExpandedCategoria(
-                    expandedCategoria === cat.categoriaId ? null : cat.categoriaId
-                  )}
+                  onClick={() => handleCategoriaClick(cat)}
                   className="w-full p-5 flex items-center justify-between hover:bg-white/5 transition-colors"
                 >
                   <div className="flex items-center gap-4">
@@ -529,56 +569,16 @@ export default function InvestimentoColaboradores() {
                       <p className="font-bold text-white">{formatCurrency(cat.total)}</p>
                       <p className="text-sm text-gray-500">{formatPercentage(cat.percentual)}</p>
                     </div>
-                    {expandedCategoria === cat.categoriaId ? (
-                      <ChevronUp size={20} className="text-gray-400" />
-                    ) : (
-                      <ChevronDown size={20} className="text-gray-400" />
-                    )}
+                    <ArrowRight size={20} className="text-gray-400" />
                   </div>
                 </button>
 
-                {/* Lançamentos Expandidos */}
-                {expandedCategoria === cat.categoriaId && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    className="border-t border-white/10"
-                  >
-                    <div className="p-4 max-h-96 overflow-y-auto">
-                      <table className="w-full text-sm">
-                        <thead className="text-gray-500 border-b border-white/10">
-                          <tr>
-                            <th className="text-left py-2 px-2">Descrição</th>
-                            <th className="text-left py-2 px-2 hidden md:table-cell">Fornecedor</th>
-                            <th className="text-right py-2 px-2">Valor</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {cat.lancamentos.map((lanc, idx) => (
-                            <tr
-                              key={`${lanc.id}-${idx}`}
-                              className="border-b border-white/5 hover:bg-white/5"
-                            >
-                              <td className="py-3 px-2 text-gray-300">
-                                {lanc.historico || lanc.categoria}
-                              </td>
-                              <td className="py-3 px-2 text-gray-500 hidden md:table-cell">
-                                {lanc.fornecedor || '-'}
-                              </td>
-                              <td className="py-3 px-2 text-right font-medium text-white">
-                                {formatCurrency(lanc.debito)}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  </motion.div>
-                )}
               </motion.div>
             ))}
           </div>
+          <p className="text-xs text-gray-500 mt-4 text-center">
+            Clique em uma categoria para ver detalhes e gráficos
+          </p>
         </motion.section>
 
         {/* Card de Continuação */}
@@ -644,6 +644,13 @@ export default function InvestimentoColaboradores() {
           </div>
         </footer>
       </main>
+
+      {/* Modal de Detalhes com Overlay Charts */}
+      <DrillDownModal
+        isOpen={selectedCategoria !== null}
+        onClose={() => setSelectedCategoria(null)}
+        categoria={selectedCategoria}
+      />
     </motion.div>
   );
 }
