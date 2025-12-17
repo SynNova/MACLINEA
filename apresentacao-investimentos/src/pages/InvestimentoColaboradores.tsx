@@ -49,6 +49,14 @@ const CATEGORIAS_COLABORADORES: Record<number, string> = {
   58: 'Segurança Trabalho',
 };
 
+// Gastos manuais com colaboradores (não presentes no CSV)
+// Esses valores são adicionados manualmente ao cálculo
+const GASTOS_MANUAIS_COLABORADORES = [
+  { descricao: '2ª Parcela 13º Salário', valor: 62566.93, categoriaId: 73 },
+  { descricao: 'Vale dia 20 (Adiantamento)', valor: 38279.33, categoriaId: 38 },
+];
+const TOTAL_GASTOS_MANUAIS = GASTOS_MANUAIS_COLABORADORES.reduce((sum, g) => sum + g.valor, 0);
+
 // Cores vibrantes para o gráfico de pizza
 const PIE_COLORS = [
   '#8B1538', // maclinea
@@ -114,7 +122,9 @@ export default function InvestimentoColaboradores() {
 
     // Filtra gastos com colaboradores
     const gastosColab = movimentos.filter(isGastoColaborador);
-    const totalGastos = gastosColab.reduce((sum, m) => sum + m.debito, 0);
+    const totalGastosBancarios = gastosColab.reduce((sum, m) => sum + m.debito, 0);
+    // Total inclui gastos manuais (2ª parcela 13º salário)
+    const totalGastos = totalGastosBancarios + TOTAL_GASTOS_MANUAIS;
 
     // Agrupa por categoria
     const porCategoria = new Map<number, Movimento[]>();
@@ -124,7 +134,32 @@ export default function InvestimentoColaboradores() {
       porCategoria.set(mov.categoriaId, lista);
     });
 
-    // Cria array de categorias
+    // Cria lançamentos virtuais para os gastos manuais (para aparecer nos overlays)
+    const lancamentosManuais: Movimento[] = GASTOS_MANUAIS_COLABORADORES.map((gasto, index) => ({
+      id: -1000 - index, // IDs negativos para não conflitar
+      data: new Date('2025-12-20'),
+      dataStr: '20/12/2025',
+      diaSemana: 'Sexta-Feira',
+      tipo: 'Pagar' as const,
+      credito: 0,
+      debito: gasto.valor,
+      banco: 'MANUAL',
+      documento: 'MANUAL',
+      parcela: '',
+      categoria: CATEGORIAS_COLABORADORES[gasto.categoriaId] || 'Outros',
+      categoriaId: gasto.categoriaId,
+      historico: `${gasto.descricao} (LANÇAMENTO MANUAL)`,
+      fornecedor: 'Maclinea',
+    }));
+
+    // Adiciona lançamentos manuais às suas categorias
+    lancamentosManuais.forEach((mov) => {
+      const lista = porCategoria.get(mov.categoriaId) || [];
+      lista.push(mov);
+      porCategoria.set(mov.categoriaId, lista);
+    });
+
+    // Cria array de categorias (incluindo valores manuais)
     const cats: GastoCategoria[] = Array.from(porCategoria.entries())
       .map(([catId, lista]) => {
         const total = lista.reduce((sum, m) => sum + m.debito, 0);

@@ -57,6 +57,10 @@ const TERMOS_LIQUIDACAO_ATIVOS = ['MECA', 'IANCO'];
 // Aportes diretos da Usifix (pagamentos feitos diretamente pela Usifix para fornecedores da Maclinea)
 const TOTAL_APORTES_DIRETOS = 55748.00 + 71117.00; // MDS Instalação + SOFKA
 
+// Gastos manuais com colaboradores (não presentes no CSV) - usado para consistência entre páginas
+// 2ª Parcela 13º Salário (62566.93) + Vale dia 20 (38279.33)
+const TOTAL_GASTOS_MANUAIS_COLAB = 62566.93 + 38279.33;
+
 // Mapeamento de nomes duplicados (normalização)
 const NOMES_NORMALIZADOS: Record<string, string> = {
   'GRUPO K1 SA': 'Receb Grupo K1',
@@ -228,7 +232,8 @@ export default function InvestimentoVendas() {
 
     // Calcula gastos
     const gastosColab = movimentos.filter(isGastoColaborador);
-    const totalGastosColab = gastosColab.reduce((sum, m) => sum + m.debito, 0);
+    // Total inclui gastos manuais (2ª parcela 13º salário)
+    const totalGastosColab = gastosColab.reduce((sum, m) => sum + m.debito, 0) + TOTAL_GASTOS_MANUAIS_COLAB;
 
     const gastosOper = movimentos.filter(isGastoOperacional);
     // Total de gastos operacionais inclui os aportes diretos (que são também gastos)

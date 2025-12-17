@@ -63,6 +63,13 @@ const APORTES_DIRETOS_USIFIX = [
 ];
 const TOTAL_APORTES_DIRETOS = APORTES_DIRETOS_USIFIX.reduce((sum, a) => sum + a.valor, 0);
 
+// Gastos manuais com colaboradores (não presentes no CSV) - usado para consistência entre páginas
+const GASTOS_MANUAIS_COLABORADORES = [
+  { descricao: '2ª Parcela 13º Salário', valor: 62566.93, categoriaId: 73 },
+  { descricao: 'Vale dia 20 (Adiantamento)', valor: 38279.33, categoriaId: 38 },
+];
+const TOTAL_GASTOS_MANUAIS_COLAB = GASTOS_MANUAIS_COLABORADORES.reduce((sum, g) => sum + g.valor, 0);
+
 // Mapeamento de categorias operacionais
 const CATEGORIAS_OPERACIONAIS: Record<number, string> = {
   // FINANCEIRO
@@ -226,7 +233,8 @@ export default function InvestimentoOperacional() {
 
     // Filtra gastos
     const gastosColab = movimentos.filter(isGastoColaborador);
-    const totalGastosColab = gastosColab.reduce((sum, m) => sum + m.debito, 0);
+    // Total inclui gastos manuais (2ª parcela 13º salário)
+    const totalGastosColab = gastosColab.reduce((sum, m) => sum + m.debito, 0) + TOTAL_GASTOS_MANUAIS_COLAB;
 
     const gastosOper = movimentos.filter(isGastoOperacional);
     // Total de gastos operacionais inclui os aportes diretos (que são também gastos)
