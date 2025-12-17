@@ -70,7 +70,7 @@ export function KPICard({
         shadow-lg shadow-black/20
         transition-shadow duration-300
         hover:shadow-xl hover:shadow-black/30
-        ${clickable ? 'cursor-pointer focus:outline-none focus:ring-2 focus:ring-usifix/40' : ''}
+        ${clickable ? 'cursor-pointer' : ''}
       `}
     >
       {/* Decorative glow */}

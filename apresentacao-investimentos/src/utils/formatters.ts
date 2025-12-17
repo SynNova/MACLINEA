@@ -13,32 +13,15 @@ function convertFromBRL(valueBrl: number): { value: number; currency: 'BRL' | 'E
   return { value: valueBrl, currency: 'BRL' };
 }
 
-function formatBRLByLocale(locale: string, valueBrl: number, options: { compact?: boolean } = {}): string {
+function formatBRLByLocale(locale: string, valueBrl: number): string {
   const abs = Math.abs(valueBrl);
   const sign = valueBrl < 0 ? '-' : '';
 
-  const number = options.compact
-    ? (() => {
-        try {
-          return new Intl.NumberFormat(locale, {
-            notation: 'compact',
-            compactDisplay: 'short',
-            maximumFractionDigits: 1,
-          }).format(abs);
-        } catch {
-          // fallback compacto manual
-          if (abs >= 1_000_000) {
-            const n = new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(abs / 1_000_000);
-            return `${n}M`;
-          }
-          if (abs >= 1_000) {
-            const n = new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }).format(abs / 1_000);
-            return `${n}K`;
-          }
-          return new Intl.NumberFormat(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(abs);
-        }
-      })()
-    : new Intl.NumberFormat(locale, { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(abs);
+  // Sempre 2 casas decimais, sem arredondamentos
+  const number = new Intl.NumberFormat(locale, { 
+    minimumFractionDigits: 2, 
+    maximumFractionDigits: 2 
+  }).format(abs);
 
   // Regra solicitada:
   // - PT: símbolo antes (R$)
@@ -65,46 +48,19 @@ export function formatCurrency(value: number): string {
 }
 
 export function formatCurrencyCompact(value: number): string {
-  const locale = getLocale();
-  const { value: v, currency } = convertFromBRL(value);
-
-  // BRL com regra de exibição por idioma (compacto)
-  if (currency === 'BRL') {
-    return formatBRLByLocale(locale, v, { compact: true });
-  }
-
-  // Preferir Intl (compact) quando disponível, pois respeita separadores e idioma
-  try {
-    return new Intl.NumberFormat(locale, {
-      style: 'currency',
-      currency,
-      notation: 'compact',
-      compactDisplay: 'short',
-      maximumFractionDigits: 1,
-    }).format(v);
-  } catch {
-    // Fallback manual (mantém BRL + formatação por locale)
-    const abs = Math.abs(v);
-    const sign = v < 0 ? '-' : '';
-    const symbol = currency === 'EUR' ? '€' : 'R$';
-    if (abs >= 1_000_000) {
-      const n = new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(abs / 1_000_000);
-      return `${sign}${symbol} ${n}M`;
-    }
-    if (abs >= 1_000) {
-      const n = new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }).format(abs / 1_000);
-      return `${sign}${symbol} ${n}K`;
-    }
-    return formatCurrency(value);
-  }
+  // Padronizado: sempre 2 casas decimais, sem arredondamentos
+  return formatCurrency(value);
 }
 
 export function formatNumber(value: number): string {
   const locale = getLocale();
-  return new Intl.NumberFormat(locale).format(value);
+  return new Intl.NumberFormat(locale, {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }).format(value);
 }
 
-export function formatPercentage(value: number, decimals = 1): string {
+export function formatPercentage(value: number, decimals = 2): string {
   const locale = getLocale();
   const n = new Intl.NumberFormat(locale, {
     minimumFractionDigits: decimals,

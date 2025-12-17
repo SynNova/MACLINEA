@@ -244,7 +244,7 @@ function App() {
                                 checked={isSelected}
                                 onChange={() => toggleBank(banco)}
                                 className="w-4 h-4 rounded border-white/20 bg-white/5 text-usifix 
-                                           focus:ring-usifix/50 focus:ring-offset-0"
+                                           "
                               />
                               {banco}
                             </label>
