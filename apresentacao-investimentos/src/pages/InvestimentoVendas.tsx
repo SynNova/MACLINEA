@@ -198,14 +198,6 @@ export default function InvestimentoVendas() {
     const vendasNormais = movimentos.filter(isVendaNormal);
     const totalVendas = vendasNormais.reduce((sum, m) => sum + m.credito, 0);
 
-    // Calcula vendas por banco
-    const vendasUnicred = vendasNormais
-      .filter(m => m.banco.toUpperCase().includes('UNICRED'))
-      .reduce((sum, m) => sum + m.credito, 0);
-    const vendasInter = vendasNormais
-      .filter(m => m.banco.toUpperCase().includes('INTER'))
-      .reduce((sum, m) => sum + m.credito, 0);
-
     // Cálculo do fluxo das páginas anteriores
     // Aporte total Usifix = bancário + diretos (MDS + SOFKA)
     const aporteUsifixTotal = totalAporteUsifix + TOTAL_APORTES_DIRETOS;
