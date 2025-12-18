@@ -421,6 +421,18 @@ export default function InvestimentoVendas() {
         </span>
       </Link>
 
+      {/* Botão Flutuante - Próxima Página (Redução Despesas) */}
+      <Link
+        to="/reducao-despesas"
+        className="fixed right-6 top-1/2 -translate-y-1/2 z-50 p-4 rounded-full bg-usifix/90 hover:bg-usifix text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 group"
+        title="Página 4 - Redução de Despesas"
+      >
+        <ArrowRight size={24} />
+        <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-lg bg-card border border-white/10 text-sm text-white whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
+          Redução Despesas
+        </span>
+      </Link>
+
       {/* Header */}
       <header className="relative overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-transparent to-green-500/10" />
